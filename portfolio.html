@@ -3,88 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webdesign | Isabell Bader</title>
+    <title>Ibvian</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="site-title">
-    <h1 data-i18n="title">Webdesign | Isabell Bader</h1>
-  </div>
+  <a href="index.html" class="brand-container">
+    <img src="images/logo.png" alt="Ibvian Logo" class="header-logo">
+    <div class="site-title">
+      <h1>Ibvian</h1>
+      <span class="site-tagline">Design Studio</span>
+    </div>
+  </a>
 
   <button class="menu-toggle" aria-label="Menü öffnen">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   
-    <nav class="main-nav">
-        <a href="index.html" data-i18n="nav_home">Home</a>
-        <a href="about.html"data-i18n="nav_about">Über mich</a>
-        <a href="leistungen.html" data-i18n="nav_services">Leistungen</a>
-        <a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
-        <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Kontakt</a>
-        <button id="lang-switch" data-i18n="lang_switch">EN</button>
-    </nav>
+  <nav class="main-nav">
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="about.html" data-i18n="nav_about">Über Ibvian</a>
+    <a href="leistungen.html" data-i18n="nav_services">Leistungen</a>
+    <a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
+    <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Kontakt</a>
+    <button id="lang-switch" data-i18n="lang_switch">EN</button>
+  </nav>
 </header>
-
-
-<main class="portfolio-container">
-    <header class="portfolio-hero">
+<main>
+<section class="port-image-section">
+  <div class="hero-image-content">
         <h1 data-i18n="portfolio_titel">Ausgewählte Projekte</h1>
         <p class="lead" data-i18n="portfolio_lead">Jede Website wird individuell auf das Unternehmen, seine Zielgruppe und die gewünschten Ziele abgestimmt.</p>
-    </header>
+    </div>
+</section>
 
-    <section class="portfolio-item">
-        <div class="portfolio-image">
-            <img src="images/reitunterricht-screenshot.png" alt="Website Reitunterricht">
-        </div>
-        <div class="portfolio-text">
-            <h2 data-i18n="portfolio_project_1_title">Website für Reitunterricht</h2>
-            <p><strong data-i18n="portfolio_project_1_description">Persönlich, klar und auf die Zielgruppe ausgerichtet</strong></p>
-            <p><strong data-i18n="portfolio_project_1_challenge">Die Herausforderung:</strong> 
-                <span data-i18n="portfolio_project_1_challenge_text">Eine Website, die Persönlichkeit vermittelt, Vertrauen schafft und Interessenten schnell zu den wichtigsten Informationen führt.</span></p>
-            <p><strong data-i18n="portfolio_project_1_solution">Lösung:</strong> <span data-i18n="portfolio_project_1_solution_text">Ein harmonisches Design mit klarer Struktur, intuitiver Navigation und einfachen Kontaktmöglichkeiten. Die integrierte Terminorganisation erleichtert Interessenten den nächsten Schritt.</span></p>
-            <p><strong data-i18n="portfolio_project_1_fokus">Fokus:</strong> 
-                <span data-i18n="portfolio_project_1_fokus_text">Webdesign · Nutzerführung · Terminbuchung · SEO</span></p>
-            <a href="https://www.isabellbader-barockreiten.de/" class="btn-primary" data-i18n="portfolio_project_1_cta">Website ansehen</a>
-        </div>
-    </section>
+<section class="portfolio-hero">
+    <div class="portfolio-grid">
+        <article class="portfolio-item">
+            <div class="portfolio-image">
+                <img src="images/reitunterricht.png" alt="Website Reitunterricht">
+            </div>
+            <div class="portfolio-text">
+                <p><strong data-i18n="portfolio_project_1_title">Individuelle Website für ein Reitangebot mit klarer Nutzerführung und persönlicher Gestaltung.</strong></p>
+                <p>Umgesetzung: <br>
+                Webdesign & responsive Umsetzung<br>
+                Strukturierung der Inhalte und Leistungen<br>
+                Nutzerführung und klare Kontaktwege<br>
+                Optimierung für Desktop, Tablet und Smartphone<br>
+                SEO-Basics und technische Onpage-Optimierung</p>
 
-    <section class="portfolio-item">
-        <div class="portfolio-image">
-            <img src="images/kfz-werkstatt-screenshot.png" alt="Website KFZ-Werkstatt">
-        </div>
-        <div class="portfolio-text">
-            <h2 data-i18n="portfolio_project_2_title">Website für eine KFZ-Werkstatt</h2>
-            <p><strong data-i18n="portfolio_project_2_description">Konzeptprojekt für einen modernen KFZ-Betrieb </strong></p>
-            <p><strong data-i18n="portfolio_project_2_challenge">Die Herausforderung:</strong> 
-                <span data-i18n="portfolio_project_2_challenge_text">Eine Website, die Kompetenz vermittelt und Kunden schnell zu Leistungen, Kontaktmöglichkeiten und wichtigen Informationen führt.</span></p>
-            <p><strong data-i18n="portfolio_project_2_solution">Die Lösung:</strong> 
-                <span data-i18n="portfolio_project_2_solution_text">Eine moderne, übersichtliche und mobil optimierte Website mit klarer Nutzerführung und gezielten Kontaktmöglichkeiten.</span></p>
-            <p><strong data-i18n="portfolio_project_2_fokus">Fokus:</strong> 
-                <span data-i18n="portfolio_project_2_fokus_text">Webdesign · Mobile Optimierung · Conversion · SEO</span></p>
-            <a href="kfz_index.html" class="btn-primary" data-i18n="portfolio_project_2_cta">Website ansehen</a>
-        </div>
-    </section>
+                <p>Technik<br>
+                HTML5 · CSS3 · JavaScript · Responsive Design · SEO</p>
 
-    <section class="portfolio-item">
-        <div class="portfolio-image">
-            <img src="images/equily.png" alt="Website Reitunterricht">
-        </div>
-        <div class="portfolio-text">
-            <h2 data-i18n="portfolio_project_3_title">Webportal für Reitunterricht</h2>
-            <p data-i18n="portfolio_project_3_description">Modernes Plattformkonzept für Anbieter und Interessenten</p>
-            <p><strong data-i18n="portfolio_project_3_challenge">Die Herausforderung:</strong> 
-                <span data-i18n="portfolio_project_3_challenge_text">Angebote übersichtlich präsentieren und Interessenten dabei unterstützen, schnell passende Informationen und Angebote zu finden.</span></p>
-            <p><strong data-i18n="portfolio_project_3_solution">Lösung:</strong> 
-                <span data-i18n="portfolio_project_3_solution_text">Ein modernes Konzept mit intuitiver Navigation, strukturierter Darstellung und benutzerfreundlicher Suche.</span></p>
-            <p><strong data-i18n="portfolio_project_3_fokus">Fokus:</strong> 
-                <span data-i18n="portfolio_project_3_fokus_text">Webkonzeption · UX/UI · Nutzerführung · SEO</span></p>
-            <a href="https://www.equily.de" class="btn-primary" data-i18n="portfolio_project_3_cta">Webportal ansehen</a>
-        </div>
-    </section>
+                <a href="https://www.baderisabell-barockreiten.de" class="btn-port">&rarr; Projekt ansehen</a>
+            </div>
+        </article>
+
+        <article class="portfolio-item">
+            <div class="portfolio-image">
+                <img src="images/kfz-werkstatt-screenshot.png" alt="Website KFZ-Werkstatt">
+            </div>
+            <div class="portfolio-text">
+                <p><strong data-i18n="portfolio_project_2_title">Moderne Unternehmenswebsite zur übersichtlichen Darstellung der Werkstattleistungen und zur einfachen Kontaktaufnahme.</strong></p>
+                <p>Umgesetzung:<br>
+                Individuelles Webdesign<br>
+                Responsive Webentwicklung<br>
+                Strukturierte Darstellung der Leistungen<br>
+                Kontakt- und Anfrageelemente<br>
+                Suchmaschinenfreundliche Seitenstruktur<br>
+                Optimierung von Ladezeit und Darstellung</p>
+                <p>Technik<br>
+                HTML5 · CSS3 · JavaScript · Responsive Design · SEO</p>
+                <a href="kfz_index.html" class="btn-port">&rarr; Projekt ansehen</a>
+            </div>
+        </article>
+
+        <article class="portfolio-item">
+            <div class="portfolio-image">
+                <img src="images/equily.png" alt="Website Reitunterricht">
+            </div>
+            <div class="portfolio-text">
+                <p><strong data-i18n="portfolio_project_3_title">Individuelles Webportal mit erweiterten Funktionen über die klassische Unternehmenswebsite hinaus.</strong></p>
+                <p>Umgesetzung:<br>
+                Konzeption und Gestaltung des Webportals<br>
+                Responsive Benutzeroberfläche<br>
+                Strukturierung umfangreicher Inhalte<br>
+                Interaktive Funktionen<br>
+                Benutzerfreundliche Navigation<br>
+                Individuelle technische Umsetzung</p>
+
+                <p>Technik<br>
+                Next.js · Datenbankanbindung · Responsive Design</p>
+                <a href="https://www.equily.de" class="btn-port">&rarr; Projekt ansehen</a>
+            </div>
+        </article>
+    </div>
+    <div class="more-projects-note">
+        <span class="note-badge">Coming Soon</span>
+        <p>Weitere Projekte in Kürze</p>
+    </div>
+</section>
+
+<section id="contact_index">
+<section class="contact-form-area">
+            <h2 data-i18n="contact_form_h2">Kontakt</h2>
+
+            <form action="https://formspree.io/f/mrewvyyv" method="POST" class="contact-form">
+                <label for="name" data-i18n="contact_form_name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" data-i18n="contact_form_email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefon" data-i18n="contact_form_telefon">Telefonnummer (optional)</label>
+                <input type="tel" id="telefon" name="telefon">
+
+                <label for="message" data-i18n="contact_form_message">Nachricht</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <div style="display: none;">
+                    <label>Bitte leer lassen</label>
+                    <input type="text" name="_gotcha">
+                </div>
+
+                <button type="submit" class="btn-primary" data-i18n="contact_form_submit">Absenden</button>
+            </form>
+        </section>
+        </section>
 </main>
 <footer class="site-footer">
         <div class="footer-col">

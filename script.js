@@ -43,9 +43,9 @@ let currentLang = localStorage.getItem('lang') || 'de';
 
 const translations = {
     de: {
-        title: "Webdesign | Isabell Bader",
+        title: "Ibvian",
         nav_home: "Home",
-        nav_about: "Über mich",
+        nav_about: "Über Ibvian",
         nav_services: "Leistungen",
         nav_portfolio: "Portfolio",
         nav_contact: "Kontakt",
@@ -56,11 +56,11 @@ const translations = {
         link_datenschutz: "Datenschutz",
         link_agb: "Allgemeine Geschäftsbedingungen",
         link_wiederruf: "Zahlung und Versand",
-        footer_copyright: "© 2024 Isabell Bader. Alle Rechte vorbehalten.",
+        footer_copyright: "Alle Rechte vorbehalten.",
 
         hero_subtitle: "INDIVIDUELL. MODERN. ZUVERLÄSSIG.",
-        hero_h1: "Ihre Website. Ihr digitaler Auftritt.",
-        hero_p: "Ihre Website ist mehr als eine digitale Visitenkarte. Sie zeigt, wofür Ihr Unternehmen steht, vermittelt Vertrauen und führt Interessenten gezielt zu den Informationen, die für ihre Entscheidung wichtig sind.",
+        hero_h1: "Ibvian",
+        hero_p: "Digital Studio",
         btn_services: "Leistungen ansehen",
         home_h1: "Mehr als Webdesign",
         home_p: "Eine gute Website beginnt nicht mit der Gestaltung, sondern mit der Frage, was sie für Ihr Unternehmen leisten soll.",
@@ -75,60 +75,41 @@ const translations = {
         preview_portfolio_desc: "Ausgewählte Projekte aus den Bereichen Webdesign, Webentwicklung und digitale Kundengewinnung.",
         btn_view_portfolio: "Arbeiten zeigen",
 
-        about_hero_title: "Vom Reitplatz in die digitale Welt",
-        about_lead: "Ich komme nicht aus der klassischen Agenturwelt. Und genau das empfinde ich als Vorteil.",
-        about_lead_1: "Durch meine eigene Selbstständigkeit kenne ich die Perspektive eines Unternehmens: Eine Website soll nicht einfach existieren, sondern einen Zweck erfüllen. Sie soll das eigene Angebot verständlich machen, Vertrauen schaffen und im besten Fall Arbeit abnehmen oder neue Anfragen ermöglichen.",
-        about_lead_2: "Gleichzeitig interessiert mich die technische Seite genauso sehr.",
-        about_lead_3: "Ich arbeite mit HTML, CSS und JavaScript und beschäftige mich kontinuierlich mit neuen Technologien und Möglichkeiten der Webentwicklung.",
-        about_lead_4: "Dabei möchte ich nicht möglichst viele Technologien anbieten, nur um eine lange Liste auf die Website schreiben zu können. Entscheidend ist für mich, welche Lösung für das jeweilige Projekt sinnvoll ist.",
-        about_expertise_title: "Pädagogik & Soziologie trifft Webentwicklung",
-        about_expertise_description: "Mein Studium der Pädagogik und Soziologie begleitet mich dabei bis heute.",
-        about_expertise_description_2: "Es hat meinen Blick dafür geschärft, wie Menschen Informationen aufnehmen, wie Kommunikation funktioniert und warum manche Dinge intuitiv verstanden werden, während andere unnötig kompliziert wirken.",
-        about_expertise_description_3: "Genau diese Perspektive nehme ich auch in meine Arbeit mit. Denn eine technisch gut umgesetzte Website bringt wenig, wenn Besucher nicht verstehen, was sie dort finden oder wie sie zum nächsten Schritt kommen.",
-        about_quote: "Webentwicklung mit einem Blick für Menschen, Unternehmen und die Details, die Vertrauen zwischen Unternehmen und ihren Kunden schaffen.",
-        about_text_hero: "Was mir bei meiner Arbeit wichtig ist",
-        about_text_1: "Ich möchte keine Standardlösung über ein Unternehmen legen.",
-        about_text_2: "Jedes Unternehmen hat seine eigene Geschichte, seine eigenen Kunden und seine eigenen Anforderungen. Deshalb beginnt ein Projekt für mich immer damit, zuzuhören und zu verstehen.",
-        about_text_3: "Und manchmal ist die richtige Lösung eine komplett neue Website. Manchmal reicht es aber auch, eine bestehende Website gezielt zu verbessern.",
-        about_text_4: "Genau das möchte ich gemeinsam mit meinen Kunden herausfinden.",
+        "ibvian-text": "Digitale Lösungen - Ibvian",
+        "ibvian-description": "Durch meine eigene Selbstständigkeit kenne ich die Perspektive von Unternehmen aus erster Hand. Eine Website soll nicht einfach gut aussehen oder online sein. Sie soll einen echten Zweck erfüllen und zum Unternehmen beitragen. Bei Ibvian verbinde ich Webentwicklung, hochwertiges Design und digitale Kundengewinnung zu durchdachten Lösungen. Dabei lege ich besonderen Wert auf eine technisch saubere, moderne und performante Umsetzung mit HTML, CSS und JavaScript und einem klaren Blick für Details. Denn eine Website kann mehr als eine digitale Visitenkarte sein. Sie kann Leistungen verständlich vermitteln, Vertrauen schaffen, Anfragen generieren und als aktiver Teil der Kundengewinnung funktionieren. Mein Anspruch ist es, Technik, Design und Strategie so zu verbinden, dass aus einer Website ein echtes Werkzeug für das Unternehmen wird.",
+        "about_text_hero": "Technik, die Menschen verstehen",
+        "about_text_1": "Mein Studium der Pädagogik und Soziologie prägt meinen Blick auf digitale Kommunikation bis heute. Mich interessiert nicht nur, wie eine Website technisch funktioniert, sondern auch, wie Menschen sie wahrnehmen und nutzen. Eine gute Website muss verständlich sein, Orientierung geben und Vertrauen schaffen. Deshalb verbinde ich technische Umsetzung mit einem Blick für Nutzer, Unternehmen und die Details, die aus Besuchern Interessenten machen.",
+        "about_text_2": "Mein Anspruch sind Websites, die gut aussehen, verständlich funktionieren und einen echten Zweck erfüllen.",
 
         portfolio_titel: "Ausgewählte Projekte",
         portfolio_lead: "Jede Website wird individuell auf das Unternehmen, seine Zielgruppe und die gewünschten Ziele abgestimmt.",
         portfolio_project_1_title: "Website für Reitunterricht",
         portfolio_project_1_description: "Persönlich, klar und auf die Zielgruppe ausgerichtet",
-        portfolio_project_1_challenge: "Die Herausforderung:",
-        portfolio_project_1_challenge_text: "Eine Website, die Persönlichkeit vermittelt, Vertrauen schafft und Interessenten schnell zu den wichtigsten Informationen führt.",
-        portfolio_project_1_solution: "Lösung:",
-        portfolio_project_1_solution_text: "Ein harmonisches Design mit klarer Struktur, intuitiver Navigation und einfachen Kontaktmöglichkeiten. Die integrierte Terminorganisation erleichtert Interessenten den nächsten Schritt.",
-        portfolio_project_1_fokus: "Fokus:",
-        portfolio_project_1_fokus_text: "Webdesign · Nutzerführung · Terminbuchung · SEO",
+        portfolio_project_1_challenge: "Die Herausforderung: Eine Website, die Persönlichkeit vermittelt, Vertrauen schafft und Interessenten schnell zu den wichtigsten Informationen führt.",
+        portfolio_project_1_solution: "Lösung: Ein harmonisches Design mit klarer Struktur, intuitiver Navigation und einfachen Kontaktmöglichkeiten. Die integrierte Terminorganisation erleichtert Interessenten den nächsten Schritt.",
+        portfolio_project_1_fokus: "Fokus:Webdesign · Nutzerführung · Terminbuchung · SEO",
         portfolio_project_1_cta: "Website ansehen",
         portfolio_project_2_title: "Website für eine KFZ-Werkstatt",
         portfolio_project_2_description: "Konzeptprojekt für einen modernen KFZ-Betrieb",
-        portfolio_project_2_challenge: "Die Herausforderung:",
-        portfolio_project_2_challenge_text: "Eine Website, die Kompetenz vermittelt und Kunden schnell zu Leistungen, Kontaktmöglichkeiten und wichtigen Informationen führt.",
-        portfolio_project_2_solution: "Die Lösung:",
-        portfolio_project_2_solution_text: "Eine moderne, übersichtliche und mobil optimierte Website mit klarer Nutzerführung und gezielten Kontaktmöglichkeiten.",
-        portfolio_project_2_fokus: "Fokus:",
-        portfolio_project_2_fokus_text: "Webdesign · Mobile Optimierung · Conversion · SEO",
+        portfolio_project_2_challenge: "Die Herausforderung: Eine Website, die Kompetenz vermittelt und Kunden schnell zu Leistungen, Kontaktmöglichkeiten und wichtigen Informationen führt.",
+        portfolio_project_2_solution: "Die Lösung: Eine moderne, übersichtliche und mobil optimierte Website mit klarer Nutzerführung und gezielten Kontaktmöglichkeiten.",
+        portfolio_project_2_fokus: "Fokus: Webdesign · Mobile Optimierung · Conversion · SEO",
         portfolio_project_2_cta: "Website ansehen",
         portfolio_project_3_title: "Webportal für Reitunterricht",
         portfolio_project_3_description: "Modernes Plattformkonzept für Anbieter und Interessenten",
-        portfolio_project_3_challenge: "Die Herausforderung:",
-        portfolio_project_3_challenge_text: "Angebote übersichtlich präsentieren und Interessenten dabei unterstützen, schnell passende Informationen und Angebote zu finden.",
-        portfolio_project_3_solution: "Lösung:",
-        portfolio_project_3_solution_text: "Ein modernes Konzept mit intuitiver Navigation, strukturierter Darstellung und benutzerfreundlicher Suche.",
-        portfolio_project_3_fokus: "Fokus:",
-        portfolio_project_3_fokus_text: "Webkonzeption · UX/UI · Nutzerführung · SEO",
+        portfolio_project_3_challenge: "Die Herausforderung: Angebote übersichtlich präsentieren und Interessenten dabei unterstützen, schnell passende Informationen und Angebote zu finden.",
+        portfolio_project_3_solution: "Lösung: Ein modernes Konzept mit intuitiver Navigation, strukturierter Darstellung und benutzerfreundlicher Suche.",
+        portfolio_project_3_fokus: "Fokus: Webkonzeption · UX/UI · Nutzerführung · SEO",
         portfolio_project_3_cta: "Webportal ansehen",
 
         contact_hero_title: "Lass uns über dein Projekt sprechen.",
         contact_hero_subtitle: "Ich freue mich darauf, dich und dein Unternehmen kennenzulernen. Lass uns gemeinsam herausfinden, wie ich dich unterstützen kann.",
-        contact_info_p: "Du hast Fragen oder möchtest erst einmal E-Mail-Kontakt? Schreib mir einfach eine Nachricht.",
+        contact_info_p: "Du hast Fragen, willst dich informieren oder möchtest eine konkrete Einschätzung?",
         contact_info_email: "E-Mail:",
         contact_info_telefon: "Telefonnummer:",
         contact_info_hours: "Ich antworte werktags in der Regel innerhalb von 24 Stunden.",
-        contact_form_h2: "Termin oder Anfrage",
+        btn_request_appointment: "Kostenloses Erstgespräch vereinbaren",
+        contact_form_h2: "Kontakt",
         contact_form_name: "Name",
         contact_form_email: "E-Mail",
         contact_form_telefon: "Telefonnummer (optional)",
@@ -207,6 +188,7 @@ const translations = {
         legal_whatsapp_continuation_text7: "Nähere Informationen zu Nutzungsbedingungen und Datenschutz bei Nutzung von WhatsApp finden Sie unter:",
         
         leistungen: "Leistungen",
+        leistungen_lead: "Webdesign - SEO - Conversion Optimierung - Marketing",
         leistungen_titel: "Von der Website zur automatisierten Kundengewinnung",
         leistungen_titel2: "Ihre Website arbeitet für Sie.",
         leistungen_beschreibung: "Eine Website sollte nicht nur professionell aussehen. Sie sollte Ihr Unternehmen verständlich präsentieren, Vertrauen schaffen und Interessenten gezielt zur nächsten Handlung führen.",
@@ -415,9 +397,9 @@ const translations = {
 
     },
     en: {
-    title: "Webdesign | Isabell Bader",
+    title: "Ibvian",
     nav_home: "Home",
-    nav_about: "About Me",
+    nav_about: "About Ibvian",
     nav_services: "Services",
     nav_portfolio: "Portfolio",
     nav_contact: "Contact",
@@ -428,11 +410,11 @@ const translations = {
     link_datenschutz: "Privacy Policy",
     link_agb: "Terms and Conditions",
     link_wiederruf: "Payment and Shipping",
-    footer_copyright: "© 2024 Isabell Bader. All rights reserved.",
+    footer_copyright: "All rights reserved.",
     
     hero_subtitle: "INDIVIDUAL. MODERN. RELIABLE.",
-    hero_h1: "Your Website. Your Digital Presence.",
-    hero_p: "Your website is more than a digital business card. It shows what your company stands for, builds trust and guides prospective customers to the information they need to make a decision.",
+    hero_h1: "Ibvian",
+    hero_p: "Digital Studio",
     btn_services: "View Services",
     home_h1: "More Than Web Design",
     home_p: "A good website does not begin with the design. It begins with the question of what the website should achieve for your business.",
@@ -447,23 +429,12 @@ const translations = {
     preview_portfolio_desc: "Selected projects in web design, web development and digital customer acquisition.",
     btn_view_portfolio: "View Projects",
     
-    about_hero_title: "From the Riding Arena to the Digital World",
-    about_lead: "I did not come from the traditional agency world. And I see that as an advantage.",
-    about_lead_1: "Through my own experience as a self-employed professional, I understand the perspective of a business: A website should not simply exist. It should serve a purpose. It should communicate the company's offering clearly, build trust and, ideally, reduce workload or generate new enquiries.",
-    about_lead_2: "At the same time, I am equally interested in the technical side.",
-    about_lead_3: "I work with HTML, CSS and JavaScript and continuously explore new technologies and possibilities in web development.",
-    about_lead_4: "I do not believe in offering as many technologies as possible simply to create a long list on a website. What matters to me is finding the solution that makes sense for the individual project.",
-    about_expertise_title: "Education & Sociology Meet Web Development",
-    about_expertise_description: "My background in education and sociology continues to influence the way I work today.",
-    about_expertise_description_2: "It has sharpened my understanding of how people process information, how communication works and why some things are understood intuitively while others feel unnecessarily complicated.",
-    about_expertise_description_3: "I bring this perspective into my work as well. Because even a technically well-built website has little value if visitors do not understand what they will find there or what they should do next.",
-    about_quote: "Web development with an eye for people, businesses and the details that create trust between companies and their customers.",
-    about_text_hero: "What matters to me in my work",
-    about_text_1: "I do not want to impose a standard solution on a business.",
-    about_text_2: "Every business has its own story, its own customers and its own requirements. That is why every project starts with listening and understanding.",
-    about_text_3: "Sometimes the right solution is a completely new website. Sometimes, however, a carefully targeted improvement of an existing website is all that is needed.",
-    about_text_4: "That is exactly what I want to find out together with my clients.",
-    
+    "ibvian-text": "Digital Solutions - Ibvian",
+    "ibvian-description": "Through my own self-employment, I understand the perspective of businesses firsthand. A website shouldn't just look good or be online. It should serve a real purpose and contribute to the company's success. At Ibvian, I combine web development, high-quality design, and digital customer acquisition into well-thought-out solutions. I place particular emphasis on a technically clean, modern, and high-performance implementation using HTML, CSS, and JavaScript, with a keen eye for detail. Because a website can be more than just a digital business card. It can communicate services clearly, build trust, generate inquiries, and function as an active part of customer acquisition. My goal is to combine technology, design, and strategy in a way that turns a website into a powerful tool for your business.",
+    "about_text_hero": "Technology that people understand",
+    "about_text_1": "My studies in pedagogy and sociology shape my perspective on digital communication to this day. I'm not only interested in how a website works technically, but also in how people perceive and interact with it. A good website must be clear, provide orientation, and build trust. That's why I combine technical execution with an eye for users, businesses, and the details that turn visitors into leads.",
+    "about_text_2": "My ambition is to create websites that look great, function intuitively, and serve a clear purpose.",
+  
     portfolio_titel: "Selected Projects",
     portfolio_lead: "Every website is individually tailored to the company, its target audience and its specific goals.",
 
@@ -499,11 +470,12 @@ const translations = {
 
     contact_hero_title: "Let's talk about your project.",
     contact_hero_subtitle: "I look forward to getting to know you and your business. Let's find out together how I can support you.",
-    contact_info_p: "Do you have questions or would you prefer to get in touch via email? Just send me a message.",
+    contact_info_p: "Do you have questions or would like to discuss your project? I am happy to help.",
     contact_info_email: "Email:",
     contact_info_telefon: "Phone number:",
     contact_info_hours: "I respond to inquiries on weekdays within 24 hours.",
-    contact_form_h2: "Appointment or inquiry",
+    btn_request_appointment: "Request a free initial consultation",
+    contact_form_h2: "Contact",
     contact_form_name: "Name",
     contact_form_email: "Email",
     contact_form_telefon: "Phone number (optional)",
@@ -522,6 +494,7 @@ const translations = {
     legal_whatsapp: "WhatsApp",
 
     leistungen: "Services",
+    leistungen_lead: "Web Design - SEO - Conversion Optimization - Marketing",
     leistungen_titel: "From Website to Automated Customer Acquisition",
     leistungen_titel2: "Your website works for you.",
     leistungen_beschreibung: "A website should do more than look professional. It should present your business clearly, build trust and guide potential customers towards the next step.",
@@ -777,10 +750,10 @@ if (langSwitch) langSwitch.addEventListener('click', () => {
 // ============================================================
 
 const calculator =
-    document.querySelector('.step[data-step="1"]')?.closest('main');
+    document.querySelector('.step[data-step="1"]')?.closest('form');
 
 
-if (calculator && document.getElementById('preis')) {
+if (calculator) {
 
 
     // ========================================================
@@ -789,17 +762,10 @@ if (calculator && document.getElementById('preis')) {
 
     const oneTimePrices = {
 
-        paket: {
-            präsenz: 490,
-            conversion: 890,
-            kundengewinnung: 1490,
-            individuell: 0
-        },
-
         website: {
-            erstellen: 0,
-            optimieren: -150,
-            nein: -300
+            erstellen: 490,
+            optimieren: 340,
+            nein: 0
         },
 
         umfang: {
@@ -812,7 +778,7 @@ if (calculator && document.getElementById('preis')) {
 
         texte: {
             bleiben: 0,
-            erstellen: 0,
+            erstellen: 100,
             optimieren: 100
         },
 
@@ -826,7 +792,7 @@ if (calculator && document.getElementById('preis')) {
             terminbuchung: 100,
             preisrechner: 200,
             anfrageformular: 75,
-            mehrsprachigkeit: 200,
+            mehrsprachigkeit: 150,
             blog: 100,
             newsletter: 100
         },
@@ -842,28 +808,28 @@ if (calculator && document.getElementById('preis')) {
         },
 
         cro: {
-            optimieren: 200,
-            neu: 300,
+            optimieren: 400,
+            neu: 500,
             nein: 0
         },
 
         retargeting: {
-            neu: 250,
-            optimieren: 200,
+            neu: 350,
+            optimieren: 300,
             nein: 0
         },
 
         ads_umfang: {
-            ads: 100,
-            eine: 200,
-            mehrere: 400,
-            struktur: 600
+            ads: 300,
+            eine: 400,
+            mehrere: 600,
+            struktur: 800
         },
 
         ads_ort: {
             google: 100,
             meta: 100,
-            keine_Ahnung: 0
+            keine_Ahnung: 100
         },
 
         ads_angebote: {
@@ -944,21 +910,12 @@ if (calculator && document.getElementById('preis')) {
 
     function calculatePrice() {
 
-        const packageValue =
-            getValues('paket')[0];
-
-
         const hasIndividualPrice =
-            packageValue === 'individuell' ||
             getValues('funktionen').includes('weitere') ||
             getValues('ads_ort').includes('weitere');
 
 
-        let oneTime =
-            addSelected(
-                oneTimePrices.paket,
-                'paket'
-            );
+        let oneTime = 0;
 
 
         let monthly = 0;
@@ -968,155 +925,150 @@ if (calculator && document.getElementById('preis')) {
         // INDIVIDUELLES ANGEBOT
         // ----------------------------------------------------
 
-        if (packageValue !== 'individuell') {
+        oneTime +=
+            addSelected(
+                oneTimePrices.website,
+                'website'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.website,
-                    'website'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.umfang,
+                'umfang'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.umfang,
-                    'umfang'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.texte,
+                'texte'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.texte,
-                    'texte'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.design,
+                'design'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.design,
-                    'design'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.funktionen,
+                'funktionen'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.funktionen,
-                    'funktionen'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.seo,
+                'seo'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.seo,
-                    'seo'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.seo_optimieren,
+                'seo_optimieren'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.seo_optimieren,
-                    'seo_optimieren'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.cro,
+                'cro'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.cro,
-                    'cro'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.retargeting,
+                'retargeting'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.retargeting,
-                    'retargeting'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.ads_umfang,
+                'ads_umfang'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.ads_umfang,
-                    'ads_umfang'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.ads_ort,
+                'ads_ort'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.ads_ort,
-                    'ads_ort'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.ads_angebote,
+                'ads_angebote'
+            );
 
 
-            oneTime +=
-                addSelected(
-                    oneTimePrices.ads_angebote,
-                    'ads_angebote'
-                );
-
-
-            oneTime +=
-                addSelected(
-                    oneTimePrices.landingpage,
-                    'landingpage'
-                );
+        oneTime +=
+            addSelected(
+                oneTimePrices.landingpage,
+                'landingpage'
+            );
 
 
             // ------------------------------------------------
             // MONATLICHE BETREUUNG
             // ------------------------------------------------
 
-            const website =
-                getValues('website')[0];
+        const website =
+            getValues('website')[0];
 
 
-            if (
-                website &&
-                website !== 'nein'
-            ) {
+        if (
+            website &&
+            website !== 'nein'
+        ) {
 
-                monthly +=
-                    monthlyPrices.website;
+            monthly +=
+                monthlyPrices.website;
 
-            }
-
-
-            if (
-                getValues('seo')[0] === 'ja'
-            ) {
-
-                monthly +=
-                    monthlyPrices.seo;
-
-            }
+        }
 
 
-            if (
-                ['optimieren', 'neu']
-                    .includes(
-                        getValues('cro')[0]
-                    )
-            ) {
+        if (
+            getValues('seo')[0] === 'ja'
+        ) {
 
-                monthly +=
-                    monthlyPrices.cro;
+            monthly +=
+                monthlyPrices.seo;
 
-            }
+        }
 
 
-            if (
-                ['ja', 'jein']
-                    .includes(
-                        getValues('ads')[0]
-                    )
-            ) {
+        if (
+            ['optimieren', 'neu']
+                .includes(
+                    getValues('cro')[0]
+                )
+        ) {
 
-                monthly +=
-                    monthlyPrices.budget[
-                        getValues('budget')[0]
-                    ] || 0;
+            monthly +=
+                monthlyPrices.cro;
 
-            }
+        }
+
+
+        if (
+            ['ja', 'jein']
+                .includes(
+                    getValues('ads')[0]
+                )
+        ) {
+
+            monthly +=
+                monthlyPrices.budget[
+                    getValues('budget')[0]
+                ] || 0;
 
         }
 
@@ -1150,9 +1102,6 @@ if (calculator && document.getElementById('preis')) {
 
         }
 
-                        hasIndividualPrice
-                            ? 'Individuelles Angebot'
-                            : `${monthly.toLocaleString('de-DE')} € / Monat`;
         // ----------------------------------------------------
         // PREISE FÜR FORMSPREE SPEICHERN
         // ----------------------------------------------------
@@ -1185,9 +1134,9 @@ if (calculator && document.getElementById('preis')) {
                 /*
                  * Unterstützt:
                  *
-                 * data-show-if="paket:präsenz|conversion"
+                 * data-show-if="website:erstellen|optimieren"
                  *
-                 * = Paket Präsenz ODER Conversion
+                 * = Website erstellen ODER optimieren
                  */
 
 
@@ -1272,7 +1221,7 @@ if (calculator && document.getElementById('preis')) {
 
         calculatePrice();
 
-        if (step.dataset.step === '9') {
+        if (step.dataset.step === '8') {
             waitForCalCom();
         }
 
@@ -2127,3 +2076,114 @@ if (form) {
     );
 
 }
+
+// ============================================================
+document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.folder-tab');
+    const panes = document.querySelectorAll('.folder-pane');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Aktive Klassen von allen Tabs und Inhalten entfernen
+            tabs.forEach(t => {
+                t.classList.remove('active');
+                t.setAttribute('aria-selected', 'false');
+            });
+            panes.forEach(p => p.classList.remove('active'));
+
+            // Aktiven Tab und zugehörigen Inhalt aktivieren
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+            
+            const targetId = tab.getAttribute('data-tab');
+            document.getElementById(targetId).classList.add('active');
+        });
+    });
+});
+
+// ============================================================
+// ERSTGESPRÄCH PER BUTTON AUF DERSELBEN SEITE EINBLENDEN
+// ============================================================
+document.addEventListener('DOMContentLoaded', () => {
+    const showBtn = document.getElementById('btn-show-erstgespraech');
+    const stepErstgespraech = document.getElementById('step-erstgespraech');
+
+    if (showBtn && stepErstgespraech) {
+        showBtn.addEventListener('click', () => {
+            // Entfernt das 'hidden'-Attribut, das vom Rechner-Skript gesetzt wurde
+            stepErstgespraech.hidden = false;
+            
+            // Fügt die 'active'-Klasse hinzu, falls CSS diese nutzt
+            stepErstgespraech.classList.add('active');
+
+            // Cal.com Widget initialisieren, falls noch nicht geschehen
+            if (typeof waitForCalCom === 'function') {
+                waitForCalCom();
+            }
+
+            // Sanft zum Erstgespräch-Bereich scrollen
+            stepErstgespraech.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    }
+});
+
+/* =========================================================
+   SERVICE CARDS
+========================================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.service-card');
+
+    // Funktion zum Schließen aller geöffneten Details & Karten
+    const closeAllServices = () => {
+        document.querySelectorAll('.service-card').forEach(c => {
+            c.classList.remove('is-active');
+            const btn = c.querySelector('.service-toggle');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+
+        document.querySelectorAll('.service-details-row').forEach(row => row.classList.remove('is-open'));
+        document.querySelectorAll('.service-details').forEach(detail => detail.classList.remove('is-active'));
+    };
+
+    // Klick-Event direkt auf die gesamte Kachel
+    cards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            e.stopPropagation(); // Verhindert, dass das globale Document-Click-Event direkt auslöst
+            
+            const serviceId = card.getAttribute('data-service');
+            const isActive = card.classList.contains('is-active');
+            const toggleBtn = card.querySelector('.service-toggle');
+
+            // Zuerst alle Einklappen
+            closeAllServices();
+
+            // Wenn die Kachel vorher nicht aktiv war -> Öffnen
+            if (!isActive) {
+                card.classList.add('is-active');
+                if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'true');
+
+                const targetDetail = document.querySelector(`.service-details[data-details="${serviceId}"]`);
+                if (targetDetail) {
+                    targetDetail.classList.add('is-active');
+                    const parentRow = targetDetail.closest('.service-details-row');
+                    if (parentRow) {
+                        parentRow.classList.add('is-open');
+                    }
+                }
+            }
+        });
+    });
+
+    // Klick außerhalb schließt den offenen Bereich
+    document.addEventListener('click', (e) => {
+        const isClickInsideCard = e.target.closest('.service-card');
+        const isClickInsideDetails = e.target.closest('.service-details-row');
+
+        if (!isClickInsideCard && !isClickInsideDetails) {
+            closeAllServices();
+        }
+    });
+});

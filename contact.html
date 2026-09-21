@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webdesign | Isabell Bader</title>
+    <title>Ibvian</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="site-title">
-    <h1 data-i18n="title">Webdesign | Isabell Bader</h1>
-  </div>
+  <a href="index.html" class="brand-container">
+    <img src="images/logo.png" alt="Ibvian Logo" class="header-logo">
+    <div class="site-title">
+      <h1>Ibvian</h1>
+      <span class="site-tagline">Design Studio</span>
+    </div>
+  </a>
 
   <button class="menu-toggle" aria-label="Menü öffnen">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   
-    <nav class="main-nav">
-        <a href="index.html" data-i18n="nav_home">Home</a>
-        <a href="about.html"data-i18n="nav_about">Über mich</a>
-        <a href="leistungen.html" data-i18n="nav_services">Leistungen</a>
-        <a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
-        <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Kontakt</a>
-        <button id="lang-switch" data-i18n="lang_switch">EN</button>
-    </nav>
+  <nav class="main-nav">
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="about.html" data-i18n="nav_about">Über Ibvian</a>
+    <a href="leistungen.html" data-i18n="nav_services">Leistungen</a>
+    <a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
+    <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Kontakt</a>
+    <button id="lang-switch" data-i18n="lang_switch">EN</button>
+  </nav>
 </header>
 
 <main class="contact-page">
@@ -37,19 +41,22 @@
 
     <div class="contact-grid">
         <aside class="contact-info">
-            <h2 data-i18n="contact_info_h2">Direkter Kontakt</h2>
-            <p data-i18n="contact_info_p">Du hast Fragen oder möchtest erst einmal E-Mail-Kontakt? Schreib mir einfach eine Nachricht.</p>
+            <h2 data-i18n="contact_info_h2">Kontakt</h2>
+            <p data-i18n="contact_info_p">Du hast Fragen, willst dich informieren oder möchtest eine konkrete Einschätzung?</p>
             <div class="contact-method">
                 <h4 data-i18n="contact_info_email">E-Mail:</h4>
-                <a href="mailto:baderisabell@gmail.com">baderisabell@gmail.com</a>
+                <a href="mailto:contact@ibvian.com">contact@ibvian.com</a>
                 <h4 data-i18n="contact_info_telefon">Telefonnummer:</h4>
                 <a href="tel:+4915117903181">+49 15117903181</a>
             </div>
             <p class="contact-hours" data-i18n="contact_info_hours">Ich antworte werktags in der Regel innerhalb von 24 Stunden.</p>
+            <!-- Variante mit Button & Click-Event über JS -->
+            <button type="button" id="btn-show-erstgespraech" class="btn-primary" data-i18n="btn_request_appointment">
+                Kostenloses Erstgespräch vereinbaren
+            </button>
         </aside>
 
-        <section class="contact-form-area">
-            <h2 data-i18n="contact_form_h2">Termin oder Anfrage</h2>
+        <section class="contact-form-area-container">
 
             <form action="https://formspree.io/f/mrewvyyv" method="POST" class="contact-form">
                 <label for="name" data-i18n="contact_form_name">Name</label>
@@ -73,6 +80,146 @@
             </form>
         </section>
     </div>
+
+        <section
+        id="step-erstgespraech"
+        class="step conditional"
+        data-show-if="kontakt:Erstgespräch"
+        data-step="9"
+    >
+
+        <h2 data-i18n="contact_booking_h2">
+            Kostenloses Erstgespräch vereinbaren
+        </h2>
+
+        <p data-i18n="contact_booking_text">
+            Wählen Sie einen passenden Termin für unser kostenloses Erstgespräch.
+        </p>
+
+
+        <div
+            id="cal-booking"
+            class="cal-booking"
+            style="width:100%; min-height:700px;"
+        >
+            <iframe
+                src="https://cal.com/ibvian/erstbesprechung-45-min"
+                title="Termin für ein Erstgespräch auswählen"
+                data-i18n-title="cal_title"
+                style="width:100%; min-height:700px; border:0;"
+                loading="lazy"
+            ></iframe>
+        </div>
+
+
+        <input
+            type="hidden"
+            name="termin_datum"
+            id="termin_datum"
+        >
+
+        <input
+            type="hidden"
+            name="termin_uhrzeit"
+            id="termin_uhrzeit"
+        >
+
+        <input
+            type="hidden"
+            name="termin_endzeit"
+            id="termin_endzeit"
+        >
+
+        <input
+            type="hidden"
+            name="termin_buchungs_id"
+            id="termin_buchungs_id"
+        >
+
+        <input
+            type="hidden"
+            name="kontaktart"
+            value="Erstgespräch"
+        >
+
+
+        <div class="termin-form">
+
+            <label for="name_erstgespraech" data-i18n="contact_form_name">
+                Name
+            </label>
+
+            <input
+                type="text"
+                id="name_erstgespraech"
+                name="name"
+                required
+            >
+
+            <label for="email_erstgespraech" data-i18n="contact_form_email">
+                E-Mail
+            </label>
+
+            <input
+                type="email"
+                id="email_erstgespraech"
+                name="email"
+                required
+            >
+
+            <label for="telefon_erstgespraech" data-i18n="contact_form_telefon">
+                Telefonnummer (optional)
+            </label>
+
+            <input
+                type="tel"
+                id="telefon_erstgespraech"
+                name="telefon"
+            >
+
+        </div>
+
+
+        <input
+            type="hidden"
+            name="einmalige_investition"
+            id="formspree_preis_termin"
+        >
+
+        <input
+            type="hidden"
+            name="monatliche_betreuung"
+            id="formspree_betreuung_termin"
+        >
+
+
+        <div style="display: none;">
+
+            <label data-i18n="honeypot_label">
+                Bitte leer lassen
+            </label>
+
+            <input type="text" name="_gotcha">
+
+        </div>
+
+
+        <div class="buttons">
+
+            <button type="button" class="btn back" data-i18n="back">
+                Zurück
+            </button>
+
+            <button
+                type="submit"
+                class="btn"
+                data-i18n="request_appointment"
+            >
+                Erstgespräch anfragen
+            </button>
+
+        </div>
+        </section>
 </main>
 <footer class="site-footer">
         <div class="footer-col">
