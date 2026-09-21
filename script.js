@@ -58,49 +58,86 @@ const translations = {
         link_wiederruf: "Zahlung und Versand",
         footer_copyright: "Alle Rechte vorbehalten.",
 
-        hero_subtitle: "INDIVIDUELL. MODERN. ZUVERLÄSSIG.",
         hero_h1: "Ibvian",
         hero_p: "Digital Studio",
-        btn_services: "Leistungen ansehen",
-        home_h1: "Mehr als Webdesign",
-        home_p: "Eine gute Website beginnt nicht mit der Gestaltung, sondern mit der Frage, was sie für Ihr Unternehmen leisten soll.",
-        home_p2: "Deshalb verbinde ich Webentwicklung, klare Inhalte und Nutzerführung mit Bereichen wie SEO und Conversion Optimierung. Je nach Bedarf können auch Terminbuchungen, digitale Preisanfragen oder weitere Funktionen integriert werden.",
-        home_p3: "Das Ergebnis ist eine Website, die nicht isoliert betrachtet wird, sondern Teil einer durchdachten digitalen Lösung ist.",
-        btn_contact: "Projekt anfragen →",
+        hero_h1: "Ibvian",
+        hero_p: "Digital Studio",
         preview_services: "Leistungen",
-        preview_services_desc: "Von der professionellen Website über SEO und Conversion Optimierung bis hin zu gezielter Werbung.",
-        preview_services_desc_2: "Welche Maßnahmen sinnvoll sind, hängt von Ihrem Unternehmen, Ihrer Ausgangssituation und Ihren Zielen ab.",
-        btn_view_services: "Leistungen ansehen",
         preview_portfolio: "Portfolio",
-        preview_portfolio_desc: "Ausgewählte Projekte aus den Bereichen Webdesign, Webentwicklung und digitale Kundengewinnung.",
-        btn_view_portfolio: "Arbeiten zeigen",
+        preview_services_intro: "Digitale Lösungen für mehr als nur Präsenz.",
+        preview_services_desc: "Webentwicklung, Design, SEO, Conversion Optimierung und digitale Prozesse. Von der technischen Grundlage bis zur automatisierten Kundengewinnung entsteht eine Lösung, die Besucher erreichen, zu Anfragen führen und Abläufe vereinfachen kann.",
+        btn_view_services: "Leistungen ansehen →",
+        preview_portfolio_desc: "Aus Ideen werden digitale Lösungen.",
+        preview_portfolio_desc2:"Ausgewählte Websites, Webportale und individuelle Entwicklungen. Mit Einblicken in Gestaltung, Technik und die Lösungen, die aus einer Idee ein funktionierendes digitales Projekt machen.",
+        btn_view_portfolio: "Arbeiten zeigen →",
 
-        "ibvian-text": "Digitale Lösungen - Ibvian",
-        "ibvian-description": "Durch meine eigene Selbstständigkeit kenne ich die Perspektive von Unternehmen aus erster Hand. Eine Website soll nicht einfach gut aussehen oder online sein. Sie soll einen echten Zweck erfüllen und zum Unternehmen beitragen. Bei Ibvian verbinde ich Webentwicklung, hochwertiges Design und digitale Kundengewinnung zu durchdachten Lösungen. Dabei lege ich besonderen Wert auf eine technisch saubere, moderne und performante Umsetzung mit HTML, CSS und JavaScript und einem klaren Blick für Details. Denn eine Website kann mehr als eine digitale Visitenkarte sein. Sie kann Leistungen verständlich vermitteln, Vertrauen schaffen, Anfragen generieren und als aktiver Teil der Kundengewinnung funktionieren. Mein Anspruch ist es, Technik, Design und Strategie so zu verbinden, dass aus einer Website ein echtes Werkzeug für das Unternehmen wird.",
-        "about_text_hero": "Technik, die Menschen verstehen",
-        "about_text_1": "Mein Studium der Pädagogik und Soziologie prägt meinen Blick auf digitale Kommunikation bis heute. Mich interessiert nicht nur, wie eine Website technisch funktioniert, sondern auch, wie Menschen sie wahrnehmen und nutzen. Eine gute Website muss verständlich sein, Orientierung geben und Vertrauen schaffen. Deshalb verbinde ich technische Umsetzung mit einem Blick für Nutzer, Unternehmen und die Details, die aus Besuchern Interessenten machen.",
-        "about_text_2": "Mein Anspruch sind Websites, die gut aussehen, verständlich funktionieren und einen echten Zweck erfüllen.",
+        ibvian_text: "Digitale Lösungen - Ibvian",
+        ibvian_description: "Durch meine eigene Selbstständigkeit kenne ich die Perspektive von Unternehmen aus erster Hand. Eine Website soll nicht einfach gut aussehen oder online sein. Sie soll einen echten Zweck erfüllen und zum Unternehmen beitragen. Bei Ibvian verbinde ich Webentwicklung, hochwertiges Design und digitale Kundengewinnung zu durchdachten Lösungen. Dabei lege ich besonderen Wert auf eine technisch saubere, moderne und performante Umsetzung mit HTML, CSS und JavaScript und einem klaren Blick für Details. Denn eine Website kann mehr als eine digitale Visitenkarte sein. Sie kann Leistungen verständlich vermitteln, Vertrauen schaffen, Anfragen generieren und als aktiver Teil der Kundengewinnung funktionieren. Mein Anspruch ist es, Technik, Design und Strategie so zu verbinden, dass aus einer Website ein echtes Werkzeug für das Unternehmen wird.",
+        about_text_hero: "Technik, die Menschen verstehen",
+        about_text_1: "Mein Studium der Pädagogik und Soziologie prägt meinen Blick auf digitale Kommunikation bis heute. Mich interessiert nicht nur, wie eine Website technisch funktioniert, sondern auch, wie Menschen sie wahrnehmen und nutzen. Eine gute Website muss verständlich sein, Orientierung geben und Vertrauen schaffen. Deshalb verbinde ich technische Umsetzung mit einem Blick für Nutzer, Unternehmen und die Details, die aus Besuchern Interessenten machen.",
+        about_text_2: "Mein Anspruch sind Websites, die gut aussehen, verständlich funktionieren und einen echten Zweck erfüllen.",
 
         portfolio_titel: "Ausgewählte Projekte",
-        portfolio_lead: "Jede Website wird individuell auf das Unternehmen, seine Zielgruppe und die gewünschten Ziele abgestimmt.",
-        portfolio_project_1_title: "Website für Reitunterricht",
-        portfolio_project_1_description: "Persönlich, klar und auf die Zielgruppe ausgerichtet",
-        portfolio_project_1_challenge: "Die Herausforderung: Eine Website, die Persönlichkeit vermittelt, Vertrauen schafft und Interessenten schnell zu den wichtigsten Informationen führt.",
-        portfolio_project_1_solution: "Lösung: Ein harmonisches Design mit klarer Struktur, intuitiver Navigation und einfachen Kontaktmöglichkeiten. Die integrierte Terminorganisation erleichtert Interessenten den nächsten Schritt.",
-        portfolio_project_1_fokus: "Fokus:Webdesign · Nutzerführung · Terminbuchung · SEO",
-        portfolio_project_1_cta: "Website ansehen",
-        portfolio_project_2_title: "Website für eine KFZ-Werkstatt",
-        portfolio_project_2_description: "Konzeptprojekt für einen modernen KFZ-Betrieb",
-        portfolio_project_2_challenge: "Die Herausforderung: Eine Website, die Kompetenz vermittelt und Kunden schnell zu Leistungen, Kontaktmöglichkeiten und wichtigen Informationen führt.",
-        portfolio_project_2_solution: "Die Lösung: Eine moderne, übersichtliche und mobil optimierte Website mit klarer Nutzerführung und gezielten Kontaktmöglichkeiten.",
-        portfolio_project_2_fokus: "Fokus: Webdesign · Mobile Optimierung · Conversion · SEO",
-        portfolio_project_2_cta: "Website ansehen",
-        portfolio_project_3_title: "Webportal für Reitunterricht",
-        portfolio_project_3_description: "Modernes Plattformkonzept für Anbieter und Interessenten",
-        portfolio_project_3_challenge: "Die Herausforderung: Angebote übersichtlich präsentieren und Interessenten dabei unterstützen, schnell passende Informationen und Angebote zu finden.",
-        portfolio_project_3_solution: "Lösung: Ein modernes Konzept mit intuitiver Navigation, strukturierter Darstellung und benutzerfreundlicher Suche.",
-        portfolio_project_3_fokus: "Fokus: Webkonzeption · UX/UI · Nutzerführung · SEO",
-        portfolio_project_3_cta: "Webportal ansehen",
+
+    portfolio_lead:
+        "Jede Website wird individuell auf das Unternehmen, seine Zielgruppe und die gewünschten Ziele abgestimmt.",
+
+    portfolio_project_1_alt: "Website Reitunterricht",
+    portfolio_project_1_title:
+        "Individuelle Website für ein Reitangebot mit klarer Nutzerführung und persönlicher Gestaltung.",
+
+    portfolio_implementation: "Umsetzung",
+
+    portfolio_project_1_implementation_1:
+        "Webdesign & responsive Umsetzung",
+    portfolio_project_1_implementation_2:
+        "Strukturierung der Inhalte und Leistungen",
+    portfolio_project_1_implementation_3:
+        "Nutzerführung und klare Kontaktwege",
+    portfolio_project_1_implementation_4:
+        "Optimierung für Desktop, Tablet und Smartphone",
+    portfolio_project_1_implementation_5:
+        "SEO-Basics und technische Onpage-Optimierung",
+
+    portfolio_technology: "Technik",
+    portfolio_view_project: "→ Projekt ansehen",
+
+    portfolio_project_2_alt: "Website KFZ-Werkstatt",
+    portfolio_project_2_title:
+        "Moderne Unternehmenswebsite zur übersichtlichen Darstellung der Werkstattleistungen und zur einfachen Kontaktaufnahme.",
+
+    portfolio_project_2_implementation_1:
+        "Individuelles Webdesign",
+    portfolio_project_2_implementation_2:
+        "Responsive Webentwicklung",
+    portfolio_project_2_implementation_3:
+        "Strukturierte Darstellung der Leistungen",
+    portfolio_project_2_implementation_4:
+        "Kontakt- und Anfrageelemente",
+    portfolio_project_2_implementation_5:
+        "Suchmaschinenfreundliche Seitenstruktur",
+    portfolio_project_2_implementation_6:
+        "Optimierung von Ladezeit und Darstellung",
+
+    portfolio_project_3_alt: "Webportal Equily",
+    portfolio_project_3_title:
+        "Individuelles Webportal mit erweiterten Funktionen über die klassische Unternehmenswebsite hinaus.",
+
+    portfolio_project_3_implementation_1:
+        "Konzeption und Gestaltung des Webportals",
+    portfolio_project_3_implementation_2:
+        "Responsive Benutzeroberfläche",
+    portfolio_project_3_implementation_3:
+        "Strukturierung umfangreicher Inhalte",
+    portfolio_project_3_implementation_4:
+        "Interaktive Funktionen",
+    portfolio_project_3_implementation_5:
+        "Benutzerfreundliche Navigation",
+    portfolio_project_3_implementation_6:
+        "Individuelle technische Umsetzung",
+
+    portfolio_coming_soon: "Coming Soon",
+    portfolio_more_projects: "Weitere Projekte in Kürze",
 
         contact_hero_title: "Lass uns über dein Projekt sprechen.",
         contact_hero_subtitle: "Ich freue mich darauf, dich und dein Unternehmen kennenzulernen. Lass uns gemeinsam herausfinden, wie ich dich unterstützen kann.",
@@ -187,95 +224,89 @@ const translations = {
         legal_whatsapp_continuation_text6: "Ihre personenbezogenen Daten nutzen wir nur zur Bearbeitung Ihrer Anfrage. Ihre Daten werden anschließend unter Beachtung gesetzlicher Aufbewahrungsfristen gelöscht, sofern Sie der weitergehenden Verarbeitung und Nutzung nicht zugestimmt haben.",
         legal_whatsapp_continuation_text7: "Nähere Informationen zu Nutzungsbedingungen und Datenschutz bei Nutzung von WhatsApp finden Sie unter:",
         
-        leistungen: "Leistungen",
-        leistungen_lead: "Webdesign - SEO - Conversion Optimierung - Marketing",
-        leistungen_titel: "Von der Website zur automatisierten Kundengewinnung",
-        leistungen_titel2: "Ihre Website arbeitet für Sie.",
-        leistungen_beschreibung: "Eine Website sollte nicht nur professionell aussehen. Sie sollte Ihr Unternehmen verständlich präsentieren, Vertrauen schaffen und Interessenten gezielt zur nächsten Handlung führen.",
-        leistungen_strong: "Ihre Website kann wie ein eigenständiger Mitarbeiter Ihres Unternehmens arbeiten.",
-        leistungen_beschreibung2: "Sie ist häufig der erste Kontaktpunkt für potenzielle Kunden. Sie beantwortet Fragen, vermittelt einen ersten Eindruck und begleitet Interessenten bis zur Anfrage oder Terminbuchung. Je besser diese Aufgaben aufeinander abgestimmt sind, desto mehr kann Ihre Website zu einem festen Bestandteil Ihrer Kundengewinnung werden.",
-        leistungen_beschreibung3: "Genau dort setze ich an.",
-        leistungen_beschreibung4: "Ich verbinde Webentwicklung, Suchmaschinenoptimierung, Conversion Optimierung und gezielte Werbung zu einem aufeinander abgestimmten Prozess.",
-        leistungen_strong2: "Das Ergebnis: Eine Website, die nicht nur präsent ist, sondern einen konkreten Beitrag zu Ihrer Kundengewinnung leistet.",
-        erstgespräch_button: "Kostenloses Erstgespräch vereinbaren",
-        website_employee_titel: "Mehr als eine digitale Visitenkarte",
-        website_employee_titel2: "Ihre Website übernimmt Aufgaben.",
-        website_employee_beschreibung: "Wer sich für ein Unternehmen interessiert, informiert sich heute meist zuerst online. Dabei entstehen Fragen, Erwartungen und oft auch die erste Entscheidung, ob ein Kontakt überhaupt zustande kommt.",
-        website_employee_strong: "Eine gute Website übernimmt diesen Prozess nicht nur. Sie gestaltet ihn.",
-        website_employee_div: "Sie erklärt Ihr Angebot.",
-        website_employee_div2: "Sie beantwortet wiederkehrende Fragen.",
-        website_employee_div3: "Sie schafft erste Orientierung.",
-        website_employee_div4: "Sie führt Interessenten zur Kontaktaufnahme.",
-        website_employee_beschreibung2: "Durch Funktionen wie automatische Terminbuchung oder digitale Preisabfragen können Interessenten viele Informationen selbstständig erhalten und erste Schritte ohne zusätzlichen Aufwand für Ihr Unternehmen erledigen.",
-        website_employee_beschreibung3: "So wird die Website zu einem festen Bestandteil Ihres Vertriebs und entlastet Sie dort, wo digitale Prozesse sinnvoll eingesetzt werden können.",
-        paket_titel: "Leistungspakete",
-        paket_titel2: "Die passende Lösung für Ihre digitale Kundengewinnung",
-        paket_beschreibung: "Nicht jedes Unternehmen benötigt dieselben Maßnahmen. Deshalb bauen die drei Pakete aufeinander auf:",
-        paket_strong: "Von der professionellen Website über Conversion Optimierung und Retargeting bis zur gezielten Kundengewinnung durch Werbung.",
-        paket_beschreibung2: "Welche Lösung für Sie sinnvoll ist, klären wir in einem kostenlosen und individuellen Erstgespräch.",
-        table: "Leistungen",
-        präsenz: "Präsenz",
-        conversion: "Conversion",
-        kundengewinnung: "Kundengewinnung",
-        table2: "Website & Grundlage",
-        table3: "Konzeption und Strukturierung",
-        table4: "Individuelles Webdesign",
-        table5: "Technische Umsetzung",
-        table6: "Mobil optimierte Darstellung",
-        table7: "Überarbeitung / Erstellung relevanter Inhalte",
-        table8: "Suchmaschinenoptimierung",
-        table9: "Grundlegende SEO",
-        table10: "Seitenstruktur & interne Verlinkung",
-        table11: "Conversion Optimierung",
-        table12: "Conversion Optimierung",
-        table13: "Optimierung der Nutzerführung",
-        table14: "Calls to Action",
-        table15: "Optimierung von Kontakt- und Anfrageprozessen",
-        table16: "Retargeting",
-        table17: "Retargeting System",
-        table18: "Vorbereitung von Retargeting Kampagnen",
-        table19: "Werbung & Kampagnen",
-        table20: "Strategische Planung geeigneter Werbekanäle",
-        table21: "Google Ads / Meta Ads",
-        table22: "Erstellung erster Kampagnen",
-        table23: "Abstimmung von Anzeigen und Zielseiten",
-        table24: "Auswertung relevanter Kennzahlen",
-        table25: "Automatisierung",
-        table26: "Automatische Terminbuchung",
-        table27: "Optional",
-        table28: "Digitale Preisabfrage",
-        table29: "Laufende Optimierung",
-        table30: "nach Vereinbarung",
-        table31: "Präsenz anfragen",
-        table32: "Conversion anfragen",
-        table33: "Kundengewinnung aufbauen",
-        table34: "Ihre professionelle Grundlage im Netz.",
-        table35: "Aus Website Besuchern werden Interessenten.",
-        table36: "Reichweite gezielt aufbauen und automatisierte Prozesse nutzen.",
-        system_titel: "Das System dahinter",
-        system_titel2: "Eine Website allein reicht nicht.",
-        system_beschreibung: "Eine Website kann noch so gut aufgebaut sein. Wenn die richtigen Menschen sie nicht finden, bleibt ihr Potenzial ungenutzt. Und wenn Besucher nicht verstehen, was sie als Nächstes tun können, entsteht trotz Reichweite keine Anfrage.",
-        system_beschreibung2: "Deshalb greifen die einzelnen Maßnahmen ineinander.",
-        system_span: "Analyse",
-        system_span2: "Website",
-        system_span3: "SEO",
-        system_span4: "Conversion",
-        system_span5: "Ads",
-        system_span6: "Retargeting",
-        system_span7: "Optimierung",
-        system_beschreibung3: "Jeder Bereich erfüllt eine konkrete Aufgabe. Gemeinsam entsteht daraus ein digitaler Prozess, der Interessenten erreicht, informiert und zur nächsten Handlung führt.",
-        system_titel3: "Was braucht Ihr Unternehmen?",
-        system_beschreibung4: "Im kostenlosen Erstgespräch betrachten wir Ihre aktuelle Website, Ihre Ausgangssituation und Ihre Ziele. Anschließend empfehle ich Ihnen die Maßnahmen, die für Ihr Unternehmen tatsächlich sinnvoll sind.",
-        system_strong: "Nicht mehr Leistungen. Sondern die richtigen.",
+    digitale_leistungen: "Digitale Lösungen",
+    leistungen_lead: "die für Ihr Unternehmen arbeiten.",
+
+    digitale_leistungen_text:
+        "Eine Website sollte nicht nur gut aussehen oder technisch funktionieren. Sie sollte die Identität eines Unternehmens verständlich vermitteln, Vertrauen schaffen und Menschen gezielt durch die digitale Kommunikation führen. Dabei verbinden sich Technik, Design und strategisches Denken miteinander. Sauberer Code, eine klare Nutzerführung und durchdachte Inhalte bilden die Grundlage. Darauf können Suchmaschinenoptimierung, Conversion Optimierung, digitale Prozesse und gezielte Werbung aufbauen. Entscheidend ist nicht, möglichst viele Funktionen oder Leistungen anzubieten, sondern die richtigen Lösungen miteinander zu verbinden. Jede technische Entscheidung, jedes Designelement und jeder digitale Prozess sollte einem klaren Zweck folgen. So entsteht keine Website, die lediglich online ist, sondern ein digitales Werkzeug, das langfristig einen echten Beitrag zum Unternehmen leisten kann.",
+
+    technik: "TECHNIK",
+    technik_titel: "Webentwicklung & Design",
+    technik_beschreibung:
+        "Individuelle Websites mit sauberer technischer Grundlage, hochwertigem Design und klarer Struktur.",
+    mehr_erfahren: "Mehr erfahren",
+
+    sichtbarkeit: "SICHTBARKEIT",
+    seo_titel: "Suchmaschinenoptimierung",
+    seo_beschreibung:
+        "Technische und inhaltliche Optimierung, damit Ihre Website von relevanten Menschen gefunden werden kann.",
+
+    technik_details_1:
+        "Webentwicklung bedeutet mehr als eine ansprechende Oberfläche. Eine gute Website muss schnell laden, auf jedem Gerät funktionieren, verständlich aufgebaut sein und technisch so entwickelt werden, dass sie auch langfristig zuverlässig arbeitet. Je nach Anforderungen entstehen individuelle Lösungen mit HTML5, CSS und JavaScript. Für schlanke und performante Websites können statische Lösungen eingesetzt werden. Wenn Inhalte regelmäßig gepflegt oder umfangreichere Funktionen benötigt werden, kommen WordPress oder Joomla mit PHP zum Einsatz. Auch Datenbanken, APIs, individuelle Funktionen, Formulare, Tracking und weitere Schnittstellen lassen sich integrieren.",
+
+    technik_details_2:
+        "Dabei steht nicht die verwendete Technologie im Mittelpunkt, sondern die passende Lösung für das jeweilige Unternehmen. Nicht jedes Projekt benötigt ein komplexes CMS und nicht jede Website sollte mit unnötigen Funktionen belastet werden. Eine technisch schlanke Lösung kann genauso sinnvoll sein wie ein individuell erweitertes System. Der Vorteil liegt in der Verbindung von Design, Entwicklung und strategischem Verständnis. Die technische Basis wird nicht isoliert betrachtet, sondern von Anfang an auf Nutzerführung, Suchmaschinenoptimierung, Performance und spätere Erweiterbarkeit ausgerichtet.",
+
+    technik_details_3:
+        "So entsteht keine Website von der Stange, sondern eine digitale Lösung, die zum Unternehmen passt, technisch sauber umgesetzt ist und einen konkreten Zweck erfüllt.",
+
+    seo_details_1:
+        "SEO sorgt dafür, dass eine Website technisch sauber aufgebaut ist, relevante Inhalte bietet und von Suchmaschinen verstanden und gefunden werden kann. Dazu gehören unter anderem Keyword Recherche, Onpage Optimierung, semantisches HTML, Meta Daten, strukturierte Überschriften, interne Verlinkungen, optimierte URLs, XML Sitemaps und strukturierte Daten. Auch Ladezeiten, mobile Optimierung, Indexierung und technische Fehler werden berücksichtigt.",
+
+    seo_details_2:
+        "Entscheidend ist die Verbindung aus Technik, Inhalten und Nutzerführung. Ziel ist nicht möglichst viel Traffic, sondern mehr relevante Besucher, die tatsächlich zum Angebot passen und zu Anfragen oder Kunden werden können.",
+
+    service_label_3: "CONVERSION",
+    conversion_title: "Conversion Optimierung",
+    conversion_description:
+        "Besucher sollen nicht nur Ihre Website ansehen, sondern verstehen, was sie als Nächstes tun können.",
+
+    service_label_4: "AUTOMATISIERUNG",
+    digital_processes_title: "Digitale Prozesse",
+    digital_processes_description:
+        "Die Website als Teil der Unternehmensprozesse schafft digitale Abläufe über die reine Darstellung von Inhalten hinaus.",
+
+    conversion_details_1:
+        "Conversion Optimierung sorgt dafür, dass aus Besuchern möglichst passende Interessenten werden. Dabei wird die Website gezielt auf Nutzerführung, Vertrauen und klare Handlungswege ausgerichtet. Optimiert werden unter anderem Call to Actions, Seitenstruktur, Formulare, Kontaktwege, Inhalte und Landingpages. Auch Faktoren wie mobile Darstellung, Ladezeiten, visuelle Hierarchie und die Platzierung wichtiger Informationen spielen eine Rolle.",
+
+    conversion_details_2:
+        "Ziel ist eine Website, die Besucher nicht einfach informiert, sondern sie gezielt zur passenden Handlung führt. Dazu können Anfragen, Erstgespräche, Terminbuchungen oder konkrete Kaufentscheidungen gehören.",
+
+    digital_processes_details_1:
+        "Eine Website kann als technische Schnittstelle zwischen Kunden, Mitarbeitern und bestehenden Unternehmenssystemen eingesetzt werden. Umsetzbar sind unter anderem Online Formulare, Terminbuchungen, Kundenanfragen, CRM Anbindungen, API Schnittstellen, Webhooks, automatisierte E Mail Prozesse, Datenübertragungen und individuelle Workflows. Bestehende Systeme können angebunden werden, sodass Informationen nicht mehrfach manuell erfasst werden müssen.",
+
+    digital_processes_details_2:
+        "Je nach Anforderung kann die Website Anfragen direkt an ein CRM übergeben, Termine mit einem Kalendersystem synchronisieren, Daten über APIs austauschen oder interne Prozesse über definierte Workflows anstoßen. Damit wird die Website technisch in bestehende Unternehmensabläufe integriert und übernimmt konkrete Funktionen über die reine Darstellung von Inhalten hinaus.",
+
+    service_label_5: "REICHWEITE",
+    service_title_5: "Ads & Kampagnen",
+    service_description_titel5:
+        "Gezielte Werbekampagnen, die relevante Besucher auf passende Angebote und Landingpages führen.",
+
+    service_label_6: "OPTIMIERUNG",
+    service_title_6: "Retargeting",
+    service_description_titel6:
+        "Besucher, die bereits Interesse gezeigt haben, erneut gezielt erreichen.",
+
+    service_details_5:
+        "Gezielte Werbekampagnen bringen relevante Besucher auf die Website und verbinden bezahlte Reichweite mit einem klar definierten Ziel. Zum Einsatz kommen unter anderem Google Ads, Social Ads, Zielgruppen Targeting, Kampagnenstrukturen, Anzeigentexte, Landingpages und Conversion Tracking. Kampagnen können auf bestimmte Leistungen, Regionen, Zielgruppen oder konkrete Angebote ausgerichtet werden.",
+
+    service_details_5_2:
+        "Entscheidend ist das Zusammenspiel der einzelnen Elemente. Anzeige, Zielgruppe, Landingpage, Conversion und Tracking werden aufeinander abgestimmt und messbar gemacht. Dadurch lässt sich nachvollziehen, welche Kampagnen funktionieren, wo Besucher abspringen und welche Maßnahmen angepasst werden müssen. Kampagnen werden dabei nicht einfach einmal eingerichtet und sich selbst überlassen. Daten werden ausgewertet, Anzeigen und Zielgruppen getestet und Budgets gezielt auf die relevanten Maßnahmen ausgerichtet. So entsteht ein messbarer Prozess von der ersten Anzeige bis zur konkreten Anfrage.",
+
+    service_details_6:
+        "Retargeting setzt dort an, wo der erste Website Besuch endet. Besucher, die bereits Interesse an einem Unternehmen, einer Leistung oder einem konkreten Angebot gezeigt haben, können zu definierten Zielgruppen zusammengefasst und gezielt erneut angesprochen werden. Dafür werden Tracking, Zielgruppen, Conversion Ereignisse und Werbekampagnen miteinander verbunden. Je nach Verhalten können unterschiedliche Zielgruppen entstehen, beispielsweise für Besucher bestimmter Leistungsseiten, Nutzer mit abgebrochenen Formularen oder Personen, die bereits eine bestimmte Aktion auf der Website ausgeführt haben.",
+
+    service_details_6_2:
+        "Über Google Ads, Meta Ads und weitere Werbeplattformen können anschließend passende Kampagnen ausgespielt werden. Inhalte, Anzeigen und Zielseiten lassen sich dabei auf die jeweilige Zielgruppe abstimmen. Retargeting wird damit zu einem messbaren Bestandteil der gesamten Customer Journey. Vom ersten Kontakt über die Website bis zur erneuten Ansprache lassen sich Nutzer gezielt weiterführen und Kampagnen anhand ihrer tatsächlichen Interaktionen optimieren.",
+
+    leistungen_details_bottom:
+        "Technik, Design und Kundengewinnung greifen dabei ineinander.",
+
+    leistungen_details_bottom_strong:
+        "Nicht jede Website braucht alles. Aber jede Website sollte das Richtige tun.",
 
     form_title: "Erstellen Sie Ihr individuelles Angebot",
-    form: "Für welches Paket möchten Sie sich entscheiden?",
-    form2: "Präsenz",
-    form3: "Conversion",
-    form4: "Kundengewinnung",
-    form5: "Ich möchte ein individuelles Angebot",
-    next: "Weiter",
-    back: "Zurück",
     form6: "Ich möchte meine Website:",
     form7: "Individuell erstellen lassen",
     form8: "Optimieren lassen",
@@ -412,61 +443,86 @@ const translations = {
     link_wiederruf: "Payment and Shipping",
     footer_copyright: "All rights reserved.",
     
-    hero_subtitle: "INDIVIDUAL. MODERN. RELIABLE.",
     hero_h1: "Ibvian",
     hero_p: "Digital Studio",
-    btn_services: "View Services",
-    home_h1: "More Than Web Design",
-    home_p: "A good website does not begin with the design. It begins with the question of what the website should achieve for your business.",
-    home_p2: "That is why I combine web development, clear content and user guidance with areas such as SEO and conversion optimization. Depending on your needs, appointment booking, digital price inquiries and other features can also be integrated.",
-    home_p3: "The result is a website that is not viewed in isolation, but as part of a well considered digital solution.",
-    btn_contact: "Request a Project →",
     preview_services: "Services",
-    preview_services_desc: "From professional websites and SEO to conversion optimization and targeted advertising.",
-    preview_services_desc_2: "The right approach depends on your business, your current situation and your goals.",
-    btn_view_services: "View Services",
     preview_portfolio: "Portfolio",
-    preview_portfolio_desc: "Selected projects in web design, web development and digital customer acquisition.",
-    btn_view_portfolio: "View Projects",
-    
-    "ibvian-text": "Digital Solutions - Ibvian",
-    "ibvian-description": "Through my own self-employment, I understand the perspective of businesses firsthand. A website shouldn't just look good or be online. It should serve a real purpose and contribute to the company's success. At Ibvian, I combine web development, high-quality design, and digital customer acquisition into well-thought-out solutions. I place particular emphasis on a technically clean, modern, and high-performance implementation using HTML, CSS, and JavaScript, with a keen eye for detail. Because a website can be more than just a digital business card. It can communicate services clearly, build trust, generate inquiries, and function as an active part of customer acquisition. My goal is to combine technology, design, and strategy in a way that turns a website into a powerful tool for your business.",
-    "about_text_hero": "Technology that people understand",
-    "about_text_1": "My studies in pedagogy and sociology shape my perspective on digital communication to this day. I'm not only interested in how a website works technically, but also in how people perceive and interact with it. A good website must be clear, provide orientation, and build trust. That's why I combine technical execution with an eye for users, businesses, and the details that turn visitors into leads.",
-    "about_text_2": "My ambition is to create websites that look great, function intuitively, and serve a clear purpose.",
+    preview_services_intro: "Digital solutions for more than just a presence.",
+    preview_services_desc:
+        "Web development, design, SEO, conversion optimization and digital processes. From the technical foundation to automated customer acquisition, we create solutions that reach visitors, turn them into inquiries and simplify workflows.",
+    btn_view_services: "View services →",
+    preview_portfolio_desc: "Turning ideas into digital solutions.",
+    preview_portfolio_desc2:
+        "Selected websites, web portals and custom developments. Discover insights into design, technology and the solutions that turn an idea into a functional digital project.",
+    btn_view_portfolio: "View projects →",
+
+    ibvian_text: "Digital Solutions - Ibvian",
+    ibvian_description: "Through my own self-employment, I understand the perspective of businesses firsthand. A website shouldn't just look good or be online. It should serve a real purpose and contribute to the company's success. At Ibvian, I combine web development, high-quality design, and digital customer acquisition into well-thought-out solutions. I place particular emphasis on a technically clean, modern, and high-performance implementation using HTML, CSS, and JavaScript, with a keen eye for detail. Because a website can be more than just a digital business card. It can communicate services clearly, build trust, generate inquiries, and function as an active part of customer acquisition. My goal is to combine technology, design, and strategy in a way that turns a website into a powerful tool for your business.",
+    about_text_hero: "Technology that people understand",
+    about_text_1: "My studies in pedagogy and sociology shape my perspective on digital communication to this day. I'm not only interested in how a website works technically, but also in how people perceive and interact with it. A good website must be clear, provide orientation, and build trust. That's why I combine technical execution with an eye for users, businesses, and the details that turn visitors into leads.",
+    about_text_2: "My ambition is to create websites that look great, function intuitively, and serve a clear purpose.",
   
     portfolio_titel: "Selected Projects",
-    portfolio_lead: "Every website is individually tailored to the company, its target audience and its specific goals.",
 
-    portfolio_project_1_title: "Website for Riding Lessons",
-    portfolio_project_1_description: "Personal, clear and tailored to the target audience",
-    portfolio_project_1_challenge: "The Challenge:",
-    portfolio_project_1_challenge_text: "A website that conveys personality, builds trust and helps prospective customers quickly find the most important information.",
-    portfolio_project_1_solution: "The Solution:",
-    portfolio_project_1_solution_text: "A harmonious design with a clear structure, intuitive navigation and simple contact options. The integrated appointment booking makes it easy for prospective customers to take the next step.",
-    portfolio_project_1_fokus: "Focus:",
-    portfolio_project_1_fokus_text: "Web Design · User Experience · Appointment Booking · SEO",
-    portfolio_project_1_cta: "View Website",
+    portfolio_lead:
+        "Every website is individually tailored to the business, its target audience and its specific goals.",
 
-    portfolio_project_2_title: "Website for an Automotive Repair Shop",
-    portfolio_project_2_description: "Concept project for a modern automotive repair business",
-    portfolio_project_2_challenge: "The Challenge:",
-    portfolio_project_2_challenge_text: "A website that conveys expertise and helps customers quickly find services, contact options and important information.",
-    portfolio_project_2_solution: "The Solution:",
-    portfolio_project_2_solution_text: "A modern, clear and mobile-optimized website with intuitive navigation and targeted contact options.",
-    portfolio_project_2_fokus: "Focus:",
-    portfolio_project_2_fokus_text: "Web Design · Mobile Optimization · Conversion · SEO",
-    portfolio_project_2_cta: "View Website",
+    portfolio_project_1_alt: "Horse Riding Website",
+    portfolio_project_1_title:
+        "Custom website for a horse riding service with clear user guidance and a personal design.",
 
-    portfolio_project_3_title: "Web Portal for Riding Lessons",
-    portfolio_project_3_description: "Modern platform concept for providers and prospective customers",
-    portfolio_project_3_challenge: "The Challenge:",
-    portfolio_project_3_challenge_text: "Presenting offers clearly and helping prospective customers quickly find relevant information and suitable offers.",
-    portfolio_project_3_solution: "The Solution:",
-    portfolio_project_3_solution_text: "A modern concept with intuitive navigation, structured content and a user-friendly search experience.",
-    portfolio_project_3_fokus: "Focus:",
-    portfolio_project_3_fokus_text: "Web Concept · UX/UI · User Experience · SEO",
-    portfolio_project_3_cta: "View Web Portal",
+    portfolio_implementation: "Implementation",
+
+    portfolio_project_1_implementation_1:
+        "Web design & responsive development",
+    portfolio_project_1_implementation_2:
+        "Content and service structure",
+    portfolio_project_1_implementation_3:
+        "User guidance and clear contact options",
+    portfolio_project_1_implementation_4:
+        "Optimization for desktop, tablet and smartphone",
+    portfolio_project_1_implementation_5:
+        "SEO basics and technical on-page optimization",
+
+    portfolio_technology: "Technology",
+    portfolio_view_project: "→ View project",
+
+    portfolio_project_2_alt: "Automotive Workshop Website",
+    portfolio_project_2_title:
+        "Modern business website for clearly presenting workshop services and making it easy for customers to get in touch.",
+
+    portfolio_project_2_implementation_1:
+        "Custom web design",
+    portfolio_project_2_implementation_2:
+        "Responsive web development",
+    portfolio_project_2_implementation_3:
+        "Structured presentation of services",
+    portfolio_project_2_implementation_4:
+        "Contact and inquiry elements",
+    portfolio_project_2_implementation_5:
+        "Search-engine-friendly page structure",
+    portfolio_project_2_implementation_6:
+        "Loading speed and display optimization",
+
+    portfolio_project_3_alt: "Equily Web Portal",
+    portfolio_project_3_title:
+        "Custom web portal with advanced functionality beyond a traditional business website.",
+
+    portfolio_project_3_implementation_1:
+        "Web portal concept and design",
+    portfolio_project_3_implementation_2:
+        "Responsive user interface",
+    portfolio_project_3_implementation_3:
+        "Structuring of extensive content",
+    portfolio_project_3_implementation_4:
+        "Interactive features",
+    portfolio_project_3_implementation_5:
+        "User-friendly navigation",
+    portfolio_project_3_implementation_6:
+        "Custom technical implementation",
+
+    portfolio_coming_soon: "Coming Soon",
+    portfolio_more_projects: "More projects coming soon",
 
     contact_hero_title: "Let's talk about your project.",
     contact_hero_subtitle: "I look forward to getting to know you and your business. Let's find out together how I can support you.",
@@ -493,95 +549,89 @@ const translations = {
     legal_email: "E-Mail",
     legal_whatsapp: "WhatsApp",
 
-    leistungen: "Services",
-    leistungen_lead: "Web Design - SEO - Conversion Optimization - Marketing",
-    leistungen_titel: "From Website to Automated Customer Acquisition",
-    leistungen_titel2: "Your website works for you.",
-    leistungen_beschreibung: "A website should do more than look professional. It should present your business clearly, build trust and guide potential customers towards the next step.",
-    leistungen_strong: "Your website can work like an independent employee of your business.",
-    leistungen_beschreibung2: "It is often the first point of contact for potential customers. It answers questions, creates a first impression and guides prospects towards an enquiry or appointment. The better these tasks work together, the more your website can become an integral part of your customer acquisition process.",
-    leistungen_beschreibung3: "This is where I come in.",
-    leistungen_beschreibung4: "I combine web development, search engine optimization, conversion optimization and targeted advertising into a coordinated process.",
-    leistungen_strong2: "The result: A website that does more than simply exist online and makes a tangible contribution to your customer acquisition.",
-    erstgespräch_button: "Book a free initial consultation",
-    website_employee_titel: "More than a digital business card",
-    website_employee_titel2: "Your website takes on tasks.",
-    website_employee_beschreibung: "When people are interested in a business, they usually start by researching online. Questions arise, expectations are formed and often the first decision is made about whether to get in touch at all.",
-    website_employee_strong: "A good website does not simply support this process. It shapes it.",
-    website_employee_div: "It explains your offer.",
-    website_employee_div2: "It answers recurring questions.",
-    website_employee_div3: "It provides initial guidance.",
-    website_employee_div4: "It makes it easy for prospects to get in touch.",
-    website_employee_beschreibung2: "With features such as automated appointment booking or digital price enquiries, potential customers can access relevant information themselves and take the first steps without creating additional work for your business.",
-    website_employee_beschreibung3: "This makes your website an integral part of your sales process and allows digital processes to take over wherever they make sense.",
-    paket_titel: "Service Packages",
-    paket_titel2: "The right solution for your digital customer acquisition",
-    paket_beschreibung: "Not every business needs the same measures. That is why the three packages build on each other:",
-    paket_strong: "From a professional website and conversion optimization to retargeting and targeted customer acquisition through advertising.",
-    paket_beschreibung2: "We will determine which solution makes sense for your business in a free and individual initial consultation.",
-    table: "Services",
-    präsenz: "Presence",
-    conversion: "Conversion",
-    kundengewinnung: "Customer Acquisition",
-    table2: "Website & Foundation",
-    table3: "Planning and Structure",
-    table4: "Custom Web Design",
-    table5: "Technical Implementation",
-    table6: "Mobile Optimization",
-    table7: "Revision / Creation of Relevant Content",
-    table8: "Search Engine Optimization",
-    table9: "Basic SEO",
-    table10: "Page Structure & Internal Linking",
-    table11: "Conversion Optimization",
-    table12: "Conversion Optimization",
-    table13: "User Journey Optimization",
-    table14: "Calls to Action",
-    table15: "Optimization of Contact and Enquiry Processes",
-    table16: "Retargeting",
-    table17: "Retargeting System",
-    table18: "Retargeting Campaign Preparation",
-    table19: "Advertising & Campaigns",
-    table20: "Strategic Planning of Suitable Advertising Channels",
-    table21: "Google Ads / Meta Ads",
-    table22: "Creation of Initial Campaigns",
-    table23: "Alignment of Ads and Landing Pages",
-    table24: "Analysis of Relevant Metrics",
-    table25: "Automation",
-    table26: "Automated Appointment Booking",
-    table27: "Optional",
-    table28: "Digital Price Enquiry",
-    table29: "Ongoing Optimization",
-    table30: "By agreement",
-    table31: "Enquire about Presence",
-    table32: "Enquire about Conversion",
-    table33: "Build Customer Acquisition",
-    table34: "Your professional foundation online.",
-    table35: "Turn website visitors into potential customers.",
-    table36: "Build targeted reach and use automated processes.",
-    system_titel: "The System Behind It",
-    system_titel2: "A website alone is not enough.",
-    system_beschreibung: "A website can be well designed and structured. But if the right people cannot find it, its potential remains unused. And if visitors do not know what to do next, reach alone will not generate enquiries.",
-    system_beschreibung2: "That is why the individual measures work together.",
-    system_span: "Analysis",
-    system_span2: "Website",
-    system_span3: "SEO",
-    system_span4: "Conversion",
-    system_span5: "Ads",
-    system_span6: "Retargeting",
-    system_span7: "Optimization",
-    system_beschreibung3: "Each area has a specific purpose. Together, they create a digital process that reaches potential customers, provides the right information and guides them towards the next step.",
-    system_titel3: "What does your business need?",
-    system_beschreibung4: "In a free initial consultation, we look at your current website, your starting point and your goals. I then recommend the measures that actually make sense for your business.",
-    system_strong: "Not more services. The right ones.",
+    digitale_leistungen: "Digital Solutions",
+    leistungen_lead: "that work for your business.",
+
+    digitale_leistungen_text:
+        "A website should not only look good or function technically. It should communicate a company's identity clearly, build trust and guide people purposefully through digital communication. This is where technology, design and strategic thinking come together. Clean code, clear user guidance and well-planned content form the foundation. On top of this, search engine optimization, conversion optimization, digital processes and targeted advertising can be built. The goal is not to offer as many features or services as possible, but to connect the right solutions. Every technical decision, design element and digital process should serve a clear purpose. This creates more than a website that is simply online: it creates a digital tool that can make a lasting and meaningful contribution to the business.",
+
+    technik: "TECHNOLOGY",
+    technik_titel: "Web Development & Design",
+    technik_beschreibung:
+        "Custom websites with a solid technical foundation, high-quality design and a clear structure.",
+    mehr_erfahren: "Learn more",
+
+    sichtbarkeit: "VISIBILITY",
+    seo_titel: "Search Engine Optimization",
+    seo_beschreibung:
+        "Technical and content optimization to help your website be found by the people who matter.",
+
+    technik_details_1:
+        "Web development is about more than an appealing interface. A good website needs to load quickly, work on every device, be easy to understand and be technically built to remain reliable over time. Depending on the requirements, custom solutions can be developed using HTML5, CSS and JavaScript. Static solutions can be used for lean and high-performance websites. When content needs to be managed regularly or more advanced functionality is required, WordPress or Joomla with PHP can be used. Databases, APIs, custom functions, forms, tracking and other integrations can also be implemented.",
+
+    technik_details_2:
+        "The focus is not on the technology itself, but on finding the right solution for each business. Not every project needs a complex CMS, and not every website should be burdened with unnecessary features. A technically lean solution can be just as effective as a customized and extended system. The advantage lies in combining design, development and strategic thinking. The technical foundation is not considered in isolation, but is designed from the beginning with user experience, search engine optimization, performance and future scalability in mind.",
+
+    technik_details_3:
+        "The result is not an off-the-shelf website, but a digital solution that fits the business, is technically well executed and serves a clear purpose.",
+
+    seo_details_1:
+        "SEO ensures that a website is technically well structured, provides relevant content and can be understood and discovered by search engines. This includes keyword research, on-page optimization, semantic HTML, meta data, structured headings, internal linking, optimized URLs, XML sitemaps and structured data. Loading times, mobile optimization, indexing and technical errors are also taken into account.",
+
+    seo_details_2:
+        "What matters is the combination of technology, content and user experience. The goal is not simply to generate as much traffic as possible, but to attract more relevant visitors who actually fit the offering and can become inquiries or customers.",
+
+    service_label_3: "CONVERSION",
+    conversion_title: "Conversion Optimization",
+    conversion_description:
+        "Visitors should not just browse your website. They should understand what they can do next.",
+
+    service_label_4: "AUTOMATION",
+    digital_processes_title: "Digital Processes",
+    digital_processes_description:
+        "Integrating the website into business processes creates digital workflows that go beyond simply presenting information.",
+
+    conversion_details_1:
+        "Conversion optimization focuses on turning visitors into relevant prospects. The website is strategically designed around user guidance, trust and clear paths to action. This can include optimizing calls to action, page structure, forms, contact options, content and landing pages. Factors such as mobile presentation, loading times, visual hierarchy and the placement of important information also play a role.",
+
+    conversion_details_2:
+        "The goal is a website that does more than simply inform visitors. It guides them toward the right action. This can include inquiries, initial consultations, appointment bookings or specific purchase decisions.",
+
+    digital_processes_details_1:
+        "A website can serve as a technical interface between customers, employees and existing business systems. Possible implementations include online forms, appointment bookings, customer inquiries, CRM integrations, API connections, webhooks, automated email processes, data transfers and custom workflows. Existing systems can be connected so that information does not have to be entered manually multiple times.",
+
+    digital_processes_details_2:
+        "Depending on the requirements, the website can send inquiries directly to a CRM, synchronize appointments with a calendar system, exchange data through APIs or trigger internal processes through defined workflows. This integrates the website into existing business operations and gives it concrete functions beyond simply displaying content.",
+
+    service_label_5: "REACH",
+    service_title_5: "Ads & Campaigns",
+    service_description_titel5:
+        "Targeted advertising campaigns that guide relevant visitors to suitable offers and landing pages.",
+
+    service_label_6: "OPTIMIZATION",
+    service_title_6: "Retargeting",
+    service_description_titel6:
+        "Reach visitors who have already shown interest and engage with them again in a targeted way.",
+
+    service_details_5:
+        "Targeted advertising campaigns bring relevant visitors to the website and connect paid reach with a clearly defined goal. This can include Google Ads, social ads, audience targeting, campaign structures, ad copy, landing pages and conversion tracking. Campaigns can be targeted toward specific services, regions, audiences or offers.",
+
+    service_details_5_2:
+        "The key is how all individual elements work together. Ads, audiences, landing pages, conversions and tracking are coordinated and made measurable. This makes it possible to understand which campaigns perform, where visitors drop off and which measures need to be adjusted. Campaigns are not simply set up once and left to run on their own. Data is analyzed, ads and audiences are tested, and budgets are focused on the measures that matter. This creates a measurable process from the first advertisement to the actual inquiry.",
+
+    service_details_6:
+        "Retargeting starts where the first website visit ends. Visitors who have already shown interest in a company, service or specific offer can be grouped into defined audiences and reached again with targeted messaging. This requires tracking, audience segments, conversion events and advertising campaigns to work together. Depending on user behavior, different audiences can be created, such as visitors to specific service pages, users who abandoned a form or people who have already completed a particular action on the website.",
+
+    service_details_6_2:
+        "Suitable campaigns can then be delivered through Google Ads, Meta Ads and other advertising platforms. Content, ads and landing pages can be tailored to each audience. Retargeting therefore becomes a measurable part of the entire customer journey. From the first website interaction to renewed engagement, users can be guided through the journey and campaigns can be optimized based on their actual interactions.",
+
+    leistungen_details_bottom:
+        "Technology, design and customer acquisition work together.",
+
+    leistungen_details_bottom_strong:
+        "Not every website needs everything. But every website should do the right thing.",
 
     form_title: "Create Your Individual Offer",
-    form: "Which package would you like to choose?",
-    form2: "Presence",
-    form3: "Conversion",
-    form4: "Customer Acquisition",
-    form5: "I would like an individual offer",
-    next: "Next",
-    back: "Back",
     form6: "I would like to:",
     form7: "Have a new website created",
     form8: "Optimize my existing website",
