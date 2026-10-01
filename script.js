@@ -2151,6 +2151,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Portfolio-Karten öffnen die zugehörige Projektseite.
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.portfolio-item[data-project]').forEach(item => {
+        const openProject = event => {
+            if (event.target.closest('a')) return;
+            window.location.href = item.dataset.project;
+        };
+
+        item.addEventListener('click', openProject);
+        item.addEventListener('keydown', event => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openProject(event);
+            }
+        });
+    });
+});
+
 // ============================================================
 // ERSTGESPRÄCH PER BUTTON AUF DERSELBEN SEITE EINBLENDEN
 // ============================================================
@@ -2184,56 +2202,42 @@ document.addEventListener('DOMContentLoaded', () => {
    SERVICE CARDS
 ========================================================= */
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.service-card');
+    const cards = [...document.querySelectorAll('.service-card')];
+    const detailRows = [...document.querySelectorAll('.service-details-row')];
 
-    // Funktion zum Schließen aller geöffneten Details & Karten
     const closeAllServices = () => {
-        document.querySelectorAll('.service-card').forEach(c => {
-            c.classList.remove('is-active');
-            const btn = c.querySelector('.service-toggle');
-            if (btn) btn.setAttribute('aria-expanded', 'false');
+        cards.forEach(card => {
+            card.classList.remove('is-active');
+            card.querySelector('.service-toggle')?.setAttribute('aria-expanded', 'false');
         });
 
-        document.querySelectorAll('.service-details-row').forEach(row => row.classList.remove('is-open'));
-        document.querySelectorAll('.service-details').forEach(detail => detail.classList.remove('is-active'));
+        detailRows.forEach(row => row.classList.remove('is-open'));
+        document.querySelectorAll('.service-details').forEach(detail => {
+            detail.classList.remove('is-visible');
+        });
     };
 
-    // Klick-Event direkt auf die gesamte Kachel
     cards.forEach(card => {
-        card.addEventListener('click', (e) => {
-            e.stopPropagation(); // Verhindert, dass das globale Document-Click-Event direkt auslöst
-            
-            const serviceId = card.getAttribute('data-service');
-            const isActive = card.classList.contains('is-active');
-            const toggleBtn = card.querySelector('.service-toggle');
+        card.addEventListener('click', event => {
+            if (event.target.closest('.service-toggle')) {
+                event.preventDefault();
+            }
 
-            // Zuerst alle Einklappen
+            const serviceId = card.dataset.service;
+            const detail = document.querySelector(`.service-details[data-details="${serviceId}"]`);
+            const row = detail?.closest('.service-details-row');
+            const isOpen = card.classList.contains('is-active');
+
+            if (!detail || !row) return;
+
             closeAllServices();
 
-            // Wenn die Kachel vorher nicht aktiv war -> Öffnen
-            if (!isActive) {
+            if (!isOpen) {
                 card.classList.add('is-active');
-                if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'true');
-
-                const targetDetail = document.querySelector(`.service-details[data-details="${serviceId}"]`);
-                if (targetDetail) {
-                    targetDetail.classList.add('is-active');
-                    const parentRow = targetDetail.closest('.service-details-row');
-                    if (parentRow) {
-                        parentRow.classList.add('is-open');
-                    }
-                }
+                row.classList.add('is-open');
+                detail.classList.add('is-visible');
+                card.querySelector('.service-toggle')?.setAttribute('aria-expanded', 'true');
             }
         });
-    });
-
-    // Klick außerhalb schließt den offenen Bereich
-    document.addEventListener('click', (e) => {
-        const isClickInsideCard = e.target.closest('.service-card');
-        const isClickInsideDetails = e.target.closest('.service-details-row');
-
-        if (!isClickInsideCard && !isClickInsideDetails) {
-            closeAllServices();
-        }
     });
 });
