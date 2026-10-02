@@ -223,7 +223,7 @@ const translations = {
         legal_whatsapp_continuation_text5: "Erfolgt die Kontaktaufnahme aus anderen Gründen, erfolgt diese Datenverarbeitung auf Grundlage des Art. 6 Abs. 1 lit. f DSGVO aus unserem überwiegenden berechtigten Interesse am Bereitstellen einer schnellen und einfachen Kontaktaufnahme sowie an der Beantwortung Ihrer Anfrage.",
         legal_whatsapp_continuation_text6: "Ihre personenbezogenen Daten nutzen wir nur zur Bearbeitung Ihrer Anfrage. Ihre Daten werden anschließend unter Beachtung gesetzlicher Aufbewahrungsfristen gelöscht, sofern Sie der weitergehenden Verarbeitung und Nutzung nicht zugestimmt haben.",
         legal_whatsapp_continuation_text7: "Nähere Informationen zu Nutzungsbedingungen und Datenschutz bei Nutzung von WhatsApp finden Sie unter:",
-        
+
     digitale_leistungen: "Digitale Lösungen",
     leistungen_lead: "die für Ihr Unternehmen arbeiten.",
 
@@ -442,7 +442,7 @@ const translations = {
     link_agb: "Terms and Conditions",
     link_wiederruf: "Payment and Shipping",
     footer_copyright: "All rights reserved.",
-    
+
     hero_h1: "Ibvian",
     hero_p: "Digital Studio",
     preview_services: "Services",
@@ -461,7 +461,7 @@ const translations = {
     about_text_hero: "Technology that people understand",
     about_text_1: "My studies in pedagogy and sociology shape my perspective on digital communication to this day. I'm not only interested in how a website works technically, but also in how people perceive and interact with it. A good website must be clear, provide orientation, and build trust. That's why I combine technical execution with an eye for users, businesses, and the details that turn visitors into leads.",
     about_text_2: "My ambition is to create websites that look great, function intuitively, and serve a clear purpose.",
-  
+
     portfolio_titel: "Selected Projects",
 
     portfolio_lead:
@@ -762,7 +762,7 @@ const translations = {
     honeypot_label: "Please leave this field empty",
     send: "Send Message",
     request_appointment: "Request Initial Consultation"
-    }   
+    }
 };
 
 const langSwitch = document.getElementById('lang-switch');
@@ -2144,7 +2144,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Aktiven Tab und zugehörigen Inhalt aktivieren
             tab.classList.add('active');
             tab.setAttribute('aria-selected', 'true');
-            
+
             const targetId = tab.getAttribute('data-tab');
             document.getElementById(targetId).classList.add('active');
         });
@@ -2180,7 +2180,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showBtn.addEventListener('click', () => {
             // Entfernt das 'hidden'-Attribut, das vom Rechner-Skript gesetzt wurde
             stepErstgespraech.hidden = false;
-            
+
             // Fügt die 'active'-Klasse hinzu, falls CSS diese nutzt
             stepErstgespraech.classList.add('active');
 

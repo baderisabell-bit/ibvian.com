@@ -3,65 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Aurelius & Söhne – Mechanische Uhrenmanufaktur seit 1888</title>
     <meta name="description" content="Aurelius & Söhne – handgefertigte mechanische Uhren, feinste Uhrmacherkunst und zeitlose Meisterwerke seit 1888.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <!-- Externes Stylesheet -->
     <link rel="stylesheet" href="uhrstyles.css">
 </head>
-
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header class="site-header" id="siteHeader">
-
     <div class="header-inner">
-
         <a href="#hero" class="brand">
             <span class="brand-main">Aurelius &amp; Söhne</span>
             <span class="brand-sub">Uhrenmanufaktur · Seit 1888</span>
         </a>
 
-        <nav class="main-nav" id="mainNav">
+        <nav class="main-nav">
             <a href="#geschichte">Geschichte</a>
+            <a href="#konfigurator">Studio</a>
             <a href="#handwerk">Handwerk</a>
             <a href="#kollektionen">Kollektionen</a>
-            <a href="#fertigung">Fertigung</a>
             <a href="#kontakt">Kontakt</a>
         </nav>
 
-        <a href="#kontakt" class="header-cta">
-            Atelier Termin
-            <span>↗</span>
-        </a>
-
-        <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
-            <span></span>
-            <span></span>
-        </button>
-
+        <div class="header-actions">
+            <a href="#kontakt" class="btn" style="padding: 0.6rem 1.2rem;">Atelier Termin</a>
+        </div>
     </div>
-
 </header>
 
-
 <main>
-
-<!-- =========================
-     HERO
-========================= -->
-<section class="hero">
-    <video class="hero-video"
+    <!-- HERO -->
+</section>
+    <section class="hero" id="hero">
+        <video class="hero-video"
            autoplay
            muted
            loop
@@ -71,646 +51,258 @@
     </video>
 
     <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-        <p class="eyebrow">AURELIUS & SÖHNE · SEIT 1888</p>
-
-        <h1>Zeitlosigkeit<br><em>in Perfektion.</em></h1>
-
-        <p class="hero-text">
-            Mechanische Uhren. Von Hand gefertigt.
-            Für Generationen geschaffen.
-        </p>
-
-        <a href="#kollektionen" class="hero-button">
-            Kollektion entdecken
-            <span>→</span>
-        </a>
-
+        <div class="hero-content">
+            <span class="eyebrow">AURELIUS &amp; SÖHNE · SEIT 1888</span>
+            <h1>Zeitlosigkeit<br><em>in Perfektion.</em></h1>
+            <p class="hero-text">Handgefertigte mechanische Zeitmesser aus deutscher Tradition. Geschaffen für Generationen.</p>
+            <a href="#kollektionen" class="btn">Kollektion entdecken ↗</a>
         </div>
-
-    </div>
-
-    <div class="hero-bottom">
-
-        <span>1888 — 2026</span>
-
-        <span class="hero-line"></span>
-
-        <span>Handgefertigt in Deutschland</span>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     INTRO / STATEMENT
-========================= -->
-
-<section class="statement section">
-
-    <div class="container">
-
-        <div class="statement-grid">
-
-            <div class="section-number">
-                01
-            </div>
-
-            <div class="statement-content">
-
-                <p class="eyebrow">Eine Frage der Zeit</p>
-
-                <h2>
-                    Manche Dinge werden nicht
-                    <em>gemacht.</em><br>
-                    Sie werden geschaffen.
-                </h2>
-
-                <p>
-                    Seit über 130 Jahren verbinden wir traditionelle
-                    Uhrmacherkunst mit einem kompromisslosen Anspruch
-                    an Qualität, Präzision und Ästhetik.
-                </p>
-
-                <p>
-                    Jedes Werk entsteht in unserem Atelier in vielen
-                    einzelnen Arbeitsschritten – von der ersten
-                    Konstruktion bis zur abschließenden Regulierung.
-                </p>
-
-                <a href="#geschichte" class="line-link">
-                    Mehr über Aurelius &amp; Söhne
-                    <span>↗</span>
-                </a>
-
-            </div>
-
+        <div class="hero-bottom">
+            <span>1888 — 2026</span>
+            <span class="hero-line"></span>
+            <span>Handgefertigt in Deutschland</span>
         </div>
+    </section>
 
-    </div>
-
-</section>
-
-
-<!-- =========================
-     GESCHICHTE
-========================= -->
-
-<section class="history section" id="geschichte">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div>
-                <span class="eyebrow">Seit 1888</span>
-                <h2>Eine Geschichte<br><em>voller Zeit.</em></h2>
-            </div>
-
-            <p>
-                Was einst als kleine Werkstatt begann,
-                ist heute eine Manufaktur für außergewöhnliche
-                mechanische Zeitmesser.
-            </p>
-
-        </div>
-
-
-        <div class="history-layout">
-
-            <div class="history-image image-frame">
-                <div class="history-image image-frame">
-                    <img src="images/uhrmacher.jpg" alt="Uhrmacher bei der Arbeit">
+    <!-- GESCHICHTE -->
+    <section class="section history" id="geschichte">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">Seit 1888</span>
+                    <h2>Eine Geschichte<br><em>voller Zeit.</em></h2>
                 </div>
             </div>
-
-            <div class="history-copy">
-
-                <div class="history-year">1888</div>
-
-                <h3>
-                    Der Beginn einer
-                    außergewöhnlichen Reise.
-                </h3>
-
-                <p>
-                    In einer kleinen Werkstatt legte Friedrich Aurelius
-                    den Grundstein für eine Manufaktur, deren Name bis
-                    heute für feinste mechanische Uhrmacherkunst steht.
-                </p>
-
-                <p>
-                    Über Generationen wurde das Wissen weitergegeben,
-                    verfeinert und mit neuen technischen Möglichkeiten
-                    verbunden – ohne dabei das Wesentliche aus den Augen
-                    zu verlieren.
-                </p>
-
-                <div class="signature">
-                    <span>Aurelius &amp; Söhne</span>
-                    <small>Manufaktur seit 1888</small>
+            <div class="history-layout">
+                <div class="history-image">
+                    <img src="images/uhrwerk.jpg" alt="Präzises Uhrmacherhandwerk">
                 </div>
-
+                <div class="history-copy">
+                    <div class="history-year">1888</div>
+                    <h3>Der Beginn einer außergewöhnlichen Reise.</h3>
+                    <p>In einer kleinen Werkstatt legte Friedrich Aurelius den Grundstein für eine Manufaktur, deren Name bis heute für feinste mechanische Uhrmacherkunst steht.</p>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Über Generationen wurde das meisterhafte Wissen weitergegeben, verfeinert und mit modernen Fertigungsmethoden harmoniert.</p>
+                </div>
             </div>
-
         </div>
+    </section>
 
-    </div>
-
-</section>
-
-
-<!-- =========================
-     HANDWERK
-========================= -->
-
-<section class="craft section dark-section" id="handwerk">
-
-    <div class="container">
-
-        <div class="craft-header">
-
-            <span class="eyebrow">Das Handwerk</span>
-
-            <h2>
-                Präzision ist kein Detail.<br>
-                <em>Sie ist der Anfang.</em>
-            </h2>
-
-        </div>
-
-
-        <div class="craft-grid">
-
-            <div class="craft-feature">
-
-                <div class="craft-image">
-                    <img src="images/uhrwerk.jpg" alt="Uhrwerk">
+    <!-- KONFIGURATOR -->
+    <section class="section configurator-section" id="konfigurator">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">Atelier Studio</span>
+                    <h2>Gestalten Sie Ihr <em>Meisterwerk.</em></h2>
                 </div>
-
-                <div class="craft-caption">
-                    <span>01</span>
-                    <strong>Das mechanische Herz</strong>
-                </div>
-
+                <p style="color: var(--text-muted);">Echtzeit-Anpassung aller Materialien und Zifferblatt-Farben.</p>
             </div>
+            <div class="config-grid">
+                <div class="config-preview">
+                    <div class="watch-stage">
+                        <div class="watch-case-outer" id="watchCase">
+                            <div class="watch-bezel">
+                                <div class="watch-dial-face" id="watchDial">
+                                    <div class="brand-logo-dial">Aurelius</div>
 
+                                    <!-- 12 HOUR MARKS -->
+                                    <div class="dial-mark main" style="transform: rotate(0deg);"></div>
+                                    <div class="dial-mark" style="transform: rotate(30deg);"></div>
+                                    <div class="dial-mark" style="transform: rotate(60deg);"></div>
+                                    <div class="dial-mark main" style="transform: rotate(90deg);"></div>
+                                    <div class="dial-mark" style="transform: rotate(120deg);"></div>
+                                    <div class="dial-mark" style="transform: rotate(150deg);"></div>
+                                    <div class="dial-mark main" style="transform: rotate(180deg);"></div>
+                                    <div class="dial-mark" style="transform: rotate(210deg);"></div>
+                                    <div class="dial-mark" style="transform: rotate(240deg);"></div>
+                                    <div class="dial-mark main" style="transform: rotate(270deg);"></div>
+                                    <div class="dial-mark" style="transform: rotate(300deg);"></div>
+                                    <div class="dial-mark" style="transform: rotate(330deg);"></div>
 
-            <div class="craft-list">
-
-                <article class="craft-item">
-                    <span>01</span>
-                    <div>
-                        <h3>Handmontage</h3>
-                        <p>
-                            Jedes Uhrwerk wird von erfahrenen Uhrmachern
-                            Stück für Stück von Hand montiert.
-                        </p>
+                                    <!-- REALTIME HANDS -->
+                                    <div class="hand hand-h" id="handH"></div>
+                                    <div class="hand hand-m" id="handM"></div>
+                                    <div class="hand hand-s" id="handS"></div>
+                                    <div class="cap"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </article>
-
-                <article class="craft-item">
-                    <span>02</span>
-                    <div>
-                        <h3>Feinste Finissierung</h3>
-                        <p>
-                            Anglierte Kanten, polierte Flächen und fein
-                            dekorierte Werkteile machen jedes Kaliber einzigartig.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="craft-item">
-                    <span>03</span>
-                    <div>
-                        <h3>Regulierung</h3>
-                        <p>
-                            Präzise Regulierung und umfangreiche Kontrollen
-                            garantieren die Zuverlässigkeit unserer Zeitmesser.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="craft-item">
-                    <span>04</span>
-                    <div>
-                        <h3>Von Hand vollendet</h3>
-                        <p>
-                            Erst wenn jedes Detail unseren Ansprüchen genügt,
-                            verlässt eine Uhr unser Atelier.
-                        </p>
-                    </div>
-                </article>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     KOLLEKTIONEN
-========================= -->
-
-<section class="collections section" id="kollektionen">
-
-    <div class="container">
-
-        <div class="collections-heading">
-
-            <div>
-                <span class="eyebrow">Kollektionen</span>
-
-                <h2>
-                    Für jeden Augenblick.<br>
-                    <em>Für die Ewigkeit.</em>
-                </h2>
-            </div>
-
-            <p>
-                Drei Linien, eine gemeinsame Philosophie:
-                kompromisslose Qualität und zeitloses Design.
-            </p>
-
-        </div>
-
-
-        <div class="collection-grid">
-
-            <article class="collection-card collection-large">
-
-                <div class="collection-image">
-                    <img src="images/uhr-mit-perlen.jpg" alt="Uhr Marine">
+                    <div style="font-family: var(--font-heading); font-size: 1.6rem;" id="configTitle">Modell Aurelius Classique</div>
+                    <div style="color: var(--accent-gold); font-size: 1.1rem; margin-top: 0.3rem;" id="configPrice">12.400 €</div>
                 </div>
 
-                <div class="collection-info">
-
-                    <div>
-                        <span class="collection-number">01</span>
-                        <h3>Marine</h3>
+                <div class="config-options">
+                    <div class="option-group">
+                        <h4>1. Gehäusematerial</h4>
+                        <div class="option-buttons">
+                            <button class="opt-btn active" data-case="silver" data-price="12.400 €">Edelstahl Silber</button>
+                            <button class="opt-btn" data-case="gold" data-price="18.900 €">Gelbgold 18k</button>
+                            <button class="opt-btn" data-case="dark" data-price="15.600 €">Titan DLC Schwarz</button>
+                        </div>
                     </div>
 
-                    <p>
-                        Präzision für Menschen mit Anspruch an Funktionalität.
-                    </p>
-
-                    <a href="#kontakt">Kollektion ansehen →</a>
-
-                </div>
-
-            </article>
-
-
-            <article class="collection-card">
-
-                <div class="collection-image">
-                    <img src="images/silberne-uhr.jpg" alt="Uhr Classic">
-                </div>
-
-                <div class="collection-info">
-
-                    <div>
-                        <span class="collection-number">02</span>
-                        <h3>Classic</h3>
+                    <div class="option-group">
+                        <h4>2. Zifferblatt</h4>
+                        <div class="option-buttons">
+                            <button class="opt-btn active" data-dial="black">Onyx Schwarz</button>
+                            <button class="opt-btn" data-dial="champagne">Champagner</button>
+                            <button class="opt-btn" data-dial="blue">Mitternachtsblau</button>
+                        </div>
                     </div>
 
-                    <p>
-                        Klassische Proportionen und zurückhaltende Eleganz.
-                    </p>
-
-                    <a href="#kontakt">Kollektion ansehen →</a>
-
+                    <a href="#kontakt" class="btn" style="align-self: flex-start; margin-top: 1rem;">Weiter Individualisieren ↗</a>
                 </div>
-
-            </article>
-
-
-            <article class="collection-card">
-
-                <div class="collection-image">
-                    <img src="images/uhr-heritage.jpg" alt="Uhr Heritage">
-                </div>
-
-                <div class="collection-info">
-
-                    <div>
-                        <span class="collection-number">03</span>
-                        <h3>Heritage</h3>
-                    </div>
-
-                    <p>
-                        Inspiriert von historischen Aurelius Zeitmessern.
-                    </p>
-
-                    <a href="#kontakt">Kollektion ansehen →</a>
-
-                </div>
-
-            </article>
-
+            </div>
         </div>
+    </section>
 
-    </div>
-
-</section>
-
-
-<!-- =========================
-     MANUFAKTUR
-========================= -->
-
-<section class="manufacture section" id="fertigung">
-
-    <div class="container">
-
-        <div class="manufacture-grid">
-
-            <div class="manufacture-content">
-
-                <span class="eyebrow">Die Manufaktur</span>
-
-                <h2>
-                    Wo Zeit<br>
-                    <em>entsteht.</em>
-                </h2>
-
-                <p class="lead">
-                    Eine Aurelius Uhr ist das Ergebnis aus Wissen,
-                    Geduld und unzähligen Stunden feinster Handarbeit.
-                </p>
-
-                <div class="process">
-
-                    <div class="process-item">
+    <!-- HANDWERK -->
+    <section class="section craft" id="handwerk">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">Das Handwerk</span>
+                    <h2>Präzision ist kein Detail.<br><em>Sie ist der Anfang.</em></h2>
+                </div>
+            </div>
+            <div class="craft-grid">
+                <div style="border: 1px solid var(--border-color); padding: 0.8rem; background: var(--bg-card);">
+                    <img src="images/uhrmacher.jpg" alt="Präzises mechanisches Uhrwerk">
+                </div>
+                <div class="craft-list">
+                    <div class="craft-item">
                         <span>01</span>
                         <div>
-                            <strong>Entwurf</strong>
-                            <p>Form, Proportion und Funktion werden zu einem Ganzen.</p>
+                            <h3>Handmontage</h3>
+                            <p style="color: var(--text-muted);">Jedes Kaliber wird von Meisterhand Stein für Stein zusammengefügt.</p>
                         </div>
                     </div>
-
-                    <div class="process-item">
+                    <div class="craft-item">
                         <span>02</span>
                         <div>
-                            <strong>Fertigung</strong>
-                            <p>Präzise gefertigte Komponenten bilden das mechanische Herz.</p>
+                            <h3>Feinste Finissierung</h3>
+                            <p style="color: var(--text-muted);">Genfer Streifen, anglierte Kanten und polierte Schrauben im Mikrometerbereich.</p>
                         </div>
                     </div>
-
-                    <div class="process-item">
+                    <div class="craft-item">
                         <span>03</span>
                         <div>
-                            <strong>Montage</strong>
-                            <p>Jedes Werk wird von Hand zusammengesetzt und geprüft.</p>
+                            <h3>Regulierung</h3>
+                            <p style="color: var(--text-muted);">Prüfung in 6 Lagen über 1.000 Stunden zur Maximierung der Ganggenauigkeit.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="process-item">
-                        <span>04</span>
-                        <div>
-                            <strong>Vollendung</strong>
-                            <p>Die abschließende Regulierung gibt der Uhr ihren Charakter.</p>
-                        </div>
+    <!-- KOLLEKTIONEN -->
+    <section class="section collections" id="kollektionen">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">Meisterwerke</span>
+                    <h2>Kollektionen für <em>die Ewigkeit.</em></h2>
+                </div>
+            </div>
+
+            <div class="collection-grid">
+                <article class="collection-card">
+                    <div class="collection-image">
+                        <img src="images/silberne-uhr.png" alt="Luxusuhr Marine">
                     </div>
+                    <div class="collection-info">
+                        <h3>Marine Chronometer</h3>
+                        <p>Höchste Druckfestigkeit und maritime Präzision in robustem Edelstahl.</p>
+                        <span style="color: var(--accent-gold); font-size: 0.9rem;">Ab 14.200 €</span>
+                    </div>
+                </article>
 
+                <article class="collection-card">
+                    <div class="collection-image">
+                        <img src="images/uhr-mit-perlen.jpg" alt="Klassische Armbanduhr">
+                    </div>
+                    <div class="collection-info">
+                        <h3>Classic Tourbillon</h3>
+                        <p>Schwebendes Tourbillon-Uhrwerk für Höchstleistung und zeitlosen Luxus.</p>
+                        <span style="color: var(--accent-gold); font-size: 0.9rem;">Ab 28.500 €</span>
+                    </div>
+                </article>
+
+                <article class="collection-card">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=1000&auto=format&fit=crop" alt="Heritage Chronograph">
+                    </div>
+                    <div class="collection-info">
+                        <h3>Heritage 1888</h3>
+                        <p>Historische Eleganz nach Originalentwürfen von 1888. Limitiert auf 88 Stück.</p>
+                        <span style="color: var(--accent-gold); font-size: 0.9rem;">Limitiert auf 88 Stück</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section contact" id="kontakt">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <span class="eyebrow">Atelier Besuch</span>
+                    <h2>Lassen Sie uns über <em>Zeit</em> sprechen.</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Besuchen Sie unsere Manufaktur für ein persönliches Beratungsgespräch bei Glas Champagner.</p>
+                    <div class="contact-details">
+                        <a href="mailto:atelier@aurelius-soehne.de">atelier@aurelius-soehne.de</a>
+                        <a href="tel:+490000000000">+49 (0) 89 210 900 0</a>
+                    </div>
                 </div>
 
-            </div>
-
-
-            <div class="manufacture-image">
-                <img src="images/uhr-reparatur.jpg" alt="Uhr Reparatur">
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     QUOTE
-========================= -->
-
-<section class="quote-section">
-
-    <div class="quote-inner">
-
-        <span class="quote-mark">“</span>
-
-        <blockquote>
-            Eine gute Uhr misst nicht nur die Zeit.
-            Sie erzählt, <em>wie wir sie verbringen.</em>
-        </blockquote>
-
-        <span class="quote-author">
-            Friedrich Aurelius · 1894
-        </span>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     BESUCH
-========================= -->
-
-<section class="visit section">
-
-    <div class="container">
-
-        <div class="visit-grid">
-
-            <div class="visit-content">
-
-                <span class="eyebrow">Persönlich erleben</span>
-
-                <h2>
-                    Zeit braucht<br>
-                    <em>Raum.</em>
-                </h2>
-
-                <p>
-                    Besuchen Sie unser Atelier und entdecken Sie
-                    unsere Kollektionen in persönlicher Atmosphäre.
-                </p>
-
-                <p>
-                    Gerne nehmen wir uns Zeit für eine individuelle
-                    Beratung und zeigen Ihnen die Besonderheiten
-                    unserer mechanischen Zeitmesser.
-                </p>
-
-                <a href="#kontakt" class="btn btn-dark">
-                    Atelier Termin vereinbaren
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     KONTAKT
-========================= -->
-
-<section class="contact section dark-section" id="kontakt">
-
-    <div class="container">
-
-        <div class="contact-grid">
-
-            <div class="contact-intro">
-
-                <span class="eyebrow">Kontakt</span>
-
-                <h2>
-                    Lassen Sie uns<br>
-                    über <em>Zeit</em> sprechen.
-                </h2>
-
-                <p>
-                    Für persönliche Beratung, einen Ateliertermin
-                    oder Fragen zu unseren Kollektionen erreichen
-                    Sie uns direkt.
-                </p>
-
-                <div class="contact-details">
-
-                    <a href="mailto:atelier@aurelius-soehne.de">
-                        atelier@aurelius-soehne.de
-                    </a>
-
-                    <a href="tel:+490000000000">
-                        +49 (0) 000 000 00 00
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <form class="contact-form">
-
-                <div class="form-row">
-
-                    <label>
-                        <span>Name</span>
-                        <input type="text" name="name" required>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <label>Name <input type="text" required placeholder="Ihr Name"></label>
+                        <label>E-Mail <input type="email" required placeholder="ihre@adresse.de"></label>
+                    </div>
+                    <label>Betreff
+                        <select>
+                            <option>Atelier Terminvereinbarung</option>
+                            <option>Sonderanfertigung / Konfiguration</option>
+                            <option>Service &amp; Revision</option>
+                        </select>
                     </label>
-
-                    <label>
-                        <span>E-Mail</span>
-                        <input type="email" name="email" required>
-                    </label>
-
-                </div>
-
-                <label>
-                    <span>Betreff</span>
-                    <select name="subject">
-                        <option>Allgemeine Anfrage</option>
-                        <option>Atelier Termin</option>
-                        <option>Kollektion</option>
-                        <option>Service &amp; Wartung</option>
-                    </select>
-                </label>
-
-                <label>
-                    <span>Nachricht</span>
-                    <textarea name="message" rows="5"></textarea>
-                </label>
-
-                <button type="submit" class="btn btn-light">
-                    Nachricht senden
-                    <span>↗</span>
-                </button>
-
-            </form>
-
+                    <label>Nachricht <textarea rows="4" placeholder="Wie können wir Ihnen behilflich sein?"></textarea></label>
+                    <button type="submit" class="btn">Termin anfragen ↗</button>
+                </form>
+            </div>
         </div>
-
-    </div>
-
-</section>
-
+    </section>
 </main>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer class="site-footer">
-
     <div class="container">
-
         <div class="footer-top">
-
-            <div class="footer-brand">
-
+            <div>
                 <span class="brand-main">Aurelius &amp; Söhne</span>
-
-                <span>
-                    Mechanische Uhrenmanufaktur<br>
-                    seit 1888
-                </span>
-
+                <p style="color: var(--text-muted); font-size: 0.8rem;">Mechanische Uhrenmanufaktur seit 1888</p>
             </div>
-
             <div class="footer-nav">
-
                 <a href="#geschichte">Geschichte</a>
+                <a href="#konfigurator">Studio</a>
                 <a href="#handwerk">Handwerk</a>
                 <a href="#kollektionen">Kollektionen</a>
-                <a href="#fertigung">Manufaktur</a>
-                <a href="#kontakt">Kontakt</a>
-
             </div>
-
-            <div class="footer-social">
-
-                <a href="#" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="#" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-
-            </div>
-
         </div>
-
-
         <div class="footer-bottom">
-
-            <span>© 2026 Aurelius &amp; Söhne</span>
-
+            <span>© 2026 Aurelius &amp; Söhne. Alle Rechte vorbehalten.</span>
             <div>
-                <a href="#">Impressum</a>
+                <a href="#" style="margin-right: 1rem;">Impressum</a>
                 <a href="#">Datenschutz</a>
             </div>
-
         </div>
-
     </div>
-
 </footer>
 
-
+<!-- Externes JavaScript -->
 <script src="uhrscript.js"></script>
-
 </body>
 </html>

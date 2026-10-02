@@ -56,7 +56,7 @@ body {
 .site-title h1 { color: var(--header-text); font-size: 1.2rem; }
 
 /* Gemeinsame Basis für beide Buttons */
-.theme-btn, 
+.theme-btn,
 #lang-switch {
     background-color: transparent;    /* Weißer Hintergrund */
     color: #070707;            /* Weiße Schrift */
@@ -69,7 +69,7 @@ body {
 }
 
 /* Optional: Hover-Effekt (damit es beim Drüberfahren dunkler wird) */
-.theme-btn:hover, 
+.theme-btn:hover,
 #lang-switch:hover {
     background-color: #a7a6a6;
 }
@@ -134,8 +134,8 @@ nav.main-nav a:hover::after {
 /* Mobile Anpassung */
 @media (max-width: 768px) {
     .site-header {
-        min-height: 80px; 
-        padding: 0 1rem; 
+        min-height: 80px;
+        padding: 0 1rem;
     }
 
     .menu-toggle {
@@ -301,8 +301,8 @@ input, select, textarea {
 /* --- TEXT-SEKTIONEN: FEINE LINIEN & DESIGN --- */
 
 /* Gemeinsames Styling für Überschriften in den Sektionen */
-#home-text h1, 
-.services-preview h2, 
+#home-text h1,
+.services-preview h2,
 .career-preview h2 {
     position: relative;
     padding-bottom: 20px; /* Platz für die Linie */
@@ -312,8 +312,8 @@ input, select, textarea {
 }
 
 /* Die feine Linie unter den Überschriften */
-#home-text h1::after, 
-.services-preview h2::after, 
+#home-text h1::after,
+.services-preview h2::after,
 .career-preview h2::after {
     content: "";
     position: absolute;
@@ -456,8 +456,8 @@ input, select, textarea {
 }
 
 /* Feine Input-Felder */
-.kfz-form input, 
-.kfz-form select, 
+.kfz-form input,
+.kfz-form select,
 .kfz-form textarea {
     width: 100%;
     padding: 12px;
@@ -621,7 +621,7 @@ input, select, textarea {
     color: #ffffff;
     font-family: 'Rajdhani', sans-serif;
     text-align: center;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     word-wrap: break-word; /* Bricht lange Wörter um */
     overflow-wrap: break-word;
     hyphens: auto; /* Silbentrennung */
@@ -635,7 +635,7 @@ input, select, textarea {
     .contact-parallax h1 {
         font-size: 1.8rem; /* Auf kleinen Geräten kleiner machen */
     }
-    
+
     .contact-parallax {
         aspect-ratio: 5 / 6;
     }
@@ -904,12 +904,12 @@ main {
 #karriere-hero {
     position: relative;
     width: 100%;
-    min-height: 80vh; 
+    min-height: 80vh;
     background-image: url('images/oldtimer.PNG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -936,12 +936,12 @@ main {
     .karriere-parallax {
         /* Handy-Bild */
         background-image: url('../images/oldtimer_mobile.PNG');
-        background-size: cover; 
+        background-size: cover;
         background-position: center;
-        background-attachment: fixed; 
+        background-attachment: fixed;
         min-height: 60vh;
     }
-    
+
     .hero-overlay-content h1 {
         font-size: 2rem;
     }
@@ -979,7 +979,7 @@ main {
     text-align: center;
 }
 
-.karriere-benefits h3, 
+.karriere-benefits h3,
 .karriere h1 {
     position: relative;
     padding-bottom: 20px; /* Platz für die Linie */
@@ -988,7 +988,7 @@ main {
 }
 
 /* Die feine Linie unter den Überschriften */
-.karriere-benefits h3::after, 
+.karriere-benefits h3::after,
 .karriere h1::after {
     content: "";
     position: absolute;

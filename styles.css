@@ -4,20 +4,20 @@
    1. DESIGN SYSTEM & VARIABLEN (Light & Dark Mode)
    ========================================================= */
 :root {
-    --bg-main: #f1f7f7;          
-    --bg-surface: #FFFFFF;       
-    --bg-subtle: #F0F3F1;  
-    --header-bg: #C3CBC7;      
-    
-    --velvet-green-deep: #0D1F18; 
-    --velvet-green-main: #173328; 
+    --bg-main: #f1f7f7;
+    --bg-surface: #FFFFFF;
+    --bg-subtle: #F0F3F1;
+    --header-bg: #C3CBC7;
+
+    --velvet-green-deep: #0D1F18;
+    --velvet-green-main: #173328;
     --velvet-green-hover: #214738;
     --velvet-green-light: #E7ECE9;
 
     --border-color: #E2E6E3;
     --border-dark: #0D1F18;
 
-    --text-primary: #111815;     
+    --text-primary: #111815;
     --text-secondary: #4A5550;
     --text-muted: #707C76;
 
@@ -43,19 +43,19 @@
 
 body.dark-mode,
 [data-theme="dark"] {
-    --bg-main: #0A110E;          
-    --bg-surface: #111C18;       
-    --bg-subtle: #16241F;        
+    --bg-main: #0A110E;
+    --bg-surface: #111C18;
+    --bg-subtle: #16241F;
 
-    --velvet-green-deep: #173328; 
-    --velvet-green-main: #2A5443; 
+    --velvet-green-deep: #173328;
+    --velvet-green-main: #2A5443;
     --velvet-green-hover: #366A55;
     --velvet-green-light: #1A2F26;
 
     --border-color: #23362E;
     --border-dark: #2A5443;
 
-    --text-primary: #080808;     
+    --text-primary: #080808;
     --text-secondary: #000000;
     --text-muted: #214738;
 
@@ -408,10 +408,10 @@ width: 100%;
 min-height: 85vh;
 
 /* Perfekt ausbalancierter dunkler Indigo/Cyan Hintergrund */
-background: 
+background:
     radial-gradient(
-        circle at center, 
-        rgba(5, 16, 26, 0.4) 0%, 
+        circle at center,
+        rgba(5, 16, 26, 0.4) 0%,
         rgba(2, 8, 16, 0.85) 100%
     ),
     url('images/hintergrund.jpeg') center/cover no-repeat;
@@ -477,10 +477,10 @@ text-shadow: 0 0 15px rgba(0, 229, 255, 0.25);
 /* Dunkelmodus-Anpassung für den Bild-Overlay */
 body.dark-mode .hero-image-section,
 [data-theme="dark"] .hero-image-section {
-    background: 
+    background:
         linear-gradient(
-            135deg, 
-            rgba(10, 17, 14, 0.90) 0%, 
+            135deg,
+            rgba(10, 17, 14, 0.90) 0%,
             rgba(23, 51, 40, 0.80) 100%
         ),
         url('images/hintergrund4.png') center/cover no-repeat;
@@ -558,10 +558,10 @@ body.dark-mode .hero-image-section,
 
 body.dark-mode .parallax-section,
 [data-theme="dark"] .parallax-section {
-    background: 
+    background:
         linear-gradient(
-            135deg, 
-            rgba(10, 17, 14, 0.92) 0%, 
+            135deg,
+            rgba(10, 17, 14, 0.92) 0%,
             rgba(23, 51, 40, 0.82) 100%
         ),
         url('images/hintergrund4.png') center/cover no-repeat fixed;
@@ -673,7 +673,7 @@ body.dark-mode .parallax-section,
     min-height: 56px;
     padding: 14px 16px;
     font-size: 1rem;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 #angebot-form .question textarea {
@@ -691,7 +691,7 @@ body.dark-mode .parallax-section,
 #angebot-form .question_tree {
     width: 100%;
     max-width: 900px;
-    margin: 0 auto 20px auto; 
+    margin: 0 auto 20px auto;
     min-height: 56px;
     padding: 14px 16px;
     text-align: left;
@@ -726,12 +726,12 @@ body.dark-mode .parallax-section,
 
 #angebot-form .buttons {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     gap: 16px;
     width: 100%;
     max-width: 900px;
-    margin: 20px auto 0 auto; 
+    margin: 20px auto 0 auto;
 }
 
 #angebot-form .buttons .btn {
@@ -1606,10 +1606,10 @@ body.dark-mode .parallax-section,
 width: 100%;
 min-height: 60vh;
 /* Perfekt ausbalancierter dunkler Indigo/Cyan Hintergrund */
-background: 
+background:
     radial-gradient(
-        circle at center, 
-        rgba(5, 16, 26, 0.4) 0%, 
+        circle at center,
+        rgba(5, 16, 26, 0.4) 0%,
         rgba(2, 8, 16, 0.85) 100%
     ),
     url('images/hintergrund.jpeg') center/cover no-repeat;
@@ -1638,10 +1638,10 @@ z-index: 2;
 width: 100%;
 min-height: 60vh;
 /* Perfekt ausbalancierter dunkler Indigo/Cyan Hintergrund */
-background: 
+background:
     radial-gradient(
-        circle at center, 
-        rgba(5, 16, 26, 0.4) 0%, 
+        circle at center,
+        rgba(5, 16, 26, 0.4) 0%,
         rgba(2, 8, 16, 0.85) 100%
     )
     url('images/reitunterricht-screenshot.png') center/cover no-repeat;
@@ -1660,10 +1660,10 @@ overflow: hidden;
 width: 100%;
 min-height: 60vh;
 /* Perfekt ausbalancierter dunkler Indigo/Cyan Hintergrund */
-background: 
+background:
     radial-gradient(
-        circle at center, 
-        rgba(5, 16, 26, 0.4) 0%, 
+        circle at center,
+        rgba(5, 16, 26, 0.4) 0%,
         rgba(2, 8, 16, 0.85) 100%
     ),
     url('images/hintergrund.jpeg') center/cover no-repeat;
@@ -1682,10 +1682,10 @@ overflow: hidden;
 width: 100%;
 min-height: 60vh;
 /* Perfekt ausbalancierter dunkler Indigo/Cyan Hintergrund */
-background: 
+background:
     radial-gradient(
-        circle at center, 
-        rgba(5, 16, 26, 0.4) 0%, 
+        circle at center,
+        rgba(5, 16, 26, 0.4) 0%,
         rgba(2, 8, 16, 0.85) 100%
     ),
     url('images/hintergrund.jpeg') center/cover no-repeat;
@@ -1784,8 +1784,8 @@ overflow: hidden;
     border-top: 3px solid #050505;
     background: var(--bg-main);
     width: 100%; /* Stellt sicher, dass die Sektion die volle Breite nutzt */
-}  
-    
+}
+
 .contact-form-area {
     width: 70%;
     max-width: 1180px;
@@ -1841,7 +1841,7 @@ overflow: hidden;
 
 .contact-form button[type="submit"] {
     /* ÄNDERUNG: Zentriert den Absenden-Button im Formular (oder z. B. center / stretch) */
-    align-self: center; 
+    align-self: center;
     margin-top: 10px;
 }
 
@@ -1888,7 +1888,7 @@ overflow: hidden;
 
 .termin-form button[type="submit"] {
     /* ÄNDERUNG: Zentriert den Absenden-Button im Formular (oder z. B. center / stretch) */
-    align-self: center; 
+    align-self: center;
     margin-top: 10px;
 }
 /* =========================================================
@@ -1937,7 +1937,7 @@ overflow: hidden;
 .footer-bottom p {
     color: #a5e8eb;
 }
- 
+
 /* =========================================================
    9. RESPONSIVE ANPASSUNGEN
    ========================================================= */

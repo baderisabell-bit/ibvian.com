@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ibvian — Architektur & High-End Immobilien Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        arch: {
+                            bg: '#f8f7f4',          /* Bright Off-White */
+                            card: '#ffffff',        /* Pure White */
+                            sand: '#ece8e1',        /* Light Greige/Sand */
+                            accent: '#8c8275',      /* Muted Architectural Taupe */
+                            dark: '#1a1a1a',        /* Deep Charcoal Text */
+                            muted: '#666666',       /* Subdued Body Text */
+                            border: '#e2ded7'       /* Soft Border Line */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8f7f4;
+            color: #1a1a1a;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Subtle grid blueprint pattern background */
+        .arch-grid-bg {
+            background-size: 50px 50px;
+            background-image:
+                linear-gradient(to right, rgba(0, 0, 0, 0.025) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
+        }
+
+        /* Smooth scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Clean Image Hover effect */
+        .img-hover-zoom {
+            overflow: hidden;
+        }
+        .img-hover-zoom img {
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .img-hover-zoom:hover img {
+            transform: scale(1.04);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8f7f4;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d8d3c9;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8c8275;
+        }
+
+        /* Comparison Slider Handle */
+        .slider-shadow {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="arch-grid-bg antialiased selection:bg-arch-sand selection:text-arch-dark">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-arch-bg/85 border-b border-arch-border/60" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-22 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <span class="w-9 h-9 rounded-sm border border-arch-dark flex items-center justify-center font-serif text-lg font-semibold text-arch-dark group-hover:bg-arch-dark group-hover:text-white transition-all duration-300">i</span>
+                <div class="flex flex-col">
+                    <span class="text-xl font-medium tracking-wider text-arch-dark uppercase font-sans">ibvian</span>
+                    <span class="text-[10px] tracking-widest text-arch-accent uppercase font-sans -mt-1">Architektur & Design</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center space-x-10 text-xs tracking-widest uppercase font-medium text-arch-dark">
+                <a href="#projects" class="hover:text-arch-accent transition-colors">Projekte</a>
+                <a href="#comparison" class="hover:text-arch-accent transition-colors">Transformation</a>
+                <a href="#specs" class="hover:text-arch-accent transition-colors">Spezifikationen</a>
+                <a href="#about" class="hover:text-arch-accent transition-colors">Haltung</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-sm bg-arch-dark text-white hover:bg-arch-accent transition-all duration-300">Anfrage</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-arch-dark focus:outline-none" aria-label="Menü öffnen" onclick="toggleMobileMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden bg-arch-bg border-b border-arch-border px-6 py-6 space-y-4 text-center text-xs uppercase tracking-widest">
+            <a href="#projects" class="block text-arch-dark hover:text-arch-accent" onclick="toggleMobileMenu()">Projekte</a>
+            <a href="#comparison" class="block text-arch-dark hover:text-arch-accent" onclick="toggleMobileMenu()">Transformation</a>
+            <a href="#specs" class="block text-arch-dark hover:text-arch-accent" onclick="toggleMobileMenu()">Spezifikationen</a>
+            <a href="#about" class="block text-arch-dark hover:text-arch-accent" onclick="toggleMobileMenu()">Haltung</a>
+            <a href="#contact" class="block text-arch-accent font-semibold pt-2" onclick="toggleMobileMenu()">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center justify-center relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Hero Image Showcase (An erste Stelle auf Mobilgeräten gesetzt via order-first lg:order-last) -->
+                <div class="lg:col-span-5 relative reveal active order-first lg:order-last">
+                    <div class="relative z-10 rounded bg-arch-sand p-3 shadow-lg border border-arch-border">
+                        <div class="img-hover-zoom h-[320px] sm:h-[480px] rounded overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
+                                 alt="Skandinavische Moderne Villa"
+                                 class="w-full h-full object-cover"
+                                 onerror="this.src='https://placehold.co/800x1000/ece8e1/1a1a1a?text=Architecture+Design'">
+                        </div>
+                    </div>
+                    <!-- Blueprint line decoration -->
+                    <div class="absolute -bottom-6 -left-6 w-full h-full border border-arch-accent/40 -z-10 hidden sm:block"></div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-8 reveal active order-last lg:order-first">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-arch-border bg-arch-sand/50 text-xs tracking-widest text-arch-dark uppercase">
+                        <span class="w-1.5 h-1.5 rounded-full bg-arch-accent"></span>
+                        Architektur & Real Estate
+                    </div>
+
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-normal text-arch-dark leading-[1.08] tracking-tight">
+                        Zeitlose Form.<br>
+                        <span class="italic text-arch-accent">Lichtdurchflutete Räume.</span>
+                    </h1>
+
+                    <p class="text-arch-muted max-w-xl text-base md:text-lg font-light leading-relaxed">
+                        Präzise gestellter Sichtbeton, natürliches Holz und fließende Übergänge. Wir kreieren Architektur und Immobilienkonzepte mit Fokus auf Klarheit und Langlebigkeit.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#projects" class="px-8 py-4 bg-arch-dark text-white text-xs font-medium uppercase tracking-widest hover:bg-arch-accent transition-all duration-300 text-center w-full sm:w-auto">
+                            Portfolio Ansehen
+                        </a>
+                        <a href="#contact" class="px-8 py-4 border border-arch-dark text-arch-dark text-xs font-medium uppercase tracking-widest hover:bg-arch-sand transition-all duration-300 text-center w-full sm:w-auto">
+                            Beratungsgespräch
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Filterable Portfolio Section -->
+    <section id="projects" class="py-24 border-t border-arch-border bg-arch-card">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 reveal">
+                <div>
+                    <span class="text-arch-accent text-xs tracking-widest uppercase font-medium">Ausgewählte Arbeiten</span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-normal text-arch-dark mt-2">Projektübersicht</h2>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-2 text-xs font-medium uppercase tracking-wider" id="filter-buttons">
+                    <button class="filter-btn active px-4 py-2 rounded-sm border border-arch-dark bg-arch-dark text-white transition-all" data-filter="all">Alle</button>
+                    <button class="filter-btn px-4 py-2 rounded-sm border border-arch-border bg-arch-bg text-arch-dark hover:border-arch-dark transition-all" data-filter="residential">Wohnbau</button>
+                    <button class="filter-btn px-4 py-2 rounded-sm border border-arch-border bg-arch-bg text-arch-dark hover:border-arch-dark transition-all" data-filter="commercial">Gewerbe</button>
+                    <button class="filter-btn px-4 py-2 rounded-sm border border-arch-border bg-arch-bg text-arch-dark hover:border-arch-dark transition-all" data-filter="interior">Interior</button>
+                    <button class="filter-btn px-4 py-2 rounded-sm border border-arch-border bg-arch-bg text-arch-dark hover:border-arch-dark transition-all" data-filter="urban">Städtebau</button>
+                </div>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+
+                <!-- Card 1 -->
+                <div class="project-card group cursor-pointer reveal" data-category="residential">
+                    <div class="img-hover-zoom bg-arch-sand h-80 rounded border border-arch-border relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop"
+                             alt="Haus Am See" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-arch-bg/90 backdrop-blur px-3 py-1 text-[10px] uppercase tracking-widest text-arch-dark border border-arch-border">
+                            Wohnbau
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs text-arch-accent font-mono">Zürich • 2025</span>
+                        <h3 class="text-xl font-serif text-arch-dark group-hover:text-arch-accent transition-colors">Residence Nord light</h3>
+                        <p class="text-arch-muted text-xs line-clamp-2">Offener Pavillonbau mit Holzlamellen und verdeckter Statik.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-card group cursor-pointer reveal" data-category="commercial">
+                    <div class="img-hover-zoom bg-arch-sand h-80 rounded border border-arch-border relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"
+                             alt="Gewerbekomplex" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-arch-bg/90 backdrop-blur px-3 py-1 text-[10px] uppercase tracking-widest text-arch-dark border border-arch-border">
+                            Gewerbe
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs text-arch-accent font-mono">Hamburg • 2024</span>
+                        <h3 class="text-xl font-serif text-arch-dark group-hover:text-arch-accent transition-colors">Atrium Forum</h3>
+                        <p class="text-arch-muted text-xs line-clamp-2">Lichtdurchfluteter Bürokomplex mit klimaneutraler Glasfassade.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card group cursor-pointer reveal" data-category="interior">
+                    <div class="img-hover-zoom bg-arch-sand h-80 rounded border border-arch-border relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop"
+                             alt="Interior Penthouse" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-arch-bg/90 backdrop-blur px-3 py-1 text-[10px] uppercase tracking-widest text-arch-dark border border-arch-border">
+                            Interior
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs text-arch-accent font-mono">Kopenhagen • 2025</span>
+                        <h3 class="text-xl font-serif text-arch-dark group-hover:text-arch-accent transition-colors">Minimalist Penthouse</h3>
+                        <p class="text-arch-muted text-xs line-clamp-2">Warmes Greige, Leinenstoffe und maßeingepasster Naturstein.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="project-card group cursor-pointer reveal" data-category="urban">
+                    <div class="img-hover-zoom bg-arch-sand h-80 rounded border border-arch-border relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1000&auto=format&fit=crop"
+                             alt="Urbanes Quartier" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-arch-bg/90 backdrop-blur px-3 py-1 text-[10px] uppercase tracking-widest text-arch-dark border border-arch-border">
+                            Städtebau
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs text-arch-accent font-mono">Berlin • 2026</span>
+                        <h3 class="text-xl font-serif text-arch-dark group-hover:text-arch-accent transition-colors">Quartier Grünfeld</h3>
+                        <p class="text-arch-muted text-xs line-clamp-2">Nachhaltige Nachverdichtung mit gemeinschaftlichen Dachgärten.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="project-card group cursor-pointer reveal" data-category="residential">
+                    <div class="img-hover-zoom bg-arch-sand h-80 rounded border border-arch-border relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1000&auto=format&fit=crop"
+                             alt="Atrium Haus" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-arch-bg/90 backdrop-blur px-3 py-1 text-[10px] uppercase tracking-widest text-arch-dark border border-arch-border">
+                            Wohnbau
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs text-arch-accent font-mono">Wien • 2024</span>
+                        <h3 class="text-xl font-serif text-arch-dark group-hover:text-arch-accent transition-colors">Haus Eichengrund</h3>
+                        <p class="text-arch-muted text-xs line-clamp-2">Fokussiert auf natürliches Tageslicht und geschützte Privatbereiche.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="project-card group cursor-pointer reveal" data-category="interior">
+                    <div class="img-hover-zoom bg-arch-sand h-80 rounded border border-arch-border relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1000&auto=format&fit=crop"
+                             alt="Studio Interior" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-arch-bg/90 backdrop-blur px-3 py-1 text-[10px] uppercase tracking-widest text-arch-dark border border-arch-border">
+                            Interior
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs text-arch-accent font-mono">München • 2025</span>
+                        <h3 class="text-xl font-serif text-arch-dark group-hover:text-arch-accent transition-colors">Atelier & Workspace</h3>
+                        <p class="text-arch-muted text-xs line-clamp-2">Akustikpaneele und integrierte Lichtkonzepte für produktives Arbeiten.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Transformation Comparison -->
+    <section id="comparison" class="py-24 border-t border-arch-border relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="max-w-2xl mb-16 reveal">
+                <span class="text-arch-accent text-xs tracking-widest uppercase font-medium">Sanierung & Re-Design</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-arch-dark mt-2">Vorher vs. Nachher</h2>
+                <p class="text-arch-muted text-sm mt-3 leading-relaxed">Ziehen Sie den Schieberegler, um das Potenzial unserer Altbau-Sanierung und Modernisierung interaktiv zu erleben.</p>
+            </div>
+
+            <div class="max-w-5xl mx-auto relative h-[360px] sm:h-[500px] rounded overflow-hidden select-none border border-arch-border shadow-md reveal" id="comparison-slider">
+
+                <!-- Background Image (Finished Renovation) -->
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1400&auto=format&fit=crop"
+                     alt="Fertiggestellte Architektur"
+                     class="absolute top-0 left-0 w-full h-full object-cover pointer-events-none">
+                <div class="absolute top-4 right-4 bg-arch-dark/90 text-white backdrop-blur px-3 py-1 text-[10px] uppercase tracking-widest border border-white/20 z-10">
+                    Nachher (Modernisiert)
+                </div>
+
+                <!-- Overlay Image (Original Building) -->
+                <div class="absolute top-0 left-0 h-full w-1/2 overflow-hidden z-20" id="comparison-overlay">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1400&auto=format&fit=crop"
+                         alt="Urspruengliches Gebäude"
+                         class="absolute top-0 left-0 max-w-none h-full object-cover pointer-events-none" id="comparison-bg-img">
+                    <div class="absolute top-4 left-4 bg-arch-sand text-arch-dark px-3 py-1 text-[10px] uppercase tracking-widest border border-arch-border z-10 font-semibold">
+                        Vorher (Bestand)
+                    </div>
+                </div>
+
+                <!-- Divider Slider Line -->
+                <div class="absolute top-0 bottom-0 w-0.5 bg-arch-dark z-30 cursor-ew-resize left-1/2 -translate-x-1/2 flex items-center justify-center" id="slider-handle">
+                    <div class="w-9 h-9 rounded-full bg-arch-dark text-white flex items-center justify-center slider-shadow text-xs font-mono">
+                        &#10094;&#10095;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor Plans & Specs Interactive Tab Section -->
+    <section id="specs" class="py-24 border-t border-arch-border bg-arch-card">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <span class="text-arch-accent text-xs tracking-widest uppercase font-medium">Präzisionsplanung</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-arch-dark mt-2">Grundriss & Kennzahlen</h2>
+                <p class="text-arch-muted text-sm mt-3">Einblick in typische Raumaufteilungen und strukturelle Spezifikationen.</p>
+            </div>
+
+            <div class="bg-arch-bg border border-arch-border rounded p-6 lg:p-10 reveal">
+                <!-- Spec Tabs Header -->
+                <div class="flex flex-wrap border-b border-arch-border gap-6 mb-8 text-xs font-medium uppercase tracking-widest">
+                    <button onclick="switchTab('tab-1')" class="spec-tab active border-b-2 border-arch-dark pb-3 text-arch-dark" id="btn-tab-1">Erdgeschoss (EG)</button>
+                    <button onclick="switchTab('tab-2')" class="spec-tab border-b-2 border-transparent pb-3 text-arch-muted hover:text-arch-dark" id="btn-tab-2">Obergeschoss (OG)</button>
+                    <button onclick="switchTab('tab-3')" class="spec-tab border-b-2 border-transparent pb-3 text-arch-muted hover:text-arch-dark" id="btn-tab-3">Energie & Technik</button>
+                </div>
+
+                <!-- Tab Content 1 -->
+                <div id="tab-1" class="tab-content grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 bg-white p-4 border border-arch-border rounded">
+                        <svg viewBox="0 0 600 400" class="w-full h-auto text-arch-dark stroke-current fill-none" stroke-width="1.5">
+                            <rect x="20" y="20" width="560" height="360" stroke-width="2" />
+                            <line x1="200" y1="20" x2="200" y2="380" />
+                            <line x1="200" y1="180" x2="580" y2="180" />
+                            <line x1="380" y1="180" x2="380" y2="380" />
+                            <text x="100" y="200" text-anchor="middle" class="text-xs font-sans fill-current stroke-none">Wohnen & Essen (65 m²)</text>
+                            <text x="290" y="100" text-anchor="middle" class="text-xs font-sans fill-current stroke-none">Küche (24 m²)</text>
+                            <text x="480" y="100" text-anchor="middle" class="text-xs font-sans fill-current stroke-none">Terrasse (35 m²)</text>
+                            <text x="290" y="290" text-anchor="middle" class="text-xs font-sans fill-current stroke-none">Entrée / Garderobe</text>
+                            <text x="480" y="290" text-anchor="middle" class="text-xs font-sans fill-current stroke-none">Gäste-WC & HWR</text>
+                        </svg>
+                    </div>
+                    <div class="lg:col-span-5 space-y-4">
+                        <h3 class="text-2xl font-serif text-arch-dark">EG — Offenes Wohnkonzept</h3>
+                        <p class="text-arch-muted text-sm leading-relaxed">
+                            Maximaler Raumfluss durch schwellenlose Übergänge. Die bodentiefe Verglasung verbindet den Innenbereich direkt mit dem Gartengrundstück.
+                        </p>
+                        <div class="border-t border-arch-border pt-4 space-y-2 text-xs font-mono">
+                            <div class="flex justify-between"><span class="text-arch-muted">Wohnfläche EG:</span> <span>142 m²</span></div>
+                            <div class="flex justify-between"><span class="text-arch-muted">Raumhöhe:</span> <span>3,10 m</span></div>
+                            <div class="flex justify-between"><span class="text-arch-muted">Verglasung:</span> <span>Dreifach-Sonnenschutzglas</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content 2 -->
+                <div id="tab-2" class="tab-content hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 bg-white p-4 border border-arch-border rounded">
+                        <svg viewBox="0 0 600 400" class="w-full h-auto text-arch-dark stroke-current fill-none" stroke-width="1.5">
+                            <rect x="20" y="20" width="560" height="360" stroke-width="2" />
+                            <line x1="300" y1="20" x2="300" y2="380" />
+                            <line x1="300" y1="200" x2="580" y2="200" />
+                            <text x="160" y="200" text-anchor="middle" class="text-xs font-sans fill-current stroke-none">Master Bedroom & Bad (42 m²)</text>
+                            <text x="440" y="110" text-anchor="middle" class="text-xs font-sans fill-current stroke-none">Zimmer 1 (22 m²)</text>
+                            <text x="440" y="300" text-anchor="middle" class="text-xs font-sans fill-current stroke-none">Zimmer 2 (22 m²)</text>
+                        </svg>
+                    </div>
+                    <div class="lg:col-span-5 space-y-4">
+                        <h3 class="text-2xl font-serif text-arch-dark">OG — Rückzug & Privatsphäre</h3>
+                        <p class="text-arch-muted text-sm leading-relaxed">
+                            Das Obergeschoss bietet Platz für Master-Suites und individuelle Arbeitsbereiche mit natürlichem Tageslicht.
+                        </p>
+                        <div class="border-t border-arch-border pt-4 space-y-2 text-xs font-mono">
+                            <div class="flex justify-between"><span class="text-arch-muted">Nutzfläche OG:</span> <span>118 m²</span></div>
+                            <div class="flex justify-between"><span class="text-arch-muted">Bäder:</span> <span>2 En-Suite Bäder</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content 3 -->
+                <div id="tab-3" class="tab-content hidden space-y-6">
+                    <h3 class="text-2xl font-serif text-arch-dark">Nachhaltigkeits- & Gebäudetechnik</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+                        <div class="bg-white p-5 border border-arch-border rounded">
+                            <span class="text-arch-accent font-bold uppercase tracking-widest block mb-2">Geothermie</span>
+                            <p class="text-arch-muted">Wärmepumpensystem mit Tiefenbohrung für heizkostenfreie Fußbodenkühlung im Sommer.</p>
+                        </div>
+                        <div class="bg-white p-5 border border-arch-border rounded">
+                            <span class="text-arch-accent font-bold uppercase tracking-widest block mb-2">Solar-Integration</span>
+                            <p class="text-arch-muted">In-Dach Photovoltaik-Module mit dezentralem Batteriespeicher.</p>
+                        </div>
+                        <div class="bg-white p-5 border border-arch-border rounded">
+                            <span class="text-arch-accent font-bold uppercase tracking-widest block mb-2">Smart Automation</span>
+                            <p class="text-arch-muted">KNX-Gebäudesteuerung für Beschattung, Belüftung und Zirkulation.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy & Brand Identity Section -->
+    <section id="about" class="py-24 border-t border-arch-border">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-6 reveal">
+                    <span class="text-arch-accent text-xs tracking-widest uppercase font-medium">Unsere Philosophie</span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-normal text-arch-dark mt-2 mb-6 leading-tight">
+                        Ehrliche Materialien, durchdachtes Licht.
+                    </h2>
+                    <p class="text-arch-muted leading-relaxed mb-6 font-light">
+                        Wir verzichten bewusst auf kurzlebige Trends. Bei <span class="text-arch-dark font-medium">ibvian</span> fokussieren wir uns auf Proportionen, Materialehrlichkeit und die Harmonie mit dem bestehenden Standort.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-arch-border text-arch-dark">
+                        <div>
+                            <span class="text-3xl font-serif">15+</span>
+                            <p class="text-xs text-arch-muted uppercase tracking-wider mt-1">Jahre Erfahrung</p>
+                        </div>
+                        <div>
+                            <span class="text-3xl font-serif">100%</span>
+                            <p class="text-xs text-arch-muted uppercase tracking-wider mt-1">Maßanfertigung</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 reveal">
+                    <div class="bg-arch-sand p-4 border border-arch-border rounded">
+                        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1000&auto=format&fit=crop"
+                             alt="Architektur Detail"
+                             class="w-full h-96 object-cover rounded">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-24 border-t border-arch-border bg-arch-card">
+        <div class="max-w-4xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-12 reveal">
+                <span class="text-arch-accent text-xs tracking-widest uppercase font-medium">Kontakt</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-arch-dark mt-2">Ihr Projekt Besprechen</h2>
+                <p class="text-arch-muted text-sm mt-2">Wir freuen uns darauf, Ihre Visionen kennenzulernen.</p>
+            </div>
+
+            <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6 bg-arch-bg p-8 md:p-12 border border-arch-border rounded shadow-sm reveal">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-arch-muted mb-2">Name *</label>
+                        <input type="text" required placeholder="Maximilian Muster"
+                               class="w-full bg-white border border-arch-border rounded px-4 py-3 text-arch-dark text-sm focus:outline-none focus:border-arch-dark transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-arch-muted mb-2">E-Mail *</label>
+                        <input type="email" required placeholder="m.muster@beispiel.de"
+                               class="w-full bg-white border border-arch-border rounded px-4 py-3 text-arch-dark text-sm focus:outline-none focus:border-arch-dark transition-colors">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-arch-muted mb-2">Projekttyp</label>
+                        <select class="w-full bg-white border border-arch-border rounded px-4 py-3 text-arch-dark text-sm focus:outline-none focus:border-arch-dark transition-colors">
+                            <option value="neubau">Neubau Wohnimmobilie</option>
+                            <option value="sanierung">Sanierung / Umbau</option>
+                            <option value="gewerbe">Gewerbeobjekt</option>
+                            <option value="interior">Interior Design</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-arch-muted mb-2">Geplanter Start</label>
+                        <input type="text" placeholder="z.B. Q3 2026"
+                               class="w-full bg-white border border-arch-border rounded px-4 py-3 text-arch-dark text-sm focus:outline-none focus:border-arch-dark transition-colors">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-arch-muted mb-2">Nachricht</label>
+                    <textarea rows="4" placeholder="Beschreiben Sie kurz Ihr Vorhaben, den Standort und Ihre Vorstellungen..."
+                              class="w-full bg-white border border-arch-border rounded px-4 py-3 text-arch-dark text-sm focus:outline-none focus:border-arch-dark transition-colors"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-4 bg-arch-dark text-white text-xs uppercase tracking-widest font-medium hover:bg-arch-accent transition-all duration-300">
+                    Anfrage Absenden
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-arch-dark text-white py-16 border-t border-arch-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-sm border border-white/40 flex items-center justify-center font-serif text-lg font-semibold text-white">i</span>
+                <span class="text-lg font-medium tracking-wider uppercase font-sans">ibvian</span>
+            </div>
+
+            <p class="text-xs text-arch-accent">
+                &copy; 2026 ibvian Architektur & Design. Alle Rechte vorbehalten.
+            </p>
+
+            <div class="flex gap-6 text-xs text-white/70">
+                <a href="#" class="hover:text-white transition-colors">Impressum</a>
+                <a href="#" class="hover:text-white transition-colors">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interaktivität -->
+    <script>
+        // Mobile Navigation Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Tab Switcher
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.spec-tab').forEach(el => {
+                el.classList.remove('border-arch-dark', 'text-arch-dark');
+                el.classList.add('border-transparent', 'text-arch-muted');
+            });
+
+            document.getElementById(tabId).classList.remove('hidden');
+            const btn = document.getElementById('btn-' + tabId);
+            btn.classList.add('border-arch-dark', 'text-arch-dark');
+            btn.classList.remove('border-transparent', 'text-arch-muted');
+        }
+
+        // Portfolio Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-arch-dark', 'text-white', 'border-arch-dark');
+                    b.classList.add('bg-arch-bg', 'text-arch-dark', 'border-arch-border');
+                });
+                btn.classList.add('bg-arch-dark', 'text-white', 'border-arch-dark');
+                btn.classList.remove('bg-arch-bg', 'border-arch-border');
+
+                const filter = btn.getAttribute('data-filter');
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Comparison Slider Logic
+        const slider = document.getElementById('comparison-slider');
+        const overlay = document.getElementById('comparison-overlay');
+        const handle = document.getElementById('slider-handle');
+        const bgImg = document.getElementById('comparison-bg-img');
+
+        function updateSliderWidth() {
+            if (slider && bgImg) {
+                bgImg.style.width = slider.offsetWidth + 'px';
+            }
+        }
+        window.addEventListener('resize', updateSliderWidth);
+        updateSliderWidth();
+
+        let isDragging = false;
+
+        if (slider) {
+            const moveSlider = (x) => {
+                const rect = slider.getBoundingClientRect();
+                let position = x - rect.left;
+                if (position < 0) position = 0;
+                if (position > rect.width) position = rect.width;
+                const percentage = (position / rect.width) * 100;
+                overlay.style.width = `${percentage}%`;
+                handle.style.left = `${percentage}%`;
+            };
+
+            slider.addEventListener('mousedown', () => isDragging = true);
+            window.addEventListener('mouseup', () => isDragging = false);
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                moveSlider(e.clientX);
+            });
+
+            slider.addEventListener('touchstart', () => isDragging = true);
+            window.addEventListener('touchend', () => isDragging = false);
+            window.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                moveSlider(e.touches[0].clientX);
+            });
+        }
+
+        // Scroll Reveal Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Form Submit Handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert('Vielen Dank für Ihre Anfrage. Wir werden uns in Kürze mit Ihnen in Verbindung setzen.');
+        }
+    </script>
+</body>
+</html>

@@ -9,7 +9,7 @@ function setLanguage(lang) { /* ... dein Sprach Code ... */ }
 
 // --- EINER FÜR ALLES: DOMContentLoaded ---
 document.addEventListener('DOMContentLoaded', function() {
-    
+
     // 1. BURGER MENU
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNav = document.querySelector('.main-nav');
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 2. THEME TOGGLE
     initThemeToggle();
-    
+
     // 3. SPRACH-BUTTON LOGIK
     const langBtn = document.getElementById('lang-switch');
     if (langBtn) {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('lang', currentLang);
             translateAll();
         });
-        
+
         // Initialen Button-Status setzen
         langBtn.textContent = (currentLang === 'de') ? 'EN' : 'DE';
     }
@@ -54,29 +54,29 @@ if (document.readyState === "loading") {
 
 function initThemeToggle() {
     var themeBtn = document.getElementById("themeToggle");
-    
+
     if (!themeBtn) {
         console.error('❌ ERROR: Theme-Button (id="themeToggle") nicht gefunden!');
         console.error('❌ Prüfe dein HTML: Muss haben <button id="themeToggle" class="theme-btn">');
         return;
     }
-    
+
     console.log('Teme-Button gefunden:', themeBtn);
-    
+
     var currentTheme = localStorage.getItem("theme");
     console.log('Gespeicherter Theme:', currentTheme);
-    
+
     if (currentTheme === "dark") {
         document.body.classList.add("dark-mode");
         themeBtn.textContent = "Hellmodus";
         console.log('Dunkelmodus aktiv (aus localStorage)');
     }
-    
+
     themeBtn.onclick = function() {
         console.log('Button geklickt!');
-        
+
         var isDark = document.body.classList.toggle("dark-mode");
-        
+
         if (isDark) {
             localStorage.setItem("theme", "dark");
             themeBtn.textContent = "Hellmodus";
@@ -86,10 +86,10 @@ function initThemeToggle() {
             themeBtn.textContent = "Dunkelmodus";
             console.log('Hellmodus AKTIV');
         }
-        
+
         console.log('body.classList:', document.body.classList.contains("dark-mode"));
     };
-    
+
     console.log('Dark-Mode Toggle initialisiert erfolgreich!');
 }
 
@@ -385,7 +385,7 @@ function translateAll() {
     document.querySelectorAll("input[data-i18n-placeholder]").forEach(el => {
         const key = el.getAttribute("data-i18n-placeholder");
         if (langData[key]) {
-            el.placeholder = langData[key]; 
+            el.placeholder = langData[key];
         }
     });
 
