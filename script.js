@@ -1086,6 +1086,118 @@ const translations = {
 
   immohinweis: "Note",
   immohinweis1: "This project is an independently developed website concept and not a real client website.",
+
+        footer_contact: "Contact",
+        contact_hero_h1: "Let's start your project",
+        contact_hero_lead: "Send me a message or book a free, no-obligation introductory call.",
+        contact_info_h2: "Contact",
+        back: "Back",
+        header_nav0: "Open menu",
+        menu_open: "Open menu",
+        portfolio_titel: "Selected Projects",
+        portfolio_lead: "Every website is individually tailored to the company, its target audience and its specific goals.",
+        portfolio_project_1_alt: "Isabell Bader Baroque Riding Website",
+        portfolio_project_1_title: "Isabell Bader - Baroque Riding",
+        portfolio_project_2_alt: "Rebell Pilates Website",
+        portfolio_project_2_title: "Rebell Pilates",
+        portfolio_project_3_alt: "Equily Web Portal",
+        portfolio_project_3_title: "Equily - Custom Web Portal",
+        portfolio_project_4_alt: "Watch Manufacture Website",
+        portfolio_project_4_title: "Aurelius & Sons - Mechanical Watch Manufacture",
+        portfolio_project_5_alt: "Real Estate Agency Website",
+        portfolio_project_5_title: "Real Estate Agency - Individual Property Consulting",
+        portfolio_view_project: "-> View project",
+        portfolio_coming_soon: "Coming Soon",
+        portfolio_more_projects: "More projects coming soon",
+
+        legal_datenschutz: "Privacy Policy",
+        legal_datenschutz_text1: "Unless stated otherwise below, providing your personal data is neither legally nor contractually required, nor necessary to enter into a contract. You are not obliged to provide the data. Failure to provide it will have no consequences unless otherwise stated for a specific processing activity.",
+        legal_datenschutz_text2: "Personal data means any information relating to an identified or identifiable natural person.",
+        legal_server_logfiles: "Server log files",
+        legal_server_logfiles_text1: "You can visit our websites without providing any personal information.",
+        legal_server_logfiles_text2: "Whenever you access our website, usage data is transmitted by your internet browser to us or our web host and stored in log files, known as server log files.",
+        legal_server_logfiles_text3: "The stored data includes the name of the page accessed, the date and time of access, the IP address, the amount of data transferred and the requesting provider.",
+        legal_server_logfiles_text4: "Processing is based on Art. 6 (1) (f) GDPR and our legitimate interest in ensuring the trouble-free operation of our website and improving our services.",
+        legal_contact: "Contact",
+        legal_responsible: "Controller",
+        legal_responsible_text: "Please contact us if you wish. The controller responsible for data processing is:",
+        legal_initiative: "Customer-initiated contact by email",
+        legal_initiative_text: "If you contact us by email on your own initiative, we collect your personal data, such as your name, email address and message, only to the extent you provide it. The data is processed to handle and respond to your inquiry.",
+        legal_initiative_text2: "If the contact concerns pre-contractual measures, such as advice regarding a purchase or preparing an offer, or concerns an existing contract between you and us, processing is based on Art. 6 (1) (b) GDPR.",
+        legal_initiative_text3: "If you contact us for other reasons, processing is based on Art. 6 (1) (f) GDPR and our legitimate interest in handling and responding to your inquiry.",
+        legal_initiative_text4: "We use your email address only to process your inquiry. Your data is then deleted in accordance with statutory retention periods unless you have consented to further processing and use.",
+        legal_contact_form: "Collection and processing when using the contact form",
+        legal_contact_form_text: "When you use the contact form, we collect your personal data, such as your name, email address and message, only to the extent you provide it. The data is processed for the purpose of contacting you.",
+        legal_contact_form_text2: "If the contact concerns pre-contractual measures, such as advice regarding a purchase or preparing an offer, or concerns an existing contract between you and us, processing is based on Art. 6 (1) (b) GDPR.",
+        legal_contact_form_text3: "If you contact us for other reasons, processing is based on Art. 6 (1) (f) GDPR and our legitimate interest in handling and responding to your inquiry.",
+        legal_contact_form_text4: "We use your email address only to process your inquiry. Your data is then deleted in accordance with statutory retention periods unless you have consented to further processing and use.",
+        legal_revocation: "Collection and processing when using the withdrawal button",
+        legal_revocation_text1: "If you have concluded a contract through our online presence, we provide a withdrawal function that allows you to submit your withdrawal declaration directly.",
+        legal_revocation_text2: "When using the withdrawal function, we collect your personal data, including your name, email address, contract identification details and the date and time of submission, only to the extent you provide it.",
+        legal_revocation_text3: "The data is processed to provide the legally required option to withdraw from your contract and to process your withdrawal properly.",
+        legal_revocation_text4: "If the contact concerns an existing contract between you and us, processing is based on Art. 6 (1) (b) GDPR.",
+        legal_revocation_text5: "Otherwise, processing is based on Art. 6 (1) (c) GDPR to fulfil our legal obligation to provide a withdrawal function on our online presence.",
+        legal_revocation_text6: "We use your email address only to process your withdrawal declaration. Your data is then deleted in accordance with statutory retention periods unless you have consented to further processing and use.",
+        legal_revocation_text7: "Processing your personal data serves to fulfil the statutory requirements for a legally compliant withdrawal function and is based on Art. 6 (1) (c) GDPR.",
+        legal_revocation_text8: "This processing is also based on Art. 6 (1) (f) GDPR and our legitimate interest in providing a user-friendly withdrawal option.",
+        legal_termination: "Collection and processing when using the cancellation button",
+        legal_termination_text1: "If you cancel a subscription concluded through our online presence using the legally required cancellation button, we process the data you enter in the confirmation form.",
+        legal_termination_text2: "When using the cancellation button, we collect your personal data, including your name, email address, telephone number if provided, contract identification details and the date and time of submission, only to the extent you provide it.",
+        legal_termination_text3: "The data is processed to provide the legally required option to cancel your continuing obligation contract and to process your cancellation properly.",
+        legal_termination_text4: "If the contact concerns an existing contract between you and us, processing is based on Art. 6 (1) (b) GDPR.",
+        legal_termination_text5: "Otherwise, processing is based on Art. 6 (1) (c) GDPR because we are legally required to provide a cancellation button on our online presence.",
+        legal_termination_text6: "We use your email address only to process your cancellation declaration. Your data is then deleted in accordance with statutory retention periods unless you have consented to further processing and use.",
+        legal_images: "Collection and processing when images are sent by email",
+        legal_images_text1: "You may send us images by email in connection with ordering a personalised product.",
+        legal_images_text2: "When you send us images, we may collect personal data, such as images of identifiable persons, only to the extent you provide it.",
+        legal_images_text3: "The data is processed to create personalised products. The image sent is used as a template for the product, such as a printed T-shirt.",
+        legal_images_text4: "Processing is based on Art. 6 (1) (b) GDPR and is necessary to fulfil a contract with you.",
+        legal_images_text5: "Your data is not shared with third parties.",
+        legal_images_text6: "We use the image you send only to provide the agreed service. Your data is then deleted in accordance with statutory retention periods unless you have consented to further processing and use.",
+        legal_whatsapp_text1: "If you contact us via WhatsApp, we use WhatsApp Business provided by WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland.",
+        legal_whatsapp_text2: "If you are located outside the European Economic Area, this service is provided by WhatsApp Inc., 1601 Willow Road, Menlo Park, CA 94025, USA.",
+        legal_whatsapp_text3: "The data is processed to handle and respond to your inquiry.",
+        legal_whatsapp_text4: "For this purpose, we process your mobile phone number stored with WhatsApp, your name if provided and any other data you provide.",
+        legal_whatsapp_continuation: "WhatsApp Business (continued)",
+        legal_whatsapp_continuation_text1: "We use a mobile device whose address book contains only data of users who have contacted us via WhatsApp. We therefore do not disclose personal data to WhatsApp without your prior consent to WhatsApp.",
+        legal_whatsapp_continuation_text2: "WhatsApp transfers your data to servers operated by Meta Platforms Inc. in the USA. The EU Commission has recognised the Trans-Atlantic Data Privacy Framework as an adequacy decision for the USA.",
+        legal_whatsapp_continuation_text3: "Meta Platforms Inc. is certified under the Trans-Atlantic Data Privacy Framework and has therefore committed to comply with European data protection principles.",
+        legal_whatsapp_continuation_text4: "If the contact concerns pre-contractual measures or an existing contract between you and us, processing is based on Art. 6 (1) (b) GDPR.",
+        legal_whatsapp_continuation_text5: "If you contact us for other reasons, processing is based on Art. 6 (1) (f) GDPR and our legitimate interest in providing a fast and simple means of contact and responding to your inquiry.",
+        legal_whatsapp_continuation_text6: "We use your personal data only to process your inquiry. Your data is then deleted in accordance with statutory retention periods unless you have consented to further processing and use.",
+        legal_whatsapp_continuation_text7: "Further information about WhatsApp's terms of use and privacy policy is available at:",
+            legal_orders: "Orders",
+            legal_orders_processing: "Collection, processing and disclosure of personal data when placing orders",
+            legal_orders_processing_text1: "When you place an order, we collect and process your personal data only to the extent necessary to fulfil and process your order and handle your inquiries.",
+            legal_orders_processing_text2: "Providing the data is necessary to conclude the contract. If the data is not provided, no contract can be concluded.",
+            legal_orders_processing_text3: "Processing is based on Art. 6 (1) (b) GDPR and is necessary to fulfil a contract with you.",
+            legal_orders_processing_text4: "Your data may be disclosed to shipping companies, dropshipping or fulfilment providers, payment service providers, order processing providers and IT service providers.",
+            legal_orders_processing_text5: "In all cases, we strictly observe the statutory requirements. The scope of data transferred is limited to the minimum necessary.",
+            legal_payment_service_providers: "Payment service providers",
+            legal_payment_service_providers_paypal: "Use of PayPal Checkout",
+            legal_payment_service_providers_paypal_text1: "We use the PayPal Checkout payment service provided by PayPal (Europe) S.à.r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg, on our website.",
+            legal_payment_service_providers_paypal_text2: "The data is processed to offer you payment through this payment service.",
+            legal_payment_service_providers_paypal_text3: "When you select and use payment via PayPal, credit card via PayPal, direct debit via PayPal or Pay Later via PayPal, the data required for payment processing is transmitted to PayPal to fulfil the contract using your selected payment method.",
+            legal_payment_service_providers_paypal_text4: "This processing is based on Art. 6 (1) (b) GDPR.",
+            legal_payment_service_providers_paypal_text5: "Cookies may be stored to recognise your browser. This processing is based on Art. 6 (1) (f) GDPR and our legitimate interest in offering customers a choice of payment methods.",
+            legal_payment_service_providers_betroffenenrechte: "Data subject rights and storage period",
+            legal_payment_service_providers_dauer: "Storage period",
+            legal_payment_service_providers_dauer_text1: "After the contract has been fully completed, the data is initially stored for the duration of the statutory warranty period. It is then stored in accordance with statutory retention periods, particularly those under tax and commercial law, and deleted after those periods have expired unless you have consented to further processing and use.",
+            legal_payment_service_providers_rights: "Rights of the data subject",
+            legal_payment_service_providers_rights_text: "Where the statutory requirements are met, you have the following rights under Articles 15 to 20 GDPR:",
+            legal_payment_service_providers_rights_auskunft: "Right of access",
+            legal_payment_service_providers_rights_berichtigung: "Right to rectification",
+            legal_payment_service_providers_rights_loeschung: "Right to erasure",
+            legal_payment_service_providers_rights_einschraenkung: "Right to restriction of processing",
+            legal_payment_service_providers_rights_datenuebertragbarkeit: "Right to data portability",
+            legal_payment_service_providers_rights_text2: "Under Art. 21 (1) GDPR, you also have the right to object to processing based on Art. 6 (1) (f) GDPR and to processing for direct marketing purposes.",
+            legal_complaints: "Right to lodge a complaint with a supervisory authority",
+            legal_complaints_text: "Under Art. 77 GDPR, you have the right to lodge a complaint with a supervisory authority if you believe that the processing of your personal data is unlawful.",
+            legal_complaints_text2: "You may lodge a complaint with the supervisory authority responsible for us:",
+            legal_withdrawal: "Right to object",
+            legal_withdrawal_text1: "If the personal data processing described here is based on our legitimate interest under Art. 6 (1) (f) GDPR, you have the right to object to this processing at any time with effect for the future for reasons arising from your particular situation.",
+            legal_withdrawal_text2: "After you object, processing of the affected data will cease unless we can demonstrate compelling legitimate grounds for processing that override your interests, rights and freedoms, or the processing serves to establish, exercise or defend legal claims.",
+            next: "Next",
     }
 };
 
@@ -1103,6 +1215,21 @@ function applyLanguage(language) {
         if (translations[newLang][key]) {
             element.innerHTML = translations[newLang][key];
         }
+    });
+
+    document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+        const key = element.getAttribute('data-i18n-alt');
+        if (translations[newLang][key]) element.setAttribute('alt', translations[newLang][key]);
+    });
+
+    document.querySelectorAll('[data-i18n-title]').forEach(element => {
+        const key = element.getAttribute('data-i18n-title');
+        if (translations[newLang][key]) element.setAttribute('title', translations[newLang][key]);
+    });
+
+    document.querySelectorAll('[data-i18n-aria-label]').forEach(element => {
+        const key = element.getAttribute('data-i18n-aria-label');
+        if (translations[newLang][key]) element.setAttribute('aria-label', translations[newLang][key]);
     });
 }
 
