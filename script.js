@@ -77,67 +77,28 @@ const translations = {
         about_text_1: "Mein Studium der Pädagogik und Soziologie prägt meinen Blick auf digitale Kommunikation bis heute. Mich interessiert nicht nur, wie eine Website technisch funktioniert, sondern auch, wie Menschen sie wahrnehmen und nutzen. Eine gute Website muss verständlich sein, Orientierung geben und Vertrauen schaffen. Deshalb verbinde ich technische Umsetzung mit einem Blick für Nutzer, Unternehmen und die Details, die aus Besuchern Interessenten machen.",
         about_text_2: "Mein Anspruch sind Websites, die gut aussehen, verständlich funktionieren und einen echten Zweck erfüllen.",
 
-        portfolio_titel: "Ausgewählte Projekte",
+    portfoliotitel: "Ausgewählte Projekte",
+    portfoliolead: "Jede Website wird individuell auf das Unternehmen, seine Zielgruppe und die gewünschten Ziele abgestimmt.",
 
-    portfolio_lead:
-        "Jede Website wird individuell auf das Unternehmen, seine Zielgruppe und die gewünschten Ziele abgestimmt.",
+    portfolio1alt: "Website Isabell Bader Barockreiten",
+    portfolio1title: "Isabell Bader – Barockreiten",
 
-    portfolio_project_1_alt: "Website Reitunterricht",
-    portfolio_project_1_title:
-        "Individuelle Website für ein Reitangebot mit klarer Nutzerführung und persönlicher Gestaltung.",
+    portfolio2alt: "Website Rebell Pilates",
+    portfolio2title: "Rebell Pilates",
 
-    portfolio_implementation: "Umsetzung",
+    portfolio3alt: "Webportal Equily",
+    portfolio3title: "Equily – individuelles Webportal",
 
-    portfolio_project_1_implementation_1:
-        "Webdesign & responsive Umsetzung",
-    portfolio_project_1_implementation_2:
-        "Strukturierung der Inhalte und Leistungen",
-    portfolio_project_1_implementation_3:
-        "Nutzerführung und klare Kontaktwege",
-    portfolio_project_1_implementation_4:
-        "Optimierung für Desktop, Tablet und Smartphone",
-    portfolio_project_1_implementation_5:
-        "SEO-Basics und technische Onpage-Optimierung",
+    portfolio4alt: "Website Uhrenmanufaktur",
+    portfolio4title: "Aurelius & Söhne – Mechanische Uhrenmanufaktur",
 
-    portfolio_technology: "Technik",
-    portfolio_view_project: "→ Projekt ansehen",
+    portfolio5alt: "Website Immobilienmakler",
+    portfolio5title: "Immobilienmakler – individuelle Immobilienberatung",
 
-    portfolio_project_2_alt: "Website KFZ-Werkstatt",
-    portfolio_project_2_title:
-        "Moderne Unternehmenswebsite zur übersichtlichen Darstellung der Werkstattleistungen und zur einfachen Kontaktaufnahme.",
+    portfolioviewproject: "→ Projekt ansehen",
 
-    portfolio_project_2_implementation_1:
-        "Individuelles Webdesign",
-    portfolio_project_2_implementation_2:
-        "Responsive Webentwicklung",
-    portfolio_project_2_implementation_3:
-        "Strukturierte Darstellung der Leistungen",
-    portfolio_project_2_implementation_4:
-        "Kontakt- und Anfrageelemente",
-    portfolio_project_2_implementation_5:
-        "Suchmaschinenfreundliche Seitenstruktur",
-    portfolio_project_2_implementation_6:
-        "Optimierung von Ladezeit und Darstellung",
-
-    portfolio_project_3_alt: "Webportal Equily",
-    portfolio_project_3_title:
-        "Individuelles Webportal mit erweiterten Funktionen über die klassische Unternehmenswebsite hinaus.",
-
-    portfolio_project_3_implementation_1:
-        "Konzeption und Gestaltung des Webportals",
-    portfolio_project_3_implementation_2:
-        "Responsive Benutzeroberfläche",
-    portfolio_project_3_implementation_3:
-        "Strukturierung umfangreicher Inhalte",
-    portfolio_project_3_implementation_4:
-        "Interaktive Funktionen",
-    portfolio_project_3_implementation_5:
-        "Benutzerfreundliche Navigation",
-    portfolio_project_3_implementation_6:
-        "Individuelle technische Umsetzung",
-
-    portfolio_coming_soon: "Coming Soon",
-    portfolio_more_projects: "Weitere Projekte in Kürze",
+    portfoliocomingsoon: "Coming Soon",
+    portfoliomoreprojects: "Weitere Projekte in Kürze",
 
         contact_hero_title: "Lass uns über dein Projekt sprechen.",
         contact_hero_subtitle: "Ich freue mich darauf, dich und dein Unternehmen kennenzulernen. Lass uns gemeinsam herausfinden, wie ich dich unterstützen kann.",
@@ -424,7 +385,208 @@ const translations = {
     contact_form_email: "E-Mail",
     contact_form_telefon: "Telefonnummer (optional)",
     contact_form_message: "Nachricht",
-    send: "Nachricht senden"
+    send: "Nachricht senden",
+  webreitsport: "01 / Webdesign · Reitsport",
+  dressurmuenchen: "Klassisch-barocke<br>Dressur München",
+  persweb: "Eine persönliche Website für Isabell Bader, die Kompetenz, Vertrauen und die individuelle Arbeit mit Pferd und Reiter in den Mittelpunkt stellt.",
+
+  reitprojekt: "Das Projekt",
+  reitprojekt1: "Eine Website, die Persönlichkeit vermittelt.",
+  reitprojekt2: "Die Website sollte die persönliche Arbeit von Isabell Bader als Reitlehrerin und Bereiterin authentisch widerspiegeln. Im Mittelpunkt stehen dabei nicht nur die angebotenen Leistungen, sondern vor allem die individuelle Ausbildung von Pferd und Reiter.",
+  reitprojekt3: "Der digitale Auftritt sollte bewusst nicht wie eine klassische Reitschul Website wirken, sondern Ruhe, Qualität und Vertrauen vermitteln.",
+
+  reither: "Die Herausforderung",
+  reither1: "Viele Leistungen. Eine klare Struktur.",
+  reither2: "Das Angebot richtet sich an unterschiedliche Zielgruppen vom Reitunterricht über Beritt und Lehrgänge bis hin zur Jungpferdeausbildung und der Arbeit mit anspruchsvollen Pferden.",
+  reither3: "Die Herausforderung bestand darin, diese unterschiedlichen Themen übersichtlich darzustellen, ohne die Website mit Informationen zu überladen.",
+
+  reitansatz: "Der Ansatz",
+  reitansatz1: "Weniger Ablenkung.<br>Mehr Persönlichkeit.",
+
+  reitkonzept: "Das Konzept",
+  reitkonzept1: "Ruhig, persönlich und hochwertig.",
+  reitkonzept2: "Die Gestaltung setzt auf eine klare Typografie, großzügige Bildflächen und ausreichend Weißraum. Dadurch entsteht eine ruhige Atmosphäre, die zur klassischen Reitkunst und zur persönlichen Arbeitsweise passt.",
+  reitkonzept3: "Die Inhalte wurden so strukturiert, dass Besucher schnell verstehen, welche Leistungen angeboten werden und welcher Ansatz hinter der Arbeit steht.",
+
+  altdesktop: "Desktop Ansicht der Website",
+  altmobil: "Mobile Ansicht der Website",
+
+  reitumsetzung: "Umsetzung",
+  reitumsetzung1: "Individuelles Webdesign",
+  reitumsetzung2: "Responsive Gestaltung",
+  reitumsetzung3: "Klare Leistungsstruktur",
+  reitumsetzung4: "Optimierung für mobile Endgeräte",
+  reitumsetzung5: "SEO orientierte Seitenstruktur",
+  reitumsetzung6: "Kontaktmöglichkeiten und Nutzerführung",
+
+  reitergebnis: "Das Ergebnis",
+  reitergebnis1: "Ein digitaler Auftritt, der die Persönlichkeit hinter dem Angebot sichtbar macht.",
+  reitergebnis2: "Die Website verbindet eine klare Nutzerführung mit einer persönlichen und hochwertigen Gestaltung. Besucher erhalten schnell einen Überblick über das Angebot und gleichzeitig einen authentischen Eindruck von der Arbeitsweise.",
+
+  portfolioviewproject: "→ Projekt ansehen",
+  
+  webpilates: "02 / Webdesign · Pilates",
+  rebellpilates: "Rebell Pilates<br>Individuelles Training",
+  perspilates: "Eine Website für persönliches Pilates Training, bei dem die individuelle Betreuung und die Arbeit mit dem einzelnen Menschen im Mittelpunkt stehen.",
+  altpilates: "Website von Rebell Pilates",
+
+  pilatesprojekt: "Das Projekt",
+  pilatesprojekt1: "Pilates. Persönlich statt in der Gruppe.",
+  pilatesprojekt2: "Für Rebell Pilates entstand eine Website, die das individuelle Trainingskonzept klar und verständlich vermittelt.",
+  pilatesprojekt3: "Besonders wichtig war dabei, deutlich zu machen: Rebell Pilates bietet keine klassischen Gruppenkurse an, sondern persönliche Pilates Einheiten mit individueller Betreuung.",
+
+  pilatesher: "Die Herausforderung",
+  pilatesher1: "Ein anderes Verständnis von Pilates.",
+  pilatesher2: "Viele Menschen verbinden Pilates zunächst mit Kursräumen und festen Gruppen. Die Website musste deshalb bereits auf den ersten Blick zeigen, dass hier ein anderes Konzept verfolgt wird.",
+  pilatesher3: "Das individuelle Training, die persönliche Betreuung und die gezielte Arbeit an den jeweiligen Bedürfnissen sollten klar im Mittelpunkt stehen.",
+
+  pilatesansatz: "Der Ansatz",
+  pilatesansatz1: "Keine Gruppenkurse.<br>Volle Aufmerksamkeit.",
+
+  pilateskonzept: "Das Konzept",
+  pilateskonzept1: "Klar, modern und persönlich.",
+  pilateskonzept2: "Die Gestaltung wurde bewusst modern und reduziert gehalten. Großzügige Bildflächen und eine klare Struktur geben dem individuellen Trainingsangebot Raum.",
+  pilateskonzept3: "Leistungen und Trainingsansatz werden verständlich erklärt, sodass Besucher schnell erkennen, für wen das Angebot geeignet ist und was sie bei Rebell Pilates erwartet.",
+
+  altdesktoppilates: "Desktop Ansicht der Website",
+  altmobilpilates: "Mobile Ansicht der Website",
+
+  pilatesumsetzung: "Umsetzung",
+  pilatesumsetzung1: "Individuelles Webdesign",
+  pilatesumsetzung2: "Responsive Gestaltung",
+  pilatesumsetzung3: "Klare Positionierung des Angebots",
+  pilatesumsetzung4: "Verständliche Darstellung des 1:1 Trainings",
+  pilatesumsetzung5: "Strukturierte Leistungsseiten",
+  pilatesumsetzung6: "Kontakt und Anfrageführung",
+
+  pilatesergebnis: "Das Ergebnis",
+  pilatesergebnis1: "Eine Website, die individuelles Training vermittelt.",
+  pilatesergebnis2: "Der digitale Auftritt stellt die persönliche Betreuung klar in den Mittelpunkt und grenzt das Angebot deutlich von klassischen Pilates Gruppenkursen ab.",
+
+  portfolioviewproject: "→ Projekt ansehen",
+  
+  webequily: "03 / Webdesign · Reitsport",
+  equily: "Equily",
+  persEquily: "Ein moderner digitaler Auftritt für eine Marke aus dem Pferdesport – klar, hochwertig und emotional, ohne dabei auf eine überladene Gestaltung zurückzugreifen.",
+  altequily: "Equily Website",
+
+  equilyprojekt: "Das Projekt",
+  equilyprojekt1: "Eine Marke braucht mehr als eine schöne Website.",
+  equilyprojekt2: "Für Equily sollte ein digitaler Auftritt entstehen, der die Marke professionell präsentiert und gleichzeitig die emotionale Verbindung zum Pferdesport vermittelt.",
+  equilyprojekt3: "Die Website sollte modern wirken, die Marke klar positionieren und Besuchern einen einfachen Zugang zu den wichtigsten Inhalten ermöglichen.",
+
+  equilyher: "Die Herausforderung",
+  equilyher1: "Modern, ohne den Charakter zu verlieren.",
+  equilyher2: "Websites im Pferdesport arbeiten häufig mit sehr dekorativen Elementen, klassischen Motiven und einer Vielzahl visueller Details.",
+  equilyher3: "Für Equily sollte bewusst ein anderer Weg gewählt werden: ein reduziertes Erscheinungsbild, das hochwertig wirkt und der Marke genügend Raum gibt.",
+
+  equilyansatz: "Der Ansatz",
+  equilyansatz1: "Reduziertes Design.<br>Starke Marke.",
+
+  equilykonzept: "Das Konzept",
+  equilykonzept1: "Klarheit trifft auf Emotionalität.",
+  equilykonzept2: "Das Gestaltungskonzept verbindet eine klare Typografie mit großzügigen Bildflächen und einer ruhigen Farbwelt.",
+  equilykonzept3: "Statt möglichst viele Informationen gleichzeitig zu zeigen, wurden die Inhalte bewusst priorisiert. So entsteht eine visuelle Hierarchie, die Besucher intuitiv durch die Website führt.",
+
+  altequilydesktop: "Equily Desktop Ansicht",
+  altequilymobil: "Equily Mobile Ansicht",
+
+  equilyumsetzung: "Umsetzung",
+  equilyumsetzung1: "Individuelles Webdesign",
+  equilyumsetzung2: "Modernes Farb und Typografiekonzept",
+  equilyumsetzung3: "Responsive Gestaltung",
+  equilyumsetzung4: "Klare Nutzerführung",
+  equilyumsetzung5: "Mobile Optimierung",
+  equilyumsetzung6: "Visuelle Markenführung",
+
+  equilyergebnis: "Das Ergebnis",
+  equilyergebnis1: "Ein moderner Auftritt mit eigenständiger visueller Identität.",
+  equilyergebnis2: "Die Gestaltung verbindet die emotionale Welt des Pferdesports mit einer klaren und zeitgemäßen Formsprache. Dadurch erhält Equily einen professionellen digitalen Auftritt, der die Marke in den Mittelpunkt stellt.",
+
+  portfolioviewproject: "→ Projekt ansehen",
+  
+  webuhren: "04 / Webdesign · Uhrenmanufaktur",
+  aureliusuhr: "Aurelius & Söhne<br>Mechanische Uhrenmanufaktur",
+  persuhren: "Ein digitaler Auftritt für eine traditionsbewusste Uhrenmanufaktur, der Handwerkskunst, Präzision und zeitlose Gestaltung miteinander verbindet.",
+  altuhren: "Website der Uhrenmanufaktur Aurelius & Söhne",
+
+  uhrenprojekt: "Das Projekt",
+  uhrenprojekt1: "Eine digitale Bühne für mechanische Uhrmacherkunst.",
+  uhrenprojekt2: "Für Aurelius & Söhne entstand eine Website, die den Charakter einer traditionsreichen Uhrenmanufaktur in die digitale Welt überträgt.",
+  uhrenprojekt3: "Im Mittelpunkt stehen die Uhren, ihre Details und die Geschichte hinter der Marke – reduziert präsentiert und mit viel Raum für hochwertige Bildwelten.",
+
+  uhrenher: "Die Herausforderung",
+  uhrenher1: "Tradition modern präsentieren.",
+  uhrenher2: "Die Gestaltung sollte hochwertig und klassisch wirken, ohne dabei altmodisch zu werden. Gleichzeitig mussten Produkte, Geschichte und Markenwelt übersichtlich miteinander verbunden werden.",
+  uhrenher3: "Besonderes Augenmerk lag auf einer ruhigen Gestaltung, die den Uhren selbst den nötigen Raum gibt.",
+
+  uhrenansatz: "Der Ansatz",
+  uhrenansatz1: "Präzision im Detail.<br>Ruhe im Design.",
+
+  uhrenkonzept: "Das Konzept",
+  uhrenkonzept1: "Reduziert, klassisch und hochwertig.",
+  uhrenkonzept2: "Die Gestaltung verbindet eine elegante Typografie mit warmen, zurückhaltenden Farbtönen und großzügigen Bildflächen.",
+  uhrenkonzept3: "Produktseiten, Markengeschichte und Informationen zur Manufaktur wurden klar strukturiert, sodass die Website sowohl die Ästhetik als auch die handwerkliche Qualität der Marke vermittelt.",
+
+  altuhrendesktop: "Desktop Ansicht der Website",
+  altuhrenmobil: "Mobile Ansicht der Website",
+
+  uhrenumsetzung: "Umsetzung",
+  uhrenumsetzung1: "Individuelles Webdesign",
+  uhrenumsetzung2: "Hochwertige Produktpräsentation",
+  uhrenumsetzung3: "Responsive Gestaltung",
+  uhrenumsetzung4: "Strukturierte Produkt und Markenseiten",
+  uhrenumsetzung5: "Individuelle Bild und Typografiegestaltung",
+  uhrenumsetzung6: "SEO orientierte Seitenstruktur",
+
+  uhrenergebnis: "Das Ergebnis",
+  uhrenergebnis1: "Ein digitaler Auftritt, der Tradition und moderne Markenpräsentation verbindet.",
+  uhrenergebnis2: "Die Website schafft eine ruhige, hochwertige Umgebung für die Präsentation der Uhren und gibt der Marke einen eigenständigen digitalen Auftritt.",
+
+  portfolioviewproject: "→ Projekt ansehen",
+  
+  webimmo: "05 / Konzeptprojekt · Real Estate & Architektur",
+  immo: "Immobilien & Architektur",
+  persimmo: "Ein Premium-Website-Konzept für ein Architektur- und Immobilienbüro mit Fokus auf Ästhetik, hochwertige Projektpräsentation und gezielte Interaktion.",
+  altimmo: "Immobilien & Architektur Website Konzept",
+
+  immoidee: "Die Idee",
+  immoidee1: "Eine Plattform, die Architektur und Immobilien erlebbar macht.",
+  immoidee2: "Für dieses Konzept wurde ein eleganter digitaler Auftritt für ein hochklassiges Architektur- und Immobilienunternehmen entwickelt.",
+  immoidee3: "Im Mittelpunkt steht dabei nicht nur die visuelle Eleganz, sondern die gezielte Führung des Besuchers: Kann diese Agentur meine Traumimmobilie oder mein Bauvorhaben realisieren?",
+
+  immoher: "Die Herausforderung",
+  immoher1: "Vom ersten Eindruck zur qualifizierten Anfrage.",
+  immoher2: "Kaufinteressenten und Bauherren suchen nach Präzision, Exklusivität und klaren Fakten: Welche Projekte wurden umgesetzt, welche Spezifikationen bieten die Objekte und wie erfolgt die Kontaktaufnahme?",
+  immoher3: "Deshalb wurde die Website konsequent aus der Perspektive anspruchsvoller Kunden konzipiert – übersichtlich, stilvoll und frei von unnötigem Ballast.",
+
+  immoansatz: "Der Ansatz",
+  immoansatz1: "Ästhetik spüren.<br>Details entdecken.<br>Projekt anfragen.",
+
+  immokonzept: "Das Konzept",
+  immokonzept1: "Zeitlos, strukturiert und wirkungsvoll.",
+  immokonzept2: "Die Gestaltung vereint eine minimalistische Formsprache mit großflächiger Bildsprache und interaktiven Modulen wie Vorher-Nachher-Vergleichen oder Grundriss-Previews.",
+  immokonzept3: "Exklusive Portfolio-Kategorien und Kontakmöglichkeiten stehen im Vordergrund. Elemente wie Qualitätsgarantien, Materialkonzepte und Haltung schaffen sofortiges Vertrauen.",
+
+  altimmodesktop: "Immobilien Website Desktop Ansicht",
+  altimmomobil: "Immobilien Website Mobile Ansicht",
+
+  immoumsetzung: "Umsetzung",
+  immoumsetzung1: "Exklusives Website-Konzept",
+  immoumsetzung2: "Responsive Webdesign",
+  immoumsetzung3: "Filterbare Projektübersicht",
+  immoumsetzung4: "Interaktiver Vorher-Nachher Slider",
+  immoumsetzung5: "Grundriss- & Spezifikationen-Tabs",
+  immoumsetzung6: "Strategische Nutzerführung für Anfragen",
+
+  immoergebnis: "Das Ziel",
+  immoergebnis1: "Eine Website, die exklusive Projekte würdig präsentiert und Leads generiert.",
+  immoergebnis2: "Das Konzept zeigt, wie Architekten und Immobilienmakler digital auf Highend-Niveau auftreten können, um Premium-Kunden direkt zu überzeugen.",
+
+  portfolioviewproject: "→ Projekt ansehen",
+
+  immohinweis: "Hinweis",
+  immohinweis1: "Dieses Projekt ist ein eigenständig entwickeltes Website-Konzept und keine reale Kundenwebsite.",
 
     },
     en: {
@@ -462,67 +624,28 @@ const translations = {
     about_text_1: "My studies in pedagogy and sociology shape my perspective on digital communication to this day. I'm not only interested in how a website works technically, but also in how people perceive and interact with it. A good website must be clear, provide orientation, and build trust. That's why I combine technical execution with an eye for users, businesses, and the details that turn visitors into leads.",
     about_text_2: "My ambition is to create websites that look great, function intuitively, and serve a clear purpose.",
 
-    portfolio_titel: "Selected Projects",
+    portfoliotitel: "Selected Projects",
+    portfoliolead: "Every website is individually tailored to the company, its target audience and its specific goals.",
 
-    portfolio_lead:
-        "Every website is individually tailored to the business, its target audience and its specific goals.",
+    portfolio1alt: "Isabell Bader Baroque Riding Website",
+    portfolio1title: "Isabell Bader – Baroque Riding",
 
-    portfolio_project_1_alt: "Horse Riding Website",
-    portfolio_project_1_title:
-        "Custom website for a horse riding service with clear user guidance and a personal design.",
+    portfolio2alt: "Rebell Pilates Website",
+    portfolio2title: "Rebell Pilates",
 
-    portfolio_implementation: "Implementation",
+    portfolio3alt: "Equily Web Portal",
+    portfolio3title: "Equily – Custom Web Portal",
 
-    portfolio_project_1_implementation_1:
-        "Web design & responsive development",
-    portfolio_project_1_implementation_2:
-        "Content and service structure",
-    portfolio_project_1_implementation_3:
-        "User guidance and clear contact options",
-    portfolio_project_1_implementation_4:
-        "Optimization for desktop, tablet and smartphone",
-    portfolio_project_1_implementation_5:
-        "SEO basics and technical on-page optimization",
+    portfolio4alt: "Watch Manufacture Website",
+    portfolio4title: "Aurelius & Söhne – Mechanical Watch Manufacture",
 
-    portfolio_technology: "Technology",
-    portfolio_view_project: "→ View project",
+    portfolio5alt: "Real Estate Agency Website",
+    portfolio5title: "Real Estate Agency – Individual Property Consulting",
 
-    portfolio_project_2_alt: "Automotive Workshop Website",
-    portfolio_project_2_title:
-        "Modern business website for clearly presenting workshop services and making it easy for customers to get in touch.",
+    portfolioviewproject: "→ View project",
 
-    portfolio_project_2_implementation_1:
-        "Custom web design",
-    portfolio_project_2_implementation_2:
-        "Responsive web development",
-    portfolio_project_2_implementation_3:
-        "Structured presentation of services",
-    portfolio_project_2_implementation_4:
-        "Contact and inquiry elements",
-    portfolio_project_2_implementation_5:
-        "Search-engine-friendly page structure",
-    portfolio_project_2_implementation_6:
-        "Loading speed and display optimization",
-
-    portfolio_project_3_alt: "Equily Web Portal",
-    portfolio_project_3_title:
-        "Custom web portal with advanced functionality beyond a traditional business website.",
-
-    portfolio_project_3_implementation_1:
-        "Web portal concept and design",
-    portfolio_project_3_implementation_2:
-        "Responsive user interface",
-    portfolio_project_3_implementation_3:
-        "Structuring of extensive content",
-    portfolio_project_3_implementation_4:
-        "Interactive features",
-    portfolio_project_3_implementation_5:
-        "User-friendly navigation",
-    portfolio_project_3_implementation_6:
-        "Custom technical implementation",
-
-    portfolio_coming_soon: "Coming Soon",
-    portfolio_more_projects: "More projects coming soon",
+    portfoliocomingsoon: "Coming Soon",
+    portfoliomoreprojects: "More projects coming soon",
 
     contact_hero_title: "Let's talk about your project.",
     contact_hero_subtitle: "I look forward to getting to know you and your business. Let's find out together how I can support you.",
@@ -761,7 +884,208 @@ const translations = {
     placeholder_message: "Your message",
     honeypot_label: "Please leave this field empty",
     send: "Send Message",
-    request_appointment: "Request Initial Consultation"
+    request_appointment: "Request Initial Consultation",
+  webreitsport: "01 / Web Design · Equestrian",
+  dressurmuenchen: "Classical Baroque<br>Dressage Munich",
+  persweb: "A personal website for Isabell Bader, focusing on expertise, trust and her individual approach to working with horse and rider.",
+
+  reitprojekt: "The Project",
+  reitprojekt1: "A website that conveys personality.",
+  reitprojekt2: "The website was designed to authentically reflect Isabell Bader’s work as a riding instructor and rider. The focus is not only on the services offered, but above all on the individual training of horse and rider.",
+  reitprojekt3: "The digital presence was deliberately designed not to feel like a traditional riding school website, but to convey calmness, quality and trust.",
+
+  reither: "The Challenge",
+  reither1: "Many services. One clear structure.",
+  reither2: "The services are aimed at different target groups, ranging from riding lessons, horse training and clinics to young horse training and working with challenging horses.",
+  reither3: "The challenge was to present these different areas clearly without overwhelming the website with information.",
+
+  reitansatz: "The Approach",
+  reitansatz1: "Less distraction.<br>More personality.",
+
+  reitkonzept: "The Concept",
+  reitkonzept1: "Calm, personal and refined.",
+  reitkonzept2: "The design uses clear typography, generous image areas and ample white space. This creates a calm atmosphere that reflects classical riding and the personal approach to the work.",
+  reitkonzept3: "The content was structured so that visitors can quickly understand which services are offered and what approach lies behind the work.",
+
+  altdesktop: "Desktop view of the website",
+  altmobil: "Mobile view of the website",
+
+  reitumsetzung: "Implementation",
+  reitumsetzung1: "Custom web design",
+  reitumsetzung2: "Responsive design",
+  reitumsetzung3: "Clear service structure",
+  reitumsetzung4: "Mobile optimisation",
+  reitumsetzung5: "SEO oriented page structure",
+  reitumsetzung6: "Contact options and user guidance",
+
+  reitergebnis: "The Result",
+  reitergebnis1: "A digital presence that makes the personality behind the service visible.",
+  reitergebnis2: "The website combines clear user guidance with a personal and refined design. Visitors can quickly understand the services while gaining an authentic impression of the approach to the work.",
+
+  portfolioviewproject: "→ View project",
+  
+  webpilates: "02 / Web Design · Pilates",
+  rebellpilates: "Rebell Pilates<br>Personal Training",
+  perspilates: "A website for personal Pilates training, focusing on individual attention and a personalised approach to each client.",
+  altpilates: "Website for Rebell Pilates",
+
+  pilatesprojekt: "The Project",
+  pilatesprojekt1: "Pilates. Personal rather than in a group.",
+  pilatesprojekt2: "A website was created for Rebell Pilates to clearly and effectively communicate its individual training concept.",
+  pilatesprojekt3: "It was particularly important to make clear that Rebell Pilates does not offer traditional group classes, but personal Pilates sessions with individual attention.",
+
+  pilatesher: "The Challenge",
+  pilatesher1: "A different approach to Pilates.",
+  pilatesher2: "Many people initially associate Pilates with studios and fixed groups. The website therefore needed to communicate from the very first glance that a different concept was being offered.",
+  pilatesher3: "Individual training, personal attention and targeted work based on each client’s needs were placed clearly at the centre.",
+
+  pilatesansatz: "The Approach",
+  pilatesansatz1: "No group classes.<br>Full attention.",
+
+  pilateskonzept: "The Concept",
+  pilateskonzept1: "Clear, modern and personal.",
+  pilateskonzept2: "The design was deliberately kept modern and minimal. Generous image areas and a clear structure give the individual training concept room to breathe.",
+  pilateskonzept3: "The services and training approach are explained clearly, allowing visitors to quickly understand who the offer is suited to and what they can expect from Rebell Pilates.",
+
+  altdesktoppilates: "Desktop view of the website",
+  altmobilpilates: "Mobile view of the website",
+
+  pilatesumsetzung: "Implementation",
+  pilatesumsetzung1: "Custom web design",
+  pilatesumsetzung2: "Responsive design",
+  pilatesumsetzung3: "Clear positioning of the service",
+  pilatesumsetzung4: "Clear presentation of 1:1 training",
+  pilatesumsetzung5: "Structured service pages",
+  pilatesumsetzung6: "Contact and enquiry guidance",
+
+  pilatesergebnis: "The Result",
+  pilatesergebnis1: "A website that communicates individual training.",
+  pilatesergebnis2: "The digital presence clearly places personal attention at the centre and distinguishes the service from traditional Pilates group classes.",
+
+  portfolioviewproject: "→ View project",
+  
+  webequily: "03 / Web Design · Equestrian",
+  equily: "Equily",
+  persEquily: "A modern digital presence for an equestrian brand, combining clarity, quality and emotion without relying on an overloaded design.",
+  altequily: "Equily Website",
+
+  equilyprojekt: "The Project",
+  equilyprojekt1: "A brand needs more than a beautiful website.",
+  equilyprojekt2: "The goal for Equily was to create a digital presence that presents the brand professionally while conveying its emotional connection to the equestrian world.",
+  equilyprojekt3: "The website was designed to feel modern, position the brand clearly and give visitors easy access to the most important content.",
+
+  equilyher: "The Challenge",
+  equilyher1: "Modern without losing character.",
+  equilyher2: "Equestrian websites often rely on decorative elements, traditional imagery and a large number of visual details.",
+  equilyher3: "For Equily, a different approach was deliberately chosen: a reduced visual identity that feels refined while giving the brand enough space to stand out.",
+
+  equilyansatz: "The Approach",
+  equilyansatz1: "Reduced design.<br>Strong brand.",
+
+  equilykonzept: "The Concept",
+  equilykonzept1: "Clarity meets emotion.",
+  equilykonzept2: "The design concept combines clear typography with generous image areas and a calm colour palette.",
+  equilykonzept3: "Instead of presenting as much information as possible at once, the content was deliberately prioritised. This creates a visual hierarchy that guides visitors intuitively through the website.",
+
+  altequilydesktop: "Equily Desktop view",
+  altequilymobil: "Equily Mobile view",
+
+  equilyumsetzung: "Implementation",
+  equilyumsetzung1: "Custom web design",
+  equilyumsetzung2: "Modern colour and typography concept",
+  equilyumsetzung3: "Responsive design",
+  equilyumsetzung4: "Clear user guidance",
+  equilyumsetzung5: "Mobile optimisation",
+  equilyumsetzung6: "Visual brand guidance",
+
+  equilyergebnis: "The Result",
+  equilyergebnis1: "A modern presence with a distinctive visual identity.",
+  equilyergebnis2: "The design combines the emotional world of equestrian sport with a clear and contemporary visual language. This gives Equily a professional digital presence that puts the brand at the centre.",
+
+  portfolioviewproject: "→ View project",
+
+  webuhren: "04 / Web Design · Watch Manufacture",
+  aureliusuhr: "Aurelius & Söhne<br>Mechanical Watch Manufacture",
+  persuhren: "A digital presence for a traditional watch manufacture, combining craftsmanship, precision and timeless design.",
+  altuhren: "Website of Aurelius & Söhne watch manufacture",
+
+  uhrenprojekt: "The Project",
+  uhrenprojekt1: "A digital stage for mechanical watchmaking.",
+  uhrenprojekt2: "For Aurelius & Söhne, a website was created to bring the character of a traditional watch manufacture into the digital world.",
+  uhrenprojekt3: "The focus is on the watches, their details and the story behind the brand, presented in a reduced style with generous space for high quality imagery.",
+
+  uhrenher: "The Challenge",
+  uhrenher1: "Presenting tradition in a modern way.",
+  uhrenher2: "The design needed to feel refined and classic without appearing outdated. At the same time, products, history and brand identity had to be connected in a clear and structured way.",
+  uhrenher3: "Particular emphasis was placed on a calm design that gives the watches the space they deserve.",
+
+  uhrenansatz: "The Approach",
+  uhrenansatz1: "Precision in detail.<br>Calm in design.",
+
+  uhrenkonzept: "The Concept",
+  uhrenkonzept1: "Reduced, classic and refined.",
+  uhrenkonzept2: "The design combines elegant typography with warm, understated colours and generous image areas.",
+  uhrenkonzept3: "Product pages, brand history and information about the manufacture were clearly structured so that the website communicates both the aesthetics and the craftsmanship of the brand.",
+
+  altuhrendesktop: "Desktop view of the website",
+  altuhrenmobil: "Mobile view of the website",
+
+  uhrenumsetzung: "Implementation",
+  uhrenumsetzung1: "Custom web design",
+  uhrenumsetzung2: "High quality product presentation",
+  uhrenumsetzung3: "Responsive design",
+  uhrenumsetzung4: "Structured product and brand pages",
+  uhrenumsetzung5: "Custom imagery and typography",
+  uhrenumsetzung6: "SEO oriented page structure",
+
+  uhrenergebnis: "The Result",
+  uhrenergebnis1: "A digital presence that combines tradition with modern brand presentation.",
+  uhrenergebnis2: "The website creates a calm, refined environment for presenting the watches and gives the brand a distinctive digital presence.",
+
+  portfolioviewproject: "→ View project",
+  
+  webimmo: "05 / Concept Project · Real Estate & Architecture",
+  immo: "Real Estate & Architecture",
+  persimmo: "A premium website concept for an architecture and real estate firm, focusing on aesthetics, high quality project presentation and targeted interaction.",
+  altimmo: "Real Estate & Architecture Website Concept",
+
+  immoidee: "The Idea",
+  immoidee1: "A platform that makes architecture and real estate tangible.",
+  immoidee2: "For this concept, an elegant digital presence was developed for a high-end architecture and real estate company.",
+  immoidee3: "The focus is not only on visual elegance, but also on guiding visitors with purpose: Can this agency realise my dream property or construction project?",
+
+  immoher: "The Challenge",
+  immoher1: "From first impression to qualified enquiry.",
+  immoher2: "Property buyers and clients looking to build are looking for precision, exclusivity and clear facts: Which projects have been completed, what specifications do the properties offer and how can they get in touch?",
+  immoher3: "The website was therefore designed consistently from the perspective of demanding clients – clear, refined and free from unnecessary distractions.",
+
+  immoansatz: "The Approach",
+  immoansatz1: "Feel the aesthetics.<br>Discover the details.<br>Enquire about the project.",
+
+  immokonzept: "The Concept",
+  immokonzept1: "Timeless, structured and impactful.",
+  immokonzept2: "The design combines a minimalist visual language with large-scale imagery and interactive modules such as before-and-after comparisons and floor plan previews.",
+  immokonzept3: "Exclusive portfolio categories and contact options take centre stage. Elements such as quality guarantees, material concepts and brand values create immediate trust.",
+
+  altimmodesktop: "Real Estate Website Desktop View",
+  altimmomobil: "Real Estate Website Mobile View",
+
+  immoumsetzung: "Implementation",
+  immoumsetzung1: "Exclusive website concept",
+  immoumsetzung2: "Responsive web design",
+  immoumsetzung3: "Filterable project overview",
+  immoumsetzung4: "Interactive before-and-after slider",
+  immoumsetzung5: "Floor plan and specification tabs",
+  immoumsetzung6: "Strategic user guidance for enquiries",
+
+  immoergebnis: "The Goal",
+  immoergebnis1: "A website that presents exclusive projects appropriately and generates leads.",
+  immoergebnis2: "The concept demonstrates how architects and real estate professionals can establish a high-end digital presence designed to directly convince premium clients.",
+
+  portfolioviewproject: "→ View project",
+
+  immohinweis: "Note",
+  immohinweis1: "This project is an independently developed website concept and not a real client website.",
     }
 };
 
